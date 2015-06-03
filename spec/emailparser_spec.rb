@@ -50,6 +50,13 @@ describe 'EmailParser' do
           end
         end
 
+        context 'with no subject' do
+          it 'exits the method with an error' do
+            expect{ EmailParser.parse('spec/mocks/gmail-no-subject.eml') }.to raise_error
+            expect(EmailParser.instance_variable_get(:@subject)).to be_nil
+          end
+        end
+
       end # end of gmail context
 
     end # end of single email context

@@ -14,13 +14,15 @@ class EmailParser
       (@title, secret) = @subject.split(/\|\|/)
       @title.strip!
 
+      raise StandardError, "No subject" if @subject.nil? || @subject.empty?
+
       # parse the metadata to check for the secret and create additional key/value pairs
       unless secret.nil?
         (key, @secret) = secret.split(/:\s?/)
         @secret.strip!
       end
 
-      raise StandardError unless @secret == "jekyllmail"
+      raise StandardError, "Secret incorrect" unless @secret == "jekyllmail"
 
     end
 
