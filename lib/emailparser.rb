@@ -5,8 +5,6 @@ class EmailParser
   def self.parse(email)
     unless email.nil? || email.empty?
 
-      @keyvals = {}
-
       email = Mail.read(email)
 
       # parse the subject to create the title
