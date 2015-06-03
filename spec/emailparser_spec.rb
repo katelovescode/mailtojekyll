@@ -20,7 +20,7 @@ describe 'EmailParser' do
         it 'parses the subject correctly' do
           expect(EmailParser.instance_variable_get(:@subject)).to eq("Plain Text from Gmail || secret: jekyllmail")
           expect(EmailParser.instance_variable_get(:@title)).to eq("Plain Text from Gmail")
-          expect(EmailParser.instance_variable_get(:@keyvals)).to include(:secret => "jekyllmail")
+          expect(EmailParser.instance_variable_get(:@secret)).to eq("jekyllmail")
         end
       end
 
@@ -31,7 +31,7 @@ describe 'EmailParser' do
         it 'parses the subject correctly' do
           expect(EmailParser.instance_variable_get(:@subject)).to eq("HTML formatting from Gmail || secret: jekyllmail")
           expect(EmailParser.instance_variable_get(:@title)).to eq("HTML formatting from Gmail")
-          expect(EmailParser.instance_variable_get(:@keyvals)).to include(:secret => "jekyllmail")
+          expect(EmailParser.instance_variable_get(:@secret)).to eq("jekyllmail")
         end
       end
 
@@ -41,7 +41,7 @@ describe 'EmailParser' do
         # end
         it 'exits the method with an error' do
           expect{ EmailParser.parse('spec/mocks/gmail-wrong-secret.eml') }.to raise_error
-          expect(EmailParser.instance_variable_get(:@keyvals)).not_to include(:secret => "jekyllmail")
+          expect(EmailParser.instance_variable_get(:@secret)).not_to eq("jekyllmail")
         end
       end
 

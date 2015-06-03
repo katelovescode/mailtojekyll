@@ -8,21 +8,19 @@ class EmailParser
       @keyvals = {}
 
       email = Mail.read(email)
+
+      # parse the subject to create the title
       @subject = email.subject
-      (@title, metadata) = @subject.split(/\|\|/)
+      (@title, secret) = @subject.split(/\|\|/)
       @title.strip!
 
-      unless metadata.nil?
-        meta = metadata.split('/')
-        meta.each do |m|
-          (key, val) = m.split(/:\s?/)
-          key.strip!
-          val.strip!
-          @keyvals[key.to_sym] = val
-        end
+      # parse the metadata to check for the secret and create additional key/value pairs
+      unless secret.nil?
+        (key, @secret) = secret.split(/:\s?/)
+        @secret.strip!
       end
 
-      raise StandardError unless @keyvals[:secret] == "jekyllmail"
+      raise StandardError unless @secret == "jekyllmail"
 
     end
 
