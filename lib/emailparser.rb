@@ -2,7 +2,7 @@ require 'mail'
 
 class EmailParser
 
-  def self.read(email)
+  def self.parse(email)
     unless email.nil? || email.empty?
 
       @keyvals = {}
