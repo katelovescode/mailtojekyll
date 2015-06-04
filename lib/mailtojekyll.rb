@@ -20,8 +20,9 @@ require 'reverse_markdown'
 # use "let" for rspec testing variables, like in rbemail
 # body tests - check to make sure it exists, and check to make sure it is *exactly* what I want it to be (copy-paste the body of the email and format to final result, then code to make it pass)
 # what order do the images come in?
-# strip all html tags *except* img? Keep CID logic from JekyllMail?
+# keep CID logic from JekyllMail
 # turn parse into a module with smaller methods?
+# TODO: Put the logic in to not run parse if the emails list is empty
 
 def parse(email)
 
@@ -50,13 +51,24 @@ def parse(email)
     @body.css("div").each { |node| node.replace(node.inner_html)}
     @body = @body.inner_html
     @body = ReverseMarkdown.convert(@body)
+    if @body.gsub(/\s+/, "").length == 0
+      unless email.attachments.length > 0
+        @body == ""
+        raise StandardError, "Empty email"
+      end
+    end
   else
     @body = email.body.decoded
+    @body.gsub!(/\n/,"<br />")
+    @body = ReverseMarkdown.convert(@body)
+    if @body == ""
+      raise StandardError, "Empty email"
+    end
   end
 
 end
 
 # test block for formatting html
 # TODO: remove
-mail = 'spec/mocks/gmail-html-no-format.eml'
-parse(mail)
+# mail = 'spec/mocks/gmail-no-secret.eml'
+# parse(mail)
