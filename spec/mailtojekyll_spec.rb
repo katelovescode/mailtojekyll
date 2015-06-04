@@ -38,11 +38,12 @@ describe 'mailtojekyll' do
         end
 
         context 'sent with inline images' do
+          let(:bodytext) { bodytext = IO.binread("spec/mocks/inline-images-markdown.md").to_s }
           before(:each) do
             parse('spec/mocks/gmail-inline-images-only.eml')
           end
-          it 'formats the body stripping all tags except image tags and br tags' do
-            expect(instance_variable_get(:@body)).to eq('Here are some inline images.<br><br>On its own line:<br><img src="cid:ii_i9bo30jv0_14d256658f97bbac" height="534" width="361"><br><br>On the same line:<img src="cid:ii_i9bo6dkp1_14d2568bcb70655a" height="128" width="128"><br>​<br><br>')
+          it 'formats the body stripping all outer tags' do
+            expect(instance_variable_get(:@body)).to eq(bodytext)
           end
         end
 

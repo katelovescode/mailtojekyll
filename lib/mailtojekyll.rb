@@ -2,6 +2,7 @@
 
 require 'mail'
 require 'nokogiri'
+require 'reverse_markdown'
 
 # use or mixin the emailparser module? or include the emailparser code here
 # loop through emails to create multiple Post objects (based on Post Class)
@@ -43,11 +44,12 @@ def parse(email)
 
   # parse the body - if there are inline images, leave them in place
   if email.multipart?
-    @body = email.html_part.decoded
-    @body = Nokogiri::HTML.parse(@body) do |config|
-      config.options = Nokogiri::XML::ParseOptions::NOBLANKS
-    end
-    puts @body
+    @body = email.html_part.decoded.delete("\u200b")
+    @body = Nokogiri::HTML.parse(@body).at("div")
+    @body.css("br").each { |node| node.replace('<br />') }
+    @body.css("div").each { |node| node.replace(node.inner_html)}
+    @body = @body.inner_html
+    @body = ReverseMarkdown.convert(@body)
   else
     @body = email.body.decoded
   end
@@ -56,5 +58,5 @@ end
 
 # test block for formatting html
 # TODO: remove
-mail = 'spec/mocks/gmail-inline-images-only.eml'
+mail = 'spec/mocks/gmail-html-no-format.eml'
 parse(mail)
