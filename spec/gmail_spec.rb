@@ -119,7 +119,7 @@ describe 'mailtojekyll' do
         context 'with no body' do
           let(:bodytext) { bodytext = IO.binread("spec/mocks/gmail-empty.md").to_s }
           it 'outputs the body to markdown' do
-            expect(email.instance_variable_get(:@body)).to eq(bodytext)
+            expect(instance_variable_get(:@body).to_s).to eq(bodytext)
           end
           it 'exits the method with an error' do
             expect{ parse('spec/mocks/gmail-empty.eml') }.to raise_error
