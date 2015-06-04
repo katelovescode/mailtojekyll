@@ -4,11 +4,12 @@ describe 'mailtojekyll' do
 
   describe 'parse' do
 
-    context 'given no emails' do
-      it 'returns nil' do
-        expect(parse("")).to be_nil
-      end
-    end
+    # TODO: this may not be necessary.  We can put the logic in to not run parse if the emails list is empty
+    # context 'given no emails' do
+    #   it 'raises an error' do
+    #     expect(parse("")).to raise_error
+    #   end
+    # end
 
     context 'given a single email' do
 
@@ -33,6 +34,15 @@ describe 'mailtojekyll' do
             expect(instance_variable_get(:@subject)).to eq("HTML formatting from Gmail || secret: jekyllmail")
             expect(instance_variable_get(:@title)).to eq("HTML formatting from Gmail")
             expect(instance_variable_get(:@secret)).to eq("jekyllmail")
+          end
+        end
+
+        context 'sent with inline images' do
+          before(:each) do
+            parse('spec/mocks/gmail-inline-images-only.eml')
+          end
+          it 'formats the body stripping all tags except image tags and br tags' do
+            expect(instance_variable_get(:@body)).to eq('Here are some inline images.<br><br>On its own line:<br><img src="cid:ii_i9bo30jv0_14d256658f97bbac" height="534" width="361"><br><br>On the same line:<img src="cid:ii_i9bo6dkp1_14d2568bcb70655a" height="128" width="128"><br>​<br><br>')
           end
         end
 
