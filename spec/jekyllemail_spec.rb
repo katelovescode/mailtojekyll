@@ -2,7 +2,7 @@ require 'jekyllemail'
 
 describe JekyllEmail do
 
-  context 'given a message sent from Gmail'
+  context 'given a message sent from Gmail' do
 
     context 'given an empty subject' do
       let(:email) { "spec/mocks/gmail-no-subject.eml" }
