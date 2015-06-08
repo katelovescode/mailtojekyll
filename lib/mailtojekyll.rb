@@ -24,6 +24,19 @@ require 'reverse_markdown'
 # turn parse into a module with smaller methods?
 # TODO: Put the logic in to not run parse if the emails list is empty
 
+class Email
+  def initialize
+    # NEED HELP WITH THIS
+  end
+  
+  def
+  
+end
+
+
+
+
+
 def parse(email)
 
   email = Mail.read(email)
