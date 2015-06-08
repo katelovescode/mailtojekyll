@@ -24,22 +24,33 @@ require 'reverse_markdown'
 # turn parse into a module with smaller methods?
 # TODO: Put the logic in to not run parse if the emails list is empty
 
-class Email
-  def initialize
-    # NEED HELP WITH THIS
-  end
-  
-  def
-  
-end
-
-
-
-
+# class JekyllEmail < Mail
+# 
+#   def parsesubject
+#     (title, secret) = self.subject.split(/\|\|/)
+#   end
+#     
+#     #put parsed subject and created body into a settings hash and pass it in the constructor for JekyllPost - called automatically
+#   
+#   def makeit
+#   end
+#     #calls all the parsing, reading, etc. methods before it
+# end
+# 
+# email = ('spec/mocks/whatever.eml')
+# email = (loop through the pop account)
+# 
+# email = JekyllEmail.read(email)
+# email.makeit # rspec checks this for subject, secret, body
+# 
+# post = JekyllPost.new(#settingshash)
+# post.createsubject # rspec checks this for post title, body, images.
+# # check for saving to the file system
+# # check for saving images to the file system
 
 def parse(email)
 
-  email = Mail.read(email)
+
 
   # parse the subject to create the title
   @subject = email.subject

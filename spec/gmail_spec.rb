@@ -1,6 +1,6 @@
 require "mailtojekyll"
 
-describe 'mailtojekyll' do
+describe 'mailtojekyll', disabled: true do
 
   describe 'parse' do
 
