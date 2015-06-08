@@ -9,7 +9,9 @@ class JekyllEmail
     thismail = Mail.read(thismail)
     @subject = thismail.subject
     if thismail.multipart?
-      @body = thismail.html_part.decoded.delete("\u200b")
+      unless thismail.html_part.nil?
+        @body = thismail.html_part.decoded.delete("\u200b")
+      end
     else
       @body = thismail.body.decoded
     end
@@ -45,5 +47,5 @@ end
 
 # TESTING BLOCK
 
-# mail2 = JekyllEmail.new('spec/mocks/gmail-empty.eml') 
+# mail2 = JekyllEmail.new('spec/mocks/outlook/empty.eml') 
 # mail2.p_bod
