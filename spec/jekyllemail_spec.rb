@@ -17,6 +17,15 @@ describe JekyllEmail do
         expect { JekyllEmail.new(email).p_sec }.to raise_error
       end
     end
+    
+    context 'given no secret' do
+      let(:email) { "spec/mocks/gmail-no-secret.eml" }
+      let(:email2) { "spec/mocks/gmail-no-subject.eml" }
+      it 'raises an error' do
+        expect { JekyllEmail.new(email).p_sec }.to raise_error
+        expect { JekyllEmail.new(email2).p_sec }.to raise_error
+      end
+    end
 
   end
   
