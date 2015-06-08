@@ -15,13 +15,17 @@ class JekyllEmail
     else
       @body = thismail.body.decoded
     end
+    if thismail.has_attachments?
+      # puts "Has attachments"
+      @has_attachments = true
+    end
   end
   
   def p_sub
     if @subject.nil?
       raise StandardError, "No subject"
-    else
-      puts @subject
+    # else
+    #   puts @subject
     end
   end
   
@@ -37,9 +41,11 @@ class JekyllEmail
   def p_bod
     emptylength = Nokogiri::HTML(@body).inner_text.gsub(/\s+/,"").length
     if emptylength == 0 || @body == ""
-      # unless email.attachments.length > 0
+      unless @has_attachments
         raise StandardError, "No body text"
-      # end
+      end
+    else
+      puts "Body exists"
     end
   end
   
@@ -47,5 +53,19 @@ end
 
 # TESTING BLOCK
 
-# mail2 = JekyllEmail.new('spec/mocks/outlook/empty.eml') 
-# mail2.p_bod
+path = 'spec/mocks/'
+device = 'outlook/'
+# mail = JekyllEmail.new( path + device + 'no-subject.eml' )
+# mail = JekyllEmail.new( path + device + 'empty.eml' )
+# mail = JekyllEmail.new( path + device + 'no-secret.eml' )
+# mail = JekyllEmail.new( path + device + 'wrong-secret.eml' )
+mail = JekyllEmail.new( path + device + 'attached-inline.eml' )
+# mail = JekyllEmail.new( path + device + 'attached-text.eml' )
+# mail = JekyllEmail.new( path + device + 'attached-no-text.eml' )
+# mail = JekyllEmail.new( path + device + 'inline.eml' )
+# mail = JekyllEmail.new( path + device + 'emoji.eml' )
+# mail = JekyllEmail.new( path + device + 'html-format.eml' )
+# mail = JekyllEmail.new( path + device + 'html-no-format.eml' )
+# mail = JekyllEmail.new( path + device + 'plain-text.eml' )
+
+# mail.p_bod

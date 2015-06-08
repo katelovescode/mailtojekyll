@@ -5,21 +5,21 @@ describe JekyllEmail do
   context 'given a message sent from Outlook' do
     let(:path) { "spec/mocks/outlook/" }
 
-    context 'given an empty subject' do
+    context 'with an empty subject' do
       let(:email) { path + "no-subject.eml" }
       it 'raises an error' do
         expect{ JekyllEmail.new(email).p_sub }.to raise_error("No subject")
       end
     end
     
-    context 'given the wrong secret' do
+    context 'with the wrong secret' do
       let(:email) { path + "wrong-secret.eml" }
       it 'raises an error' do
         expect { JekyllEmail.new(email).p_sec }.to raise_error("Secret incorrect")
       end
     end
     
-    context 'given no secret' do
+    context 'with no secret' do
       let(:email) { path + "no-secret.eml" }
       let(:email2) { path + "no-subject.eml" }
       it 'raises an error' do
@@ -28,12 +28,39 @@ describe JekyllEmail do
       end
     end
     
-    context 'given no body' do
+    context 'with no body' do
       let(:email) { path + "empty.eml"}
       it 'raises an error' do
         expect { JekyllEmail.new(email).p_bod }.to raise_error("No body text")
       end
     end
+    
+    context 'with attached & inline images' do
+      let(:email) { path + "attached-inline.eml" }
+      it 'does not raise an error on subject, secret, or body' do
+        expect { JekyllEmail.new(email).p_sub }.not_to raise_error
+        expect { JekyllEmail.new(email).p_sec }.not_to raise_error
+        expect { JekyllEmail.new(email).p_bod }.not_to raise_error
+      end
+    end
+    
+    # context 'with attached images & text' do
+    #   let(:email) { path + "attached-text.eml" }
+    #   it 'does not raise an error on subject, secret, or body' do
+    #     expect { JekyllEmail.new(email).p_sub }.not_to raise_error
+    #     expect { JekyllEmail.new(email).p_sec }.not_to raise_error
+    #     expect { JekyllEmail.new(email).p_bod }.not_to raise_error
+    #   end
+    # end
+    # 
+    # context 'with attached images only' do
+    #   let(:email) { path + "attached-no-text.eml" }
+    #   it 'does not raise an error on subject, secret, or body' do
+    #     expect { JekyllEmail.new(email).p_sub }.not_to raise_error
+    #     expect { JekyllEmail.new(email).p_sec }.not_to raise_error
+    #     expect { JekyllEmail.new(email).p_bod }.not_to raise_error
+    #   end
+    # end
 
   end
   
