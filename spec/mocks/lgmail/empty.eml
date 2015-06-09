@@ -1,39 +1,31 @@
-
-Delivered-To: jekylltester@gmail.com
-Received: by 10.31.65.6 with SMTP id o6csp736687vka;
-Mon, 8 Jun 2015 14:47:35 -0700 (PDT)
-X-Received: by 10.107.132.138 with SMTP id o10mr23139705ioi.52.1433800055626;
-Mon, 08 Jun 2015 14:47:35 -0700 (PDT)
 Return-Path: <kklemp@misdepartment.com>
-Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])
-by mx.google.com with ESMTPS id b6si1469797ign.1.2015.06.08.14.47.34
-for <jekylltester@gmail.com>
-(version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
-Mon, 08 Jun 2015 14:47:35 -0700 (PDT)
-Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
-Authentication-Results: mx.google.com;
-spf=pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com
-Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com
-(10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 8 Jun 2015
-16:47:20 -0500
-Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by
-io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id
-15.00.0913.011; Mon, 8 Jun 2015 16:47:20 -0500
+Received: by 10.31.65.6 with SMTP id o6csp736687vka; Mon, 08 Jun 2015 14:47:35 -0700
+Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by mx.google.com with ESMTPS id b6si1469797ign.1.2015.06.08.14.47.34 for <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Mon, 08 Jun 2015 14:47:35 -0700
+Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 08 Jun 2015 16:47:20 -0500
+Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Mon, 08 Jun 2015 16:47:20 -0500
+Date: Mon, 08 Jun 2015 21:47:20 +0000
 From: Kate Klemp <kklemp@MISDepartment.com>
 To: "jekylltester@gmail.com" <jekylltester@gmail.com>
-Subject: Empty email, no body from Android mail app || secret: jekyllmail
-Thread-Topic: Empty email, no body from Android mail app || secret:
-jekyllmail
-Thread-Index: AQHQojSyhI3DCbsWXEerPSEX4l+KYw==
-Date: Mon, 8 Jun 2015 21:47:20 +0000
 Message-ID: <7dfieq4dok7c3f7rc9oa8a3c.1433800052983@email.lge.com>
+Subject: Empty email, no body from Android mail app || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.107.132.138 with SMTP id o10mr23139705ioi.52.1433800055626;
+ Mon, 08 Jun 2015 14:47:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates
+ 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+ smtp.mail=kklemp@misdepartment.com
+Thread-Topic: Empty email, no body from Android mail app || secret: jekyllmail
+Thread-Index: AQHQojSyhI3DCbsWXEerPSEX4l+KYw==
 Accept-Language: en-US
 Content-Language: en-US
-X-MS-Has-Attach:
-X-MS-TNEF-Correlator:
-Content-Type: text/plain; charset="utf-8"
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
 Content-ID: <42526E39251EF844B850972697974B2D@misdepartment.com>
-Content-Transfer-Encoding: base64
-MIME-Version: 1.0
 
 DQo=
