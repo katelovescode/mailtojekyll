@@ -2,12 +2,15 @@
 
 require 'mail'
 require 'nokogiri'
-require 'reverse_markdown'
 require_relative 'striphtml'
 
 class JekyllEmail
   
   include Mail
+
+  attr_reader :atts
+  attr_reader :title
+  attr_reader :body
   
   def initialize(thismail)
     
@@ -19,7 +22,7 @@ class JekyllEmail
     @subject = thismail.subject
     
     # split the subject to get the title for creating posts and the secret for validation
-    (@title, @secret) = @subject.split((/\|\|/)) unless @subject.nil?    
+    (@title, @secret) = (@subject.split((/\|\|/))).collect { |x| x.strip } unless @subject.nil?
     
     thismail.attachments.each do |att|
       fn = att.filename
@@ -36,6 +39,7 @@ class JekyllEmail
     else
       @body = striphtml(thismail.body.decoded)
     end
+    @body.delete!("\u200b")
     
   end
   

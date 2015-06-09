@@ -43,5 +43,7 @@ def striphtml(email)
   if blanktest.length == 0
     doc = ""
   end
-
+  
+  doc
+  
 end
