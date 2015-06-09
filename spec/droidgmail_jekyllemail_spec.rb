@@ -1,6 +1,6 @@
 require 'jekyllemail'
 
-describe JekyllEmail do
+describe JekyllEmail, disabled: true do
 
   context 'given a message sent from Android (5.0.2) Gmail App' do
     let(:path) { "spec/mocks/droidgmail/" }

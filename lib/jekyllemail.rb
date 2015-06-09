@@ -1,9 +1,9 @@
 #!/usr/bin/env ruby
 
 require 'mail'
-require 'net/pop'
 require 'nokogiri'
-require 'fileutils'
+require 'reverse_markdown'
+require_relative 'parsebody'
 
 class JekyllEmail
   
@@ -14,15 +14,12 @@ class JekyllEmail
     @subject = thismail.subject
     (@title, @secret) = @subject.split((/\|\|/)) unless @subject.nil?
     if thismail.multipart?
-      unless thismail.html_part.nil?
-        @body = thismail.html_part.decoded.delete("\u200b")
+      !thismail.html_part.nil? ? @body = parsebody(thismail.html_part.decoded) : @body = parsebody(thismail.body.decoded)
+      if @body == "" && thismail.has_attachments?
+        @body = " "
       end
     else
-      @body = thismail.body.decoded
-    end
-    if thismail.has_attachments?
-      # puts "Has attachments"
-      @has_attachments = true
+      @body = parsebody(thismail.body.decoded)
     end
   end
   
@@ -41,22 +38,22 @@ class JekyllEmail
       (key, @secret) = @secret.split(/:\s?/)
       @secret.strip!
     end
-    raise StandardError, "Secret incorrect" if (@secret.nil? || @secret != "jekyllmail")
+    if (@secret.nil? || @secret != "jekyllmail")
+      raise StandardError, "Secret incorrect" 
+    end
   end
   
   # validate the body; return body
   def v_bod
-    nbsp = 160.chr(Encoding::UTF_8)
-    clr = Nokogiri::HTML(@body).at("body")
-    unless clr.nil?
-      clr = clr.inner_text.gsub(/\s+/,"").gsub(/\n/,"").gsub(nbsp,"")
-    end
-    if clr.nil? || clr.length == 0 || @body == ""
-      unless @has_attachments
-        raise StandardError, "No body text"
-      end
-    # else
-      # puts clr
+    if @body == ""
+      raise StandardError, "No body text" 
+    else
+      # strip = Nokogiri::HTML(decode).at("body").inner_text.gsub(/\s+/,"").length        
+      # if strip == 0 && !thismail.has_attachments?
+      #   @body = ""
+      # else
+      # puts "body incoming!"
+      # puts @body
     end
   end
   
