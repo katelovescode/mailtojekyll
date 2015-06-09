@@ -1,6 +1,6 @@
 require 'jekyllemail'
 
-describe JekyllEmail, disabled: true do
+describe JekyllEmail do
 
   context 'given a message sent from iPhone Mail App' do
     let(:path) { "spec/mocks/iphonemail/" }
