@@ -23,6 +23,7 @@ require 'reverse_markdown'
 # keep CID logic from JekyllMail
 # turn parse into a module with smaller methods?
 # TODO: Put the logic in to not run parse if the emails list is empty
+# TODO: Figure something out for mail signatures
 
 # class JekyllEmail < Mail
 # 

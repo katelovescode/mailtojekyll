@@ -1,0 +1,877 @@
+--- !ruby/object:Mail::Message
+body: !ruby/object:Mail::Body
+  boundary: _000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_
+  preamble: ''
+  epilogue: ''
+  charset: US-ASCII
+  part_sort_order:
+  - text/plain
+  - text/enriched
+  - text/html
+  parts: !ruby/array:Mail::PartsList
+  - !ruby/object:Mail::Part
+    body: 
+    body_raw: "Testing more HTML stuff.\r\n\r\nSerif font - red - large\r\n\r\nHighlighting
+      in green, underlined\r\n\r\nLet's see what else....\r\n\r\n*         bulleted
+      1\r\n\r\n*         bulleted 2\r\n\r\n*         bulleted 3\r\n\r\n--\r\n\r\nKate
+      Klemp\r\n| The MIS Department, Inc.\r\n(773) 644-5515 | http://www.misdepartment.com\r\n\r\nFor
+      Support Issues: (773) 231-7997\r\n\r\n  *   Facebook: http://www.misdepartment.com/facebook\r\n
+      \ *   Twitter: http://www.misdepartment.com/twitter\r\n  *   LinkedIn: http://www.misdepartment.com/linkedin\r\n
+      \ *   Google+: http://www.misdepartment.com/googleplus\r\n"
+    separate_parts: false
+    text_part: 
+    html_part: 
+    errors: 
+    header: !ruby/object:Mail::Header
+      charset: UTF-8
+      raw_source: "Content-Type: text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+        quoted-printable"
+      fields: !ruby/array:Mail::FieldList
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Type
+        raw_value: 'Content-Type: text/plain; charset="us-ascii"'
+        value: text/plain; charset="us-ascii"
+        field_order_id: 23
+        field: !ruby/object:Mail::ContentTypeField
+          charset: UTF-8
+          main_type: text
+          sub_type: 
+          parameters: 
+          name: Content-Type
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTypeElement
+            main_type: text
+            sub_type: plain
+            parameters:
+            - charset: us-ascii
+          value: text/plain; charset="us-ascii"
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Transfer-Encoding
+        raw_value: 'Content-Transfer-Encoding: quoted-printable'
+        value: quoted-printable
+        field_order_id: 24
+        field: !ruby/object:Mail::ContentTransferEncodingField
+          charset: UTF-8
+          name: Content-Transfer-Encoding
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTransferEncodingElement
+            encoding: quoted-printable
+          value: quoted-printable
+    charset: UTF-8
+    defaulted_charset: true
+    smtp_envelope_from: 
+    smtp_envelope_to: 
+    perform_deliveries: true
+    raise_delivery_errors: true
+    delivery_handler: 
+    delivery_method: !ruby/object:Mail::SMTP
+      settings: &1
+        :address: localhost
+        :port: 25
+        :domain: localhost.localdomain
+        :user_name: 
+        :password: 
+        :authentication: 
+        :enable_starttls_auto: true
+        :openssl_verify_mode: 
+        :ssl: 
+        :tls: 
+    transport_encoding: &2 !ruby/class 'Mail::Encodings::SevenBit'
+    mark_for_delete: false
+    raw_source: "\r\nContent-Type: text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+      quoted-printable\r\n\r\nTesting more HTML stuff.\r\n\r\nSerif font - red - large\r\n\r\nHighlighting
+      in green, underlined\r\n\r\nLet's see what else....\r\n\r\n*         bulleted
+      1\r\n\r\n*         bulleted 2\r\n\r\n*         bulleted 3\r\n\r\n--\r\n\r\nKate
+      Klemp\r\n| The MIS Department, Inc.\r\n(773) 644-5515 | http://www.misdepartment.com\r\n\r\nFor
+      Support Issues: (773) 231-7997\r\n\r\n  *   Facebook: http://www.misdepartment.com/facebook\r\n
+      \ *   Twitter: http://www.misdepartment.com/twitter\r\n  *   LinkedIn: http://www.misdepartment.com/linkedin\r\n
+      \ *   Google+: http://www.misdepartment.com/googleplus\r\n"
+  - !ruby/object:Mail::Part
+    body: 
+    body_raw: "<html xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+      xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+      xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+      content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+      content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font
+      Definitions */\r\n@font-face\r\n\t{font-family:Wingdings;\r\n\tpanose-1:5 0
+      0 0 0 0 0 0 0 0;}\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2
+      4 5 3 5 4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2
+      15 5 2 2 2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal,
+      div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+      span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+      span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\np.MsoListParagraph,
+      li.MsoListParagraph, div.MsoListParagraph\r\n\t{mso-style-priority:34;\r\n\tmargin-top:0in;\r\n\tmargin-right:0in;\r\n\tmargin-bottom:0in;\r\n\tmargin-left:.5in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+      WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n/*
+      List Definitions */\r\n@list l0\r\n\t{mso-list-id:1724719016;\r\n\tmso-list-type:hybrid;\r\n\tmso-list-template-ids:1097229748
+      67698689 67698691 67698693 67698689 67698=\r\n691 67698693 67698689 67698691
+      67698693;}\r\n@list l0:level1\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+      l0:level2\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+      New\";}\r\n@list l0:level3\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+      l0:level4\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+      l0:level5\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+      New\";}\r\n@list l0:level6\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+      l0:level7\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+      l0:level8\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+      New\";}\r\n@list l0:level9\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\nol\r\n\t{margin-bottom:0in;}\r\nul\r\n\t{margin-bottom:0in;}\r\n--></style><!--[if
+      gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+      gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+      data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+      link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+      class=3D\"MsoNormal\">Testing more HTML stuff.<o:p></o:p></p>\r\n<p class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p
+      class=3D\"MsoNormal\"><span style=3D\"font-size:22.0pt;font-family:&quot;Ti=\r\nmes
+      New Roman&quot;,serif;color:red\">Serif font - red - large<o:p></o:p></s=\r\npan></p>\r\n<p
+      class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\"><u><span
+      style=3D\"background:lime;mso-highlight:lime=\r\n\">Highlighting in green, underlined</span><o:p></o:p></u></p>\r\n<p
+      class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\">Let's
+      see what else....<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+      level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+      style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+      New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+      1<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+      level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+      style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+      New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+      2<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+      level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+      style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+      New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+      3<o:p></o:p></p>\r\n</div>\r\n--<br>\r\n<p style=3D\"clear: left; font-size:0.7em;
+      color: #999;\">Kate Klemp<br>\r\n| The MIS Department, Inc.<br>\r\n(773) 644-5515
+      | http://www.misdepartment.com<br>\r\n</p>\r\n<p style=3D\"clear: left; font-size:0.7em;
+      color: #999;\">For Support Issues:=\r\n (773) 231-7997\r\n</p>\r\n<ul style=3D\"clear:
+      both;font-size:0.7em; color: #999;\">\r\n<li>Facebook: http://www.misdepartment.com/facebook
+      </li><li>Twitter: http:=\r\n//www.misdepartment.com/twitter </li><li>LinkedIn:
+      http://www.misdepartment=\r\n.com/linkedin </li><li>Google&#43;: http://www.misdepartment.com/googleplus=\r\n
+      </li></ul>\r\n</body>\r\n</html>\r\n"
+    separate_parts: false
+    text_part: 
+    html_part: 
+    errors: 
+    header: !ruby/object:Mail::Header
+      charset: UTF-8
+      raw_source: "Content-Type: text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+        quoted-printable"
+      fields: !ruby/array:Mail::FieldList
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Type
+        raw_value: 'Content-Type: text/html; charset="us-ascii"'
+        value: text/html; charset="us-ascii"
+        field_order_id: 23
+        field: !ruby/object:Mail::ContentTypeField
+          charset: UTF-8
+          main_type: text
+          sub_type: 
+          parameters: 
+          name: Content-Type
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTypeElement
+            main_type: text
+            sub_type: html
+            parameters:
+            - charset: us-ascii
+          value: text/html; charset="us-ascii"
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Transfer-Encoding
+        raw_value: 'Content-Transfer-Encoding: quoted-printable'
+        value: quoted-printable
+        field_order_id: 24
+        field: !ruby/object:Mail::ContentTransferEncodingField
+          charset: UTF-8
+          name: Content-Transfer-Encoding
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTransferEncodingElement
+            encoding: quoted-printable
+          value: quoted-printable
+    charset: UTF-8
+    defaulted_charset: true
+    smtp_envelope_from: 
+    smtp_envelope_to: 
+    perform_deliveries: true
+    raise_delivery_errors: true
+    delivery_handler: 
+    delivery_method: !ruby/object:Mail::SMTP
+      settings: *1
+    transport_encoding: *2
+    mark_for_delete: false
+    raw_source: "\r\nContent-Type: text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+      quoted-printable\r\n\r\n<html xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+      xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+      xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+      content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+      content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font
+      Definitions */\r\n@font-face\r\n\t{font-family:Wingdings;\r\n\tpanose-1:5 0
+      0 0 0 0 0 0 0 0;}\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2
+      4 5 3 5 4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2
+      15 5 2 2 2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal,
+      div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+      span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+      span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\np.MsoListParagraph,
+      li.MsoListParagraph, div.MsoListParagraph\r\n\t{mso-style-priority:34;\r\n\tmargin-top:0in;\r\n\tmargin-right:0in;\r\n\tmargin-bottom:0in;\r\n\tmargin-left:.5in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+      WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n/*
+      List Definitions */\r\n@list l0\r\n\t{mso-list-id:1724719016;\r\n\tmso-list-type:hybrid;\r\n\tmso-list-template-ids:1097229748
+      67698689 67698691 67698693 67698689 67698=\r\n691 67698693 67698689 67698691
+      67698693;}\r\n@list l0:level1\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+      l0:level2\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+      New\";}\r\n@list l0:level3\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+      l0:level4\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+      l0:level5\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+      New\";}\r\n@list l0:level6\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+      l0:level7\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+      l0:level8\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+      New\";}\r\n@list l0:level9\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\nol\r\n\t{margin-bottom:0in;}\r\nul\r\n\t{margin-bottom:0in;}\r\n--></style><!--[if
+      gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+      gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+      data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+      link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+      class=3D\"MsoNormal\">Testing more HTML stuff.<o:p></o:p></p>\r\n<p class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p
+      class=3D\"MsoNormal\"><span style=3D\"font-size:22.0pt;font-family:&quot;Ti=\r\nmes
+      New Roman&quot;,serif;color:red\">Serif font - red - large<o:p></o:p></s=\r\npan></p>\r\n<p
+      class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\"><u><span
+      style=3D\"background:lime;mso-highlight:lime=\r\n\">Highlighting in green, underlined</span><o:p></o:p></u></p>\r\n<p
+      class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\">Let's
+      see what else....<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+      level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+      style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+      New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+      1<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+      level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+      style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+      New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+      2<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+      level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+      style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+      New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+      3<o:p></o:p></p>\r\n</div>\r\n--<br>\r\n<p style=3D\"clear: left; font-size:0.7em;
+      color: #999;\">Kate Klemp<br>\r\n| The MIS Department, Inc.<br>\r\n(773) 644-5515
+      | http://www.misdepartment.com<br>\r\n</p>\r\n<p style=3D\"clear: left; font-size:0.7em;
+      color: #999;\">For Support Issues:=\r\n (773) 231-7997\r\n</p>\r\n<ul style=3D\"clear:
+      both;font-size:0.7em; color: #999;\">\r\n<li>Facebook: http://www.misdepartment.com/facebook
+      </li><li>Twitter: http:=\r\n//www.misdepartment.com/twitter </li><li>LinkedIn:
+      http://www.misdepartment=\r\n.com/linkedin </li><li>Google&#43;: http://www.misdepartment.com/googleplus=\r\n
+      </li></ul>\r\n</body>\r\n</html>\r\n"
+  raw_source: "--_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\r\nContent-Type:
+    text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nTesting
+    more HTML stuff.\r\n\r\nSerif font - red - large\r\n\r\nHighlighting in green,
+    underlined\r\n\r\nLet's see what else....\r\n\r\n*         bulleted 1\r\n\r\n*
+    \        bulleted 2\r\n\r\n*         bulleted 3\r\n\r\n--\r\n\r\nKate Klemp\r\n|
+    The MIS Department, Inc.\r\n(773) 644-5515 | http://www.misdepartment.com\r\n\r\nFor
+    Support Issues: (773) 231-7997\r\n\r\n  *   Facebook: http://www.misdepartment.com/facebook\r\n
+    \ *   Twitter: http://www.misdepartment.com/twitter\r\n  *   LinkedIn: http://www.misdepartment.com/linkedin\r\n
+    \ *   Google+: http://www.misdepartment.com/googleplus\r\n\r\n--_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\r\nContent-Type:
+    text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n<html
+    xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+    xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+    xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+    content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+    content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font Definitions
+    */\r\n@font-face\r\n\t{font-family:Wingdings;\r\n\tpanose-1:5 0 0 0 0 0 0 0 0
+    0;}\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2 4 5 3 5
+    4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2 15 5 2 2
+    2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+    span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+    span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\np.MsoListParagraph,
+    li.MsoListParagraph, div.MsoListParagraph\r\n\t{mso-style-priority:34;\r\n\tmargin-top:0in;\r\n\tmargin-right:0in;\r\n\tmargin-bottom:0in;\r\n\tmargin-left:.5in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+    WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n/*
+    List Definitions */\r\n@list l0\r\n\t{mso-list-id:1724719016;\r\n\tmso-list-type:hybrid;\r\n\tmso-list-template-ids:1097229748
+    67698689 67698691 67698693 67698689 67698=\r\n691 67698693 67698689 67698691 67698693;}\r\n@list
+    l0:level1\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+    l0:level2\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+    New\";}\r\n@list l0:level3\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+    l0:level4\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+    l0:level5\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+    New\";}\r\n@list l0:level6\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+    l0:level7\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+    l0:level8\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+    New\";}\r\n@list l0:level9\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\nol\r\n\t{margin-bottom:0in;}\r\nul\r\n\t{margin-bottom:0in;}\r\n--></style><!--[if
+    gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+    gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+    data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+    link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+    class=3D\"MsoNormal\">Testing more HTML stuff.<o:p></o:p></p>\r\n<p class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p
+    class=3D\"MsoNormal\"><span style=3D\"font-size:22.0pt;font-family:&quot;Ti=\r\nmes
+    New Roman&quot;,serif;color:red\">Serif font - red - large<o:p></o:p></s=\r\npan></p>\r\n<p
+    class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\"><u><span
+    style=3D\"background:lime;mso-highlight:lime=\r\n\">Highlighting in green, underlined</span><o:p></o:p></u></p>\r\n<p
+    class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\">Let's
+    see what else....<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+    level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+    style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+    New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+    1<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+    level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+    style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+    New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+    2<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+    level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+    style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+    New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+    3<o:p></o:p></p>\r\n</div>\r\n--<br>\r\n<p style=3D\"clear: left; font-size:0.7em;
+    color: #999;\">Kate Klemp<br>\r\n| The MIS Department, Inc.<br>\r\n(773) 644-5515
+    | http://www.misdepartment.com<br>\r\n</p>\r\n<p style=3D\"clear: left; font-size:0.7em;
+    color: #999;\">For Support Issues:=\r\n (773) 231-7997\r\n</p>\r\n<ul style=3D\"clear:
+    both;font-size:0.7em; color: #999;\">\r\n<li>Facebook: http://www.misdepartment.com/facebook
+    </li><li>Twitter: http:=\r\n//www.misdepartment.com/twitter </li><li>LinkedIn:
+    http://www.misdepartment=\r\n.com/linkedin </li><li>Google&#43;: http://www.misdepartment.com/googleplus=\r\n
+    </li></ul>\r\n</body>\r\n</html>\r\n\r\n--_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_--\r\n"
+  encoding: 7bit
+body_raw: 
+separate_parts: true
+text_part: 
+html_part: 
+errors: 
+header: !ruby/object:Mail::Header
+  charset: UTF-8
+  raw_source: "Delivered-To: jekylltester@gmail.com\r\nReceived: by 10.27.31.206 with
+    SMTP id f197csp2472307wlf;\r\n        Tue, 5 May 2015 13:02:12 -0700 (PDT)\r\nX-Received:
+    by 10.43.39.1 with SMTP id tk1mr32324679icb.26.1430856131464;\r\n        Tue,
+    05 May 2015 13:02:11 -0700 (PDT)\r\nReturn-Path: <kklemp@misdepartment.com>\r\nReceived:
+    from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n        by
+    mx.google.com with ESMTPS id f14si13456353ioe.5.2015.05.05.13.02.10\r\n        for
+    <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+    bits=128/128);\r\n        Tue, 05 May 2015 13:02:11 -0700 (PDT)\r\nReceived-SPF:
+    pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as
+    permitted sender) client-ip=12.32.148.3;\r\nAuthentication-Results: mx.google.com;\r\n
+    \      spf=pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+    as permitted sender) smtp.mail=kklemp@misdepartment.com\r\nReceived: from IO.misdepartment.com
+    (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17) with Microsoft SMTP Server
+    (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n 15:02:08 -0500\r\nReceived: from IO.misdepartment.com
+    ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12])
+    with mapi id\r\n 15.00.0913.011; Tue, 5 May 2015 15:02:08 -0500\r\nFrom: Kate
+    Klemp <kklemp@MISDepartment.com>\r\nTo: \"jekylltester@gmail.com\" <jekylltester@gmail.com>\r\nSubject:
+    HTML formatting from Outlook || secret: jekyllmail\r\nThread-Topic: HTML formatting
+    from Outlook || secret: jekyllmail\r\nThread-Index: AdCHbl1GX34wZf7eQdip6BnCHEceaw==\r\nDate:
+    Tue, 5 May 2015 20:02:08 +0000\r\nMessage-ID: <447191178fdc498187489bca7edd4dd7@io.misdepartment.com>\r\nAccept-Language:
+    en-US\r\nContent-Language: en-US\r\nX-MS-Has-Attach:\r\nX-MS-TNEF-Correlator:\r\nx-originating-ip:
+    [10.1.1.148]\r\nx-signature: Yes\r\nContent-Type: multipart/alternative;\r\n\tboundary=\"_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\"\r\nMIME-Version:
+    1.0"
+  fields: !ruby/array:Mail::FieldList
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Return-Path
+    raw_value: 'Return-Path: <kklemp@misdepartment.com>'
+    value: "<kklemp@misdepartment.com>"
+    field_order_id: 0
+    field: !ruby/object:Mail::ReturnPathField
+      charset: UTF-8
+      name: Return-Path
+      length: 
+      tree: 
+      element: 
+      value: "<kklemp@misdepartment.com>"
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: "<kklemp@misdepartment.com>"
+            domain: misdepartment.com
+            comments: []
+            local: kklemp
+            obs_domain_list: 
+            display_name: 
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: by 10.27.31.206 with SMTP id f197csp2472307wlf;\r\n        Tue,
+      5 May 2015 13:02:12 -0700 (PDT)"
+    value: "by 10.27.31.206 with SMTP id f197csp2472307wlf;\r\n        Tue, 5 May
+      2015 13:02:12 -0700 (PDT)"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 13:02:12.000000000 -07:00
+        info: by 10.27.31.206 with SMTP id f197csp2472307wlf
+      value: by 10.27.31.206 with SMTP id f197csp2472307wlf; Tue, 5 May 2015 13:02:12
+        -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n
+      \       by mx.google.com with ESMTPS id f14si13456353ioe.5.2015.05.05.13.02.10\r\n
+      \       for <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+      bits=128/128);\r\n        Tue, 05 May 2015 13:02:11 -0700 (PDT)"
+    value: "from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n
+      \       by mx.google.com with ESMTPS id f14si13456353ioe.5.2015.05.05.13.02.10\r\n
+      \       for <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+      bits=128/128);\r\n        Tue, 05 May 2015 13:02:11 -0700 (PDT)"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 13:02:11.000000000 -07:00
+        info: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])
+          by mx.google.com with ESMTPS id f14si13456353ioe.5.2015.05.05.13.02.10 for
+          <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128)
+      value: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by
+        mx.google.com with ESMTPS id f14si13456353ioe.5.2015.05.05.13.02.10 for <jekylltester@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Tue, 05 May 2015
+        13:02:11 -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n
+      (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n
+      15:02:08 -0500"
+    value: "from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17)
+      with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n 15:02:08
+      -0500"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 15:02:08.000000000 -05:00
+        info: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17)
+          with Microsoft SMTP Server (TLS) id 15.0.913.22
+      value: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17)
+        with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015 15:02:08
+        -0500
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96])
+      by\r\n io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n
+      15.00.0913.011; Tue, 5 May 2015 15:02:08 -0500"
+    value: "from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com
+      ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n 15.00.0913.011; Tue, 5 May
+      2015 15:02:08 -0500"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 15:02:08.000000000 -05:00
+        info: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com
+          ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011
+      value: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com
+        ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Tue, 5 May 2015
+        15:02:08 -0500
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Date
+    raw_value: 'Date: Tue, 5 May 2015 20:02:08 +0000'
+    value: Tue, 5 May 2015 20:02:08 +0000
+    field_order_id: 9
+    field: !ruby/object:Mail::DateField
+      charset: UTF-8
+      name: Date
+      length: 
+      tree: 
+      element: 
+      value: Tue, 05 May 2015 20:02:08 +0000
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: From
+    raw_value: 'From: Kate Klemp <kklemp@MISDepartment.com>'
+    value: Kate Klemp <kklemp@MISDepartment.com>
+    field_order_id: 10
+    field: !ruby/object:Mail::FromField
+      charset: UTF-8
+      name: From
+      length: 
+      tree: 
+      element: 
+      value: Kate Klemp <kklemp@MISDepartment.com>
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: Kate Klemp <kklemp@MISDepartment.com>
+            domain: MISDepartment.com
+            comments: []
+            local: kklemp
+            obs_domain_list: 
+            display_name: Kate Klemp
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: To
+    raw_value: 'To: "jekylltester@gmail.com" <jekylltester@gmail.com>'
+    value: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+    field_order_id: 13
+    field: !ruby/object:Mail::ToField
+      charset: UTF-8
+      name: To
+      length: 
+      tree: 
+      element: 
+      value: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+            domain: gmail.com
+            comments: []
+            local: jekylltester
+            obs_domain_list: 
+            display_name: jekylltester@gmail.com
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Message-ID
+    raw_value: 'Message-ID: <447191178fdc498187489bca7edd4dd7@io.misdepartment.com>'
+    value: "<447191178fdc498187489bca7edd4dd7@io.misdepartment.com>"
+    field_order_id: 16
+    field: !ruby/object:Mail::MessageIdField
+      charset: UTF-8
+      uniq: 1
+      name: Message-ID
+      length: 
+      tree: 
+      element: !ruby/object:Mail::MessageIdsElement
+        message_ids:
+        - 447191178fdc498187489bca7edd4dd7@io.misdepartment.com
+      value: "<447191178fdc498187489bca7edd4dd7@io.misdepartment.com>"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Subject
+    raw_value: 'Subject: HTML formatting from Outlook || secret: jekyllmail'
+    value: 'HTML formatting from Outlook || secret: jekyllmail'
+    field_order_id: 19
+    field: !ruby/object:Mail::SubjectField
+      charset: UTF-8
+      errors: []
+      name: Subject
+      length: 
+      tree: 
+      element: 
+      value: 'HTML formatting from Outlook || secret: jekyllmail'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Mime-Version
+    raw_value: 'MIME-Version: 1.0'
+    value: '1.0'
+    field_order_id: 22
+    field: !ruby/object:Mail::MimeVersionField
+      charset: UTF-8
+      name: Mime-Version
+      length: 
+      tree: 
+      element: !ruby/object:Mail::MimeVersionElement
+        major: '1'
+        minor: '0'
+      value: '1.0'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Type
+    raw_value: "Content-Type: multipart/alternative;\r\n\tboundary=\"_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\""
+    value: "multipart/alternative;\r\n\tboundary=\"_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\""
+    field_order_id: 23
+    field: !ruby/object:Mail::ContentTypeField
+      charset: UTF-8
+      main_type: multipart
+      sub_type: 
+      parameters: !ruby/hash:Mail::ParameterHash
+        boundary: _000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_
+      name: Content-Type
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ContentTypeElement
+        main_type: multipart
+        sub_type: alternative
+        parameters:
+        - boundary: _000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_
+      value: multipart/alternative; boundary="_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Delivered-To
+    raw_value: 'Delivered-To: jekylltester@gmail.com'
+    value: jekylltester@gmail.com
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Delivered-To
+      length: 
+      tree: 
+      element: 
+      value: jekylltester@gmail.com
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-Received
+    raw_value: "X-Received: by 10.43.39.1 with SMTP id tk1mr32324679icb.26.1430856131464;\r\n
+      \       Tue, 05 May 2015 13:02:11 -0700 (PDT)"
+    value: "by 10.43.39.1 with SMTP id tk1mr32324679icb.26.1430856131464;\r\n        Tue,
+      05 May 2015 13:02:11 -0700 (PDT)"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-Received
+      length: 
+      tree: 
+      element: 
+      value: by 10.43.39.1 with SMTP id tk1mr32324679icb.26.1430856131464; Tue, 05
+        May 2015 13:02:11 -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received-SPF
+    raw_value: 'Received-SPF: pass (google.com: domain of kklemp@misdepartment.com
+      designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;'
+    value: 'pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+      as permitted sender) client-ip=12.32.148.3;'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Received-SPF
+      length: 
+      tree: 
+      element: 
+      value: 'pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+        as permitted sender) client-ip=12.32.148.3;'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Authentication-Results
+    raw_value: "Authentication-Results: mx.google.com;\r\n       spf=pass (google.com:
+      domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+      smtp.mail=kklemp@misdepartment.com"
+    value: "mx.google.com;\r\n       spf=pass (google.com: domain of kklemp@misdepartment.com
+      designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Authentication-Results
+      length: 
+      tree: 
+      element: 
+      value: 'mx.google.com; spf=pass (google.com: domain of kklemp@misdepartment.com
+        designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Thread-Topic
+    raw_value: 'Thread-Topic: HTML formatting from Outlook || secret: jekyllmail'
+    value: 'HTML formatting from Outlook || secret: jekyllmail'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Thread-Topic
+      length: 
+      tree: 
+      element: 
+      value: 'HTML formatting from Outlook || secret: jekyllmail'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Thread-Index
+    raw_value: 'Thread-Index: AdCHbl1GX34wZf7eQdip6BnCHEceaw=='
+    value: AdCHbl1GX34wZf7eQdip6BnCHEceaw==
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Thread-Index
+      length: 
+      tree: 
+      element: 
+      value: AdCHbl1GX34wZf7eQdip6BnCHEceaw==
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Accept-Language
+    raw_value: 'Accept-Language: en-US'
+    value: en-US
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Accept-Language
+      length: 
+      tree: 
+      element: 
+      value: en-US
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Language
+    raw_value: 'Content-Language: en-US'
+    value: en-US
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Content-Language
+      length: 
+      tree: 
+      element: 
+      value: en-US
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-MS-Has-Attach
+    raw_value: 'X-MS-Has-Attach:'
+    value: ''
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-MS-Has-Attach
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-MS-TNEF-Correlator
+    raw_value: 'X-MS-TNEF-Correlator:'
+    value: ''
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-MS-TNEF-Correlator
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: x-originating-ip
+    raw_value: 'x-originating-ip: [10.1.1.148]'
+    value: "[10.1.1.148]"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: x-originating-ip
+      length: 
+      tree: 
+      element: 
+      value: "[10.1.1.148]"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: x-signature
+    raw_value: 'x-signature: Yes'
+    value: 'Yes'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: x-signature
+      length: 
+      tree: 
+      element: 
+      value: 'Yes'
+charset: UTF-8
+defaulted_charset: true
+smtp_envelope_from: 
+smtp_envelope_to: 
+perform_deliveries: true
+raise_delivery_errors: true
+delivery_handler: 
+delivery_method: !ruby/object:Mail::SMTP
+  settings: *1
+transport_encoding: *2
+mark_for_delete: false
+raw_source: "Delivered-To: jekylltester@gmail.com\r\nReceived: by 10.27.31.206 with
+  SMTP id f197csp2472307wlf;\r\n        Tue, 5 May 2015 13:02:12 -0700 (PDT)\r\nX-Received:
+  by 10.43.39.1 with SMTP id tk1mr32324679icb.26.1430856131464;\r\n        Tue, 05
+  May 2015 13:02:11 -0700 (PDT)\r\nReturn-Path: <kklemp@misdepartment.com>\r\nReceived:
+  from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n        by
+  mx.google.com with ESMTPS id f14si13456353ioe.5.2015.05.05.13.02.10\r\n        for
+  <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);\r\n
+  \       Tue, 05 May 2015 13:02:11 -0700 (PDT)\r\nReceived-SPF: pass (google.com:
+  domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;\r\nAuthentication-Results:
+  mx.google.com;\r\n       spf=pass (google.com: domain of kklemp@misdepartment.com
+  designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com\r\nReceived:
+  from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17) with
+  Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n 15:02:08 -0500\r\nReceived:
+  from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com
+  ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n 15.00.0913.011; Tue, 5 May 2015
+  15:02:08 -0500\r\nFrom: Kate Klemp <kklemp@MISDepartment.com>\r\nTo: \"jekylltester@gmail.com\"
+  <jekylltester@gmail.com>\r\nSubject: HTML formatting from Outlook || secret: jekyllmail\r\nThread-Topic:
+  HTML formatting from Outlook || secret: jekyllmail\r\nThread-Index: AdCHbl1GX34wZf7eQdip6BnCHEceaw==\r\nDate:
+  Tue, 5 May 2015 20:02:08 +0000\r\nMessage-ID: <447191178fdc498187489bca7edd4dd7@io.misdepartment.com>\r\nAccept-Language:
+  en-US\r\nContent-Language: en-US\r\nX-MS-Has-Attach:\r\nX-MS-TNEF-Correlator:\r\nx-originating-ip:
+  [10.1.1.148]\r\nx-signature: Yes\r\nContent-Type: multipart/alternative;\r\n\tboundary=\"_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\"\r\nMIME-Version:
+  1.0\r\n\r\n--_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\r\nContent-Type:
+  text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nTesting
+  more HTML stuff.\r\n\r\nSerif font - red - large\r\n\r\nHighlighting in green, underlined\r\n\r\nLet's
+  see what else....\r\n\r\n*         bulleted 1\r\n\r\n*         bulleted 2\r\n\r\n*
+  \        bulleted 3\r\n\r\n--\r\n\r\nKate Klemp\r\n| The MIS Department, Inc.\r\n(773)
+  644-5515 | http://www.misdepartment.com\r\n\r\nFor Support Issues: (773) 231-7997\r\n\r\n
+  \ *   Facebook: http://www.misdepartment.com/facebook\r\n  *   Twitter: http://www.misdepartment.com/twitter\r\n
+  \ *   LinkedIn: http://www.misdepartment.com/linkedin\r\n  *   Google+: http://www.misdepartment.com/googleplus\r\n\r\n--_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_\r\nContent-Type:
+  text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n<html
+  xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+  xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+  xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+  content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+  content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font Definitions
+  */\r\n@font-face\r\n\t{font-family:Wingdings;\r\n\tpanose-1:5 0 0 0 0 0 0 0 0 0;}\r\n@font-face\r\n\t{font-family:\"Cambria
+  Math\";\r\n\tpanose-1:2 4 5 3 5 4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2
+  15 5 2 2 2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+  span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+  span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\np.MsoListParagraph,
+  li.MsoListParagraph, div.MsoListParagraph\r\n\t{mso-style-priority:34;\r\n\tmargin-top:0in;\r\n\tmargin-right:0in;\r\n\tmargin-bottom:0in;\r\n\tmargin-left:.5in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+  WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n/*
+  List Definitions */\r\n@list l0\r\n\t{mso-list-id:1724719016;\r\n\tmso-list-type:hybrid;\r\n\tmso-list-template-ids:1097229748
+  67698689 67698691 67698693 67698689 67698=\r\n691 67698693 67698689 67698691 67698693;}\r\n@list
+  l0:level1\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+  l0:level2\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+  New\";}\r\n@list l0:level3\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+  l0:level4\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+  l0:level5\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+  New\";}\r\n@list l0:level6\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\n@list
+  l0:level7\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0B7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Symbol;}\r\n@list
+  l0:level8\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:o;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:\"Courier
+  New\";}\r\n@list l0:level9\r\n\t{mso-level-number-format:bullet;\r\n\tmso-level-text:\\F0A7;\r\n\tmso-level-tab-stop:none;\r\n\tmso-level-number-position:left;\r\n\ttext-indent:-.25in;\r\n\tfont-family:Wingdings;}\r\nol\r\n\t{margin-bottom:0in;}\r\nul\r\n\t{margin-bottom:0in;}\r\n--></style><!--[if
+  gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+  gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+  data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+  link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+  class=3D\"MsoNormal\">Testing more HTML stuff.<o:p></o:p></p>\r\n<p class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p
+  class=3D\"MsoNormal\"><span style=3D\"font-size:22.0pt;font-family:&quot;Ti=\r\nmes
+  New Roman&quot;,serif;color:red\">Serif font - red - large<o:p></o:p></s=\r\npan></p>\r\n<p
+  class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\"><u><span
+  style=3D\"background:lime;mso-highlight:lime=\r\n\">Highlighting in green, underlined</span><o:p></o:p></u></p>\r\n<p
+  class=3D\"MsoNormal\"><o:p>&nbsp;</o:p></p>\r\n<p class=3D\"MsoNormal\">Let's see
+  what else....<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+  level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+  style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+  New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+  1<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+  level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+  style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+  New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+  2<o:p></o:p></p>\r\n<p class=3D\"MsoListParagraph\" style=3D\"text-indent:-.25in;mso-list:l0
+  level=\r\n1 lfo1\"><![if !supportLists]><span style=3D\"font-family:Symbol\"><span
+  style=\r\n=3D\"mso-list:Ignore\">&middot;<span style=3D\"font:7.0pt &quot;Times
+  New Roma=\r\nn&quot;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n</span></span></span><![endif]>bulleted
+  3<o:p></o:p></p>\r\n</div>\r\n--<br>\r\n<p style=3D\"clear: left; font-size:0.7em;
+  color: #999;\">Kate Klemp<br>\r\n| The MIS Department, Inc.<br>\r\n(773) 644-5515
+  | http://www.misdepartment.com<br>\r\n</p>\r\n<p style=3D\"clear: left; font-size:0.7em;
+  color: #999;\">For Support Issues:=\r\n (773) 231-7997\r\n</p>\r\n<ul style=3D\"clear:
+  both;font-size:0.7em; color: #999;\">\r\n<li>Facebook: http://www.misdepartment.com/facebook
+  </li><li>Twitter: http:=\r\n//www.misdepartment.com/twitter </li><li>LinkedIn: http://www.misdepartment=\r\n.com/linkedin
+  </li><li>Google&#43;: http://www.misdepartment.com/googleplus=\r\n </li></ul>\r\n</body>\r\n</html>\r\n\r\n--_000_447191178fdc498187489bca7edd4dd7iomisdepartmentcom_--\r\n"

@@ -1,0 +1,581 @@
+--- !ruby/object:Mail::Message
+body: 
+body_raw: "Here's a bunch of plain text\r\n\r\nIf I put a break in, it seems to work\r\n\r\nMore
+  line breaks.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+  hendreri=\r\nt dictum felis, eu iaculis tortor egestas non. Nunc consectetur placerat
+  ex=\r\n nec vestibulum. In sapien tellus, maximus et ipsum eget, aliquet vehicula
+  =\r\nmassa. Sed ornare, leo eget tincidunt lacinia, augue mi facilisis arcu, ali=\r\nquet
+  lacinia ante sem non magna. Donec luctus bibendum ligula, a molestie l=\r\nibero
+  lobortis ut. Maecenas vel neque molestie, vehicula tellus sed, tempus=\r\n tellus.
+  Sed in sem et\r\npurus rhoncus sodales. Proin egestas maximus molestie.\r\n\r\nNulla
+  velit erat, lacinia quis eros faucibus, pretium condimentum erat. Eti=\r\nam bibendum
+  ultrices massa quis hendrerit. Phasellus ullamcorper consequat =\r\ntempus. Morbi
+  tincidunt, dolor ac faucibus luctus, nisi nulla ultrices est,=\r\n a pulvinar metus
+  ligula id est. Phasellus semper libero eget lacus auctor =\r\nposuere. Ut et metus
+  non enim varius molestie. In nec odio enim. Suspendiss=\r\ne vitae pellentesque
+  tortor. Maecenas consectetur mollis mattis. Etiam aliq=\r\nuam accumsan ex nec vulputate.
+  Quisque tristique nunc urna, nec fermentum m=\r\nagna laoreet sit amet. Nullam pharetra
+  augue at lacinia sagittis. Morbi ege=\r\nt ante efficitur, scelerisque ligula id,
+  bibendum elit. In dapibus, massa a=\r\nt finibus porttitor, turpis lectus euismod
+  massa, non aliquot tortor nunc n=\r\nec urna.\r\n\r\nMorbi malesuada auctor semper.
+  Aliquam non ipsum vitae odio maximus laoreet=\r\n nec sed massa. Sed eu urna ante.
+  Integer pharetra, turpis eu auctor bibend=\r\num, ex enim vulputate odio, sit amet
+  ornare magna sem consectetur justo. Ma=\r\nuris sit amet metus aliquet, posuere
+  risus a, placerat tortor. Vestibulum a=\r\nnte ipsum primis in faucibus orci luctus
+  et ultrices posuere cubilia Curae;=\r\n Ut lacus nunc, laoreet ut varius at, placerat
+  ut sem. Suspendisse efficitu=\r\nr vehicula venenatis. Aliquam augue erat, rhoncus
+  quis venenatis feugiat, c=\r\nursus at tellus. Duis ac est tristique nisi elementum
+  tristique. Vestibulum=\r\n in dui gravida,\r\ntempor magna vitae, semper arcu. Vestibulum
+  tempus ultricies porttitor. Nun=\r\nc id diam pulvinar, condimentum leo non, feugiat
+  dolor. Aliquam quis nunc v=\r\nel ipsum semper commodo. Sed feugiat justo quis nisl
+  pulvinar blandit.\r\n--\r\n\r\nKate Klemp\r\n | The MIS Department, Inc.\r\n(773)
+  644-5515 | http://www.misdepartment.com\r\n\r\nFor Support Issues: (773) 231-7997\r\n\r\n
+  \ *   Facebook: http://www.misdepartment.com/facebook\r\n  *   Twitter: http://www.misdepartment.com/twitter\r\n
+  \ *   LinkedIn: http://www.misdepartment.com/linkedin\r\n  *   Google+: http://www.misdepartment.com/googleplus\r\n"
+separate_parts: false
+text_part: 
+html_part: 
+errors: 
+header: !ruby/object:Mail::Header
+  charset: UTF-8
+  raw_source: "Delivered-To: jekylltester@gmail.com\r\nReceived: by 10.27.31.206 with
+    SMTP id f197csp2470726wlf;\r\n        Tue, 5 May 2015 12:59:18 -0700 (PDT)\r\nX-Received:
+    by 10.107.137.143 with SMTP id t15mr36463013ioi.16.1430855957492;\r\n        Tue,
+    05 May 2015 12:59:17 -0700 (PDT)\r\nReturn-Path: <kklemp@misdepartment.com>\r\nReceived:
+    from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n        by
+    mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16\r\n        for
+    <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+    bits=128/128);\r\n        Tue, 05 May 2015 12:59:17 -0700 (PDT)\r\nReceived-SPF:
+    pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as
+    permitted sender) client-ip=12.32.148.3;\r\nAuthentication-Results: mx.google.com;\r\n
+    \      spf=pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+    as permitted sender) smtp.mail=kklemp@misdepartment.com\r\nReceived: from IO.misdepartment.com
+    (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17) with Microsoft SMTP Server
+    (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n 14:58:53 -0500\r\nReceived: from IO.misdepartment.com
+    ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12])
+    with mapi id\r\n 15.00.0913.011; Tue, 5 May 2015 14:58:53 -0500\r\nFrom: Kate
+    Klemp <kklemp@MISDepartment.com>\r\nTo: \"jekylltester@gmail.com\" <jekylltester@gmail.com>\r\nSubject:
+    Plain Text from Outlook || secret: jekyllmail\r\nThread-Topic: Plain Text from
+    Outlook || secret: jekyllmail\r\nThread-Index: AdCHbei/BtcMHUPLRrmAZn4+/1BCUQ==\r\nDate:
+    Tue, 5 May 2015 19:58:53 +0000\r\nMessage-ID: <4dedf73548a84629af2c956386cd5be1@io.misdepartment.com>\r\nAccept-Language:
+    en-US\r\nContent-Language: en-US\r\nX-MS-Has-Attach:\r\nX-MS-TNEF-Correlator:\r\nx-originating-ip:
+    [10.1.1.148]\r\nx-signature: Yes\r\nContent-Type: text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+    quoted-printable\r\nMIME-Version: 1.0"
+  fields: !ruby/array:Mail::FieldList
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Return-Path
+    raw_value: 'Return-Path: <kklemp@misdepartment.com>'
+    value: "<kklemp@misdepartment.com>"
+    field_order_id: 0
+    field: !ruby/object:Mail::ReturnPathField
+      charset: UTF-8
+      name: Return-Path
+      length: 
+      tree: 
+      element: 
+      value: "<kklemp@misdepartment.com>"
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: "<kklemp@misdepartment.com>"
+            domain: misdepartment.com
+            comments: []
+            local: kklemp
+            obs_domain_list: 
+            display_name: 
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: by 10.27.31.206 with SMTP id f197csp2470726wlf;\r\n        Tue,
+      5 May 2015 12:59:18 -0700 (PDT)"
+    value: "by 10.27.31.206 with SMTP id f197csp2470726wlf;\r\n        Tue, 5 May
+      2015 12:59:18 -0700 (PDT)"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 12:59:18.000000000 -07:00
+        info: by 10.27.31.206 with SMTP id f197csp2470726wlf
+      value: by 10.27.31.206 with SMTP id f197csp2470726wlf; Tue, 5 May 2015 12:59:18
+        -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n
+      \       by mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16\r\n
+      \       for <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+      bits=128/128);\r\n        Tue, 05 May 2015 12:59:17 -0700 (PDT)"
+    value: "from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n
+      \       by mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16\r\n
+      \       for <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+      bits=128/128);\r\n        Tue, 05 May 2015 12:59:17 -0700 (PDT)"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 12:59:17.000000000 -07:00
+        info: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])
+          by mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16 for
+          <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128)
+      value: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by
+        mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16 for <jekylltester@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Tue, 05 May 2015
+        12:59:17 -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n
+      (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n
+      14:58:53 -0500"
+    value: "from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17)
+      with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n 14:58:53
+      -0500"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 14:58:53.000000000 -05:00
+        info: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17)
+          with Microsoft SMTP Server (TLS) id 15.0.913.22
+      value: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17)
+        with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015 14:58:53
+        -0500
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96])
+      by\r\n io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n
+      15.00.0913.011; Tue, 5 May 2015 14:58:53 -0500"
+    value: "from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com
+      ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n 15.00.0913.011; Tue, 5 May
+      2015 14:58:53 -0500"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-05-05 14:58:53.000000000 -05:00
+        info: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com
+          ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011
+      value: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com
+        ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Tue, 5 May 2015
+        14:58:53 -0500
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Date
+    raw_value: 'Date: Tue, 5 May 2015 19:58:53 +0000'
+    value: Tue, 5 May 2015 19:58:53 +0000
+    field_order_id: 9
+    field: !ruby/object:Mail::DateField
+      charset: UTF-8
+      name: Date
+      length: 
+      tree: 
+      element: 
+      value: Tue, 05 May 2015 19:58:53 +0000
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: From
+    raw_value: 'From: Kate Klemp <kklemp@MISDepartment.com>'
+    value: Kate Klemp <kklemp@MISDepartment.com>
+    field_order_id: 10
+    field: !ruby/object:Mail::FromField
+      charset: UTF-8
+      name: From
+      length: 
+      tree: 
+      element: 
+      value: Kate Klemp <kklemp@MISDepartment.com>
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: Kate Klemp <kklemp@MISDepartment.com>
+            domain: MISDepartment.com
+            comments: []
+            local: kklemp
+            obs_domain_list: 
+            display_name: Kate Klemp
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: To
+    raw_value: 'To: "jekylltester@gmail.com" <jekylltester@gmail.com>'
+    value: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+    field_order_id: 13
+    field: !ruby/object:Mail::ToField
+      charset: UTF-8
+      name: To
+      length: 
+      tree: 
+      element: 
+      value: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+            domain: gmail.com
+            comments: []
+            local: jekylltester
+            obs_domain_list: 
+            display_name: jekylltester@gmail.com
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Message-ID
+    raw_value: 'Message-ID: <4dedf73548a84629af2c956386cd5be1@io.misdepartment.com>'
+    value: "<4dedf73548a84629af2c956386cd5be1@io.misdepartment.com>"
+    field_order_id: 16
+    field: !ruby/object:Mail::MessageIdField
+      charset: UTF-8
+      uniq: 1
+      name: Message-ID
+      length: 
+      tree: 
+      element: !ruby/object:Mail::MessageIdsElement
+        message_ids:
+        - 4dedf73548a84629af2c956386cd5be1@io.misdepartment.com
+      value: "<4dedf73548a84629af2c956386cd5be1@io.misdepartment.com>"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Subject
+    raw_value: 'Subject: Plain Text from Outlook || secret: jekyllmail'
+    value: 'Plain Text from Outlook || secret: jekyllmail'
+    field_order_id: 19
+    field: !ruby/object:Mail::SubjectField
+      charset: UTF-8
+      errors: []
+      name: Subject
+      length: 
+      tree: 
+      element: 
+      value: 'Plain Text from Outlook || secret: jekyllmail'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Mime-Version
+    raw_value: 'MIME-Version: 1.0'
+    value: '1.0'
+    field_order_id: 22
+    field: !ruby/object:Mail::MimeVersionField
+      charset: UTF-8
+      name: Mime-Version
+      length: 
+      tree: 
+      element: !ruby/object:Mail::MimeVersionElement
+        major: '1'
+        minor: '0'
+      value: '1.0'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Type
+    raw_value: 'Content-Type: text/plain; charset="us-ascii"'
+    value: text/plain; charset="us-ascii"
+    field_order_id: 23
+    field: !ruby/object:Mail::ContentTypeField
+      charset: UTF-8
+      main_type: text
+      sub_type: 
+      parameters: 
+      name: Content-Type
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ContentTypeElement
+        main_type: text
+        sub_type: plain
+        parameters:
+        - charset: us-ascii
+      value: text/plain; charset="us-ascii"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Transfer-Encoding
+    raw_value: 'Content-Transfer-Encoding: quoted-printable'
+    value: quoted-printable
+    field_order_id: 24
+    field: !ruby/object:Mail::ContentTransferEncodingField
+      charset: UTF-8
+      name: Content-Transfer-Encoding
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ContentTransferEncodingElement
+        encoding: quoted-printable
+      value: quoted-printable
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Delivered-To
+    raw_value: 'Delivered-To: jekylltester@gmail.com'
+    value: jekylltester@gmail.com
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Delivered-To
+      length: 
+      tree: 
+      element: 
+      value: jekylltester@gmail.com
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-Received
+    raw_value: "X-Received: by 10.107.137.143 with SMTP id t15mr36463013ioi.16.1430855957492;\r\n
+      \       Tue, 05 May 2015 12:59:17 -0700 (PDT)"
+    value: "by 10.107.137.143 with SMTP id t15mr36463013ioi.16.1430855957492;\r\n
+      \       Tue, 05 May 2015 12:59:17 -0700 (PDT)"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-Received
+      length: 
+      tree: 
+      element: 
+      value: by 10.107.137.143 with SMTP id t15mr36463013ioi.16.1430855957492; Tue,
+        05 May 2015 12:59:17 -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received-SPF
+    raw_value: 'Received-SPF: pass (google.com: domain of kklemp@misdepartment.com
+      designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;'
+    value: 'pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+      as permitted sender) client-ip=12.32.148.3;'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Received-SPF
+      length: 
+      tree: 
+      element: 
+      value: 'pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+        as permitted sender) client-ip=12.32.148.3;'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Authentication-Results
+    raw_value: "Authentication-Results: mx.google.com;\r\n       spf=pass (google.com:
+      domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+      smtp.mail=kklemp@misdepartment.com"
+    value: "mx.google.com;\r\n       spf=pass (google.com: domain of kklemp@misdepartment.com
+      designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Authentication-Results
+      length: 
+      tree: 
+      element: 
+      value: 'mx.google.com; spf=pass (google.com: domain of kklemp@misdepartment.com
+        designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Thread-Topic
+    raw_value: 'Thread-Topic: Plain Text from Outlook || secret: jekyllmail'
+    value: 'Plain Text from Outlook || secret: jekyllmail'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Thread-Topic
+      length: 
+      tree: 
+      element: 
+      value: 'Plain Text from Outlook || secret: jekyllmail'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Thread-Index
+    raw_value: 'Thread-Index: AdCHbei/BtcMHUPLRrmAZn4+/1BCUQ=='
+    value: AdCHbei/BtcMHUPLRrmAZn4+/1BCUQ==
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Thread-Index
+      length: 
+      tree: 
+      element: 
+      value: AdCHbei/BtcMHUPLRrmAZn4+/1BCUQ==
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Accept-Language
+    raw_value: 'Accept-Language: en-US'
+    value: en-US
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Accept-Language
+      length: 
+      tree: 
+      element: 
+      value: en-US
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Language
+    raw_value: 'Content-Language: en-US'
+    value: en-US
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Content-Language
+      length: 
+      tree: 
+      element: 
+      value: en-US
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-MS-Has-Attach
+    raw_value: 'X-MS-Has-Attach:'
+    value: ''
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-MS-Has-Attach
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-MS-TNEF-Correlator
+    raw_value: 'X-MS-TNEF-Correlator:'
+    value: ''
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-MS-TNEF-Correlator
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: x-originating-ip
+    raw_value: 'x-originating-ip: [10.1.1.148]'
+    value: "[10.1.1.148]"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: x-originating-ip
+      length: 
+      tree: 
+      element: 
+      value: "[10.1.1.148]"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: x-signature
+    raw_value: 'x-signature: Yes'
+    value: 'Yes'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: x-signature
+      length: 
+      tree: 
+      element: 
+      value: 'Yes'
+charset: UTF-8
+defaulted_charset: true
+smtp_envelope_from: 
+smtp_envelope_to: 
+perform_deliveries: true
+raise_delivery_errors: true
+delivery_handler: 
+delivery_method: !ruby/object:Mail::SMTP
+  settings:
+    :address: localhost
+    :port: 25
+    :domain: localhost.localdomain
+    :user_name: 
+    :password: 
+    :authentication: 
+    :enable_starttls_auto: true
+    :openssl_verify_mode: 
+    :ssl: 
+    :tls: 
+transport_encoding: !ruby/class 'Mail::Encodings::SevenBit'
+mark_for_delete: false
+raw_source: "Delivered-To: jekylltester@gmail.com\r\nReceived: by 10.27.31.206 with
+  SMTP id f197csp2470726wlf;\r\n        Tue, 5 May 2015 12:59:18 -0700 (PDT)\r\nX-Received:
+  by 10.107.137.143 with SMTP id t15mr36463013ioi.16.1430855957492;\r\n        Tue,
+  05 May 2015 12:59:17 -0700 (PDT)\r\nReturn-Path: <kklemp@misdepartment.com>\r\nReceived:
+  from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n        by
+  mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16\r\n        for
+  <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);\r\n
+  \       Tue, 05 May 2015 12:59:17 -0700 (PDT)\r\nReceived-SPF: pass (google.com:
+  domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;\r\nAuthentication-Results:
+  mx.google.com;\r\n       spf=pass (google.com: domain of kklemp@misdepartment.com
+  designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com\r\nReceived:
+  from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17) with
+  Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 5 May 2015\r\n 14:58:53 -0500\r\nReceived:
+  from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com
+  ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n 15.00.0913.011; Tue, 5 May 2015
+  14:58:53 -0500\r\nFrom: Kate Klemp <kklemp@MISDepartment.com>\r\nTo: \"jekylltester@gmail.com\"
+  <jekylltester@gmail.com>\r\nSubject: Plain Text from Outlook || secret: jekyllmail\r\nThread-Topic:
+  Plain Text from Outlook || secret: jekyllmail\r\nThread-Index: AdCHbei/BtcMHUPLRrmAZn4+/1BCUQ==\r\nDate:
+  Tue, 5 May 2015 19:58:53 +0000\r\nMessage-ID: <4dedf73548a84629af2c956386cd5be1@io.misdepartment.com>\r\nAccept-Language:
+  en-US\r\nContent-Language: en-US\r\nX-MS-Has-Attach:\r\nX-MS-TNEF-Correlator:\r\nx-originating-ip:
+  [10.1.1.148]\r\nx-signature: Yes\r\nContent-Type: text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+  quoted-printable\r\nMIME-Version: 1.0\r\n\r\nHere's a bunch of plain text\r\n\r\nIf
+  I put a break in, it seems to work\r\n\r\nMore line breaks.\r\n\r\nLorem ipsum dolor
+  sit amet, consectetur adipiscing elit. Curabitur hendreri=\r\nt dictum felis, eu
+  iaculis tortor egestas non. Nunc consectetur placerat ex=\r\n nec vestibulum. In
+  sapien tellus, maximus et ipsum eget, aliquet vehicula =\r\nmassa. Sed ornare, leo
+  eget tincidunt lacinia, augue mi facilisis arcu, ali=\r\nquet lacinia ante sem non
+  magna. Donec luctus bibendum ligula, a molestie l=\r\nibero lobortis ut. Maecenas
+  vel neque molestie, vehicula tellus sed, tempus=\r\n tellus. Sed in sem et\r\npurus
+  rhoncus sodales. Proin egestas maximus molestie.\r\n\r\nNulla velit erat, lacinia
+  quis eros faucibus, pretium condimentum erat. Eti=\r\nam bibendum ultrices massa
+  quis hendrerit. Phasellus ullamcorper consequat =\r\ntempus. Morbi tincidunt, dolor
+  ac faucibus luctus, nisi nulla ultrices est,=\r\n a pulvinar metus ligula id est.
+  Phasellus semper libero eget lacus auctor =\r\nposuere. Ut et metus non enim varius
+  molestie. In nec odio enim. Suspendiss=\r\ne vitae pellentesque tortor. Maecenas
+  consectetur mollis mattis. Etiam aliq=\r\nuam accumsan ex nec vulputate. Quisque
+  tristique nunc urna, nec fermentum m=\r\nagna laoreet sit amet. Nullam pharetra
+  augue at lacinia sagittis. Morbi ege=\r\nt ante efficitur, scelerisque ligula id,
+  bibendum elit. In dapibus, massa a=\r\nt finibus porttitor, turpis lectus euismod
+  massa, non aliquot tortor nunc n=\r\nec urna.\r\n\r\nMorbi malesuada auctor semper.
+  Aliquam non ipsum vitae odio maximus laoreet=\r\n nec sed massa. Sed eu urna ante.
+  Integer pharetra, turpis eu auctor bibend=\r\num, ex enim vulputate odio, sit amet
+  ornare magna sem consectetur justo. Ma=\r\nuris sit amet metus aliquet, posuere
+  risus a, placerat tortor. Vestibulum a=\r\nnte ipsum primis in faucibus orci luctus
+  et ultrices posuere cubilia Curae;=\r\n Ut lacus nunc, laoreet ut varius at, placerat
+  ut sem. Suspendisse efficitu=\r\nr vehicula venenatis. Aliquam augue erat, rhoncus
+  quis venenatis feugiat, c=\r\nursus at tellus. Duis ac est tristique nisi elementum
+  tristique. Vestibulum=\r\n in dui gravida,\r\ntempor magna vitae, semper arcu. Vestibulum
+  tempus ultricies porttitor. Nun=\r\nc id diam pulvinar, condimentum leo non, feugiat
+  dolor. Aliquam quis nunc v=\r\nel ipsum semper commodo. Sed feugiat justo quis nisl
+  pulvinar blandit.\r\n--\r\n\r\nKate Klemp\r\n | The MIS Department, Inc.\r\n(773)
+  644-5515 | http://www.misdepartment.com\r\n\r\nFor Support Issues: (773) 231-7997\r\n\r\n
+  \ *   Facebook: http://www.misdepartment.com/facebook\r\n  *   Twitter: http://www.misdepartment.com/twitter\r\n
+  \ *   LinkedIn: http://www.misdepartment.com/linkedin\r\n  *   Google+: http://www.misdepartment.com/googleplus\r\n"

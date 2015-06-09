@@ -1,104 +1,674 @@
-
-Delivered-To: jekylltester@gmail.com
-Received: by 10.31.65.6 with SMTP id o6csp721784vka;
-Mon, 8 Jun 2015 13:45:46 -0700 (PDT)
-X-Received: by 10.43.96.5 with SMTP id ce5mr17933854icc.96.1433796346091;
-Mon, 08 Jun 2015 13:45:46 -0700 (PDT)
-Return-Path: <kklemp@misdepartment.com>
-Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])
-by mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45
-for <jekylltester@gmail.com>
-(version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);
-Mon, 08 Jun 2015 13:45:46 -0700 (PDT)
-Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
-Authentication-Results: mx.google.com;
-spf=pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com
-Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com
-(10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 8 Jun 2015
-15:45:13 -0500
-Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by
-io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id
-15.00.0913.011; Mon, 8 Jun 2015 15:45:13 -0500
-From: Kate Klemp <kklemp@MISDepartment.com>
-To: "jekylltester@gmail.com" <jekylltester@gmail.com>
-Subject:
-Thread-Index: AdCiLAPCPEjN8bk6QwaVvuAOo0M1OA==
-Date: Mon, 8 Jun 2015 20:45:12 +0000
-Message-ID: <d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com>
-Accept-Language: en-US
-Content-Language: en-US
-X-MS-Has-Attach:
-X-MS-TNEF-Correlator:
-x-originating-ip: [10.1.1.148]
-Content-Type: multipart/alternative;
-boundary="_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_"
-MIME-Version: 1.0
-
---_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_
-Content-Type: text/plain; charset="us-ascii"
-Content-Transfer-Encoding: quoted-printable
-
-No subject in this email, it should be murdered by mailtojekyll
-
---_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_
-Content-Type: text/html; charset="us-ascii"
-Content-Transfer-Encoding: quoted-printable
-
-<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
-osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
-xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
-//www.w3.org/TR/REC-html40">
-<head>
-<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dus-ascii"=
->
-<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
-<style><!--
-/* Font Definitions */
-@font-face
-{font-family:"Cambria Math";
-panose-1:2 4 5 3 5 4 6 3 2 4;}
-@font-face
-{font-family:Calibri;
-panose-1:2 15 5 2 2 2 4 3 2 4;}
-/* Style Definitions */
-p.MsoNormal, li.MsoNormal, div.MsoNormal
-{margin:0in;
-margin-bottom:.0001pt;
-font-size:11.0pt;
-font-family:"Calibri",sans-serif;}
-a:link, span.MsoHyperlink
-{mso-style-priority:99;
-color:#0563C1;
-text-decoration:underline;}
-a:visited, span.MsoHyperlinkFollowed
-{mso-style-priority:99;
-color:#954F72;
-text-decoration:underline;}
-span.EmailStyle17
-{mso-style-type:personal-compose;
-font-family:"Calibri",sans-serif;
-color:windowtext;}
-.MsoChpDefault
-{mso-style-type:export-only;
-font-family:"Calibri",sans-serif;}
-@page WordSection1
-{size:8.5in 11.0in;
-margin:1.0in 1.0in 1.0in 1.0in;}
-div.WordSection1
-{page:WordSection1;}
---></style><!--[if gte mso 9]><xml>
-<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
-</xml><![endif]--><!--[if gte mso 9]><xml>
-<o:shapelayout v:ext=3D"edit">
-<o:idmap v:ext=3D"edit" data=3D"1" />
-</o:shapelayout></xml><![endif]-->
-</head>
-<body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
-<div class=3D"WordSection1">
-<p class=3D"MsoNormal">No subject in this email, it should be murdered by m=
-ailtojekyll<o:p></o:p></p>
-</div>
-</body>
-</html>
-
---_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_--
+--- !ruby/object:Mail::Message
+body: !ruby/object:Mail::Body
+  boundary: _000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_
+  preamble: ''
+  epilogue: ''
+  charset: US-ASCII
+  part_sort_order:
+  - text/plain
+  - text/enriched
+  - text/html
+  parts: !ruby/array:Mail::PartsList
+  - !ruby/object:Mail::Part
+    body: 
+    body_raw: "No subject in this email, it should be murdered by mailtojekyll\r\n"
+    separate_parts: false
+    text_part: 
+    html_part: 
+    errors: 
+    header: !ruby/object:Mail::Header
+      charset: UTF-8
+      raw_source: "Content-Type: text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+        quoted-printable"
+      fields: !ruby/array:Mail::FieldList
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Type
+        raw_value: 'Content-Type: text/plain; charset="us-ascii"'
+        value: text/plain; charset="us-ascii"
+        field_order_id: 23
+        field: !ruby/object:Mail::ContentTypeField
+          charset: UTF-8
+          main_type: text
+          sub_type: 
+          parameters: 
+          name: Content-Type
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTypeElement
+            main_type: text
+            sub_type: plain
+            parameters:
+            - charset: us-ascii
+          value: text/plain; charset="us-ascii"
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Transfer-Encoding
+        raw_value: 'Content-Transfer-Encoding: quoted-printable'
+        value: quoted-printable
+        field_order_id: 24
+        field: !ruby/object:Mail::ContentTransferEncodingField
+          charset: UTF-8
+          name: Content-Transfer-Encoding
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTransferEncodingElement
+            encoding: quoted-printable
+          value: quoted-printable
+    charset: UTF-8
+    defaulted_charset: true
+    smtp_envelope_from: 
+    smtp_envelope_to: 
+    perform_deliveries: true
+    raise_delivery_errors: true
+    delivery_handler: 
+    delivery_method: !ruby/object:Mail::SMTP
+      settings: &1
+        :address: localhost
+        :port: 25
+        :domain: localhost.localdomain
+        :user_name: 
+        :password: 
+        :authentication: 
+        :enable_starttls_auto: true
+        :openssl_verify_mode: 
+        :ssl: 
+        :tls: 
+    transport_encoding: &2 !ruby/class 'Mail::Encodings::SevenBit'
+    mark_for_delete: false
+    raw_source: "\r\nContent-Type: text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+      quoted-printable\r\n\r\nNo subject in this email, it should be murdered by mailtojekyll\r\n"
+  - !ruby/object:Mail::Part
+    body: 
+    body_raw: "<html xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+      xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+      xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+      content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+      content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font
+      Definitions */\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2
+      4 5 3 5 4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2
+      15 5 2 2 2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal,
+      div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+      span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+      span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+      WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n--></style><!--[if
+      gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+      gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+      data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+      link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+      class=3D\"MsoNormal\">No subject in this email, it should be murdered by m=\r\nailtojekyll<o:p></o:p></p>\r\n</div>\r\n</body>\r\n</html>\r\n"
+    separate_parts: false
+    text_part: 
+    html_part: 
+    errors: 
+    header: !ruby/object:Mail::Header
+      charset: UTF-8
+      raw_source: "Content-Type: text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+        quoted-printable"
+      fields: !ruby/array:Mail::FieldList
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Type
+        raw_value: 'Content-Type: text/html; charset="us-ascii"'
+        value: text/html; charset="us-ascii"
+        field_order_id: 23
+        field: !ruby/object:Mail::ContentTypeField
+          charset: UTF-8
+          main_type: text
+          sub_type: 
+          parameters: 
+          name: Content-Type
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTypeElement
+            main_type: text
+            sub_type: html
+            parameters:
+            - charset: us-ascii
+          value: text/html; charset="us-ascii"
+      - !ruby/object:Mail::Field
+        charset: UTF-8
+        name: Content-Transfer-Encoding
+        raw_value: 'Content-Transfer-Encoding: quoted-printable'
+        value: quoted-printable
+        field_order_id: 24
+        field: !ruby/object:Mail::ContentTransferEncodingField
+          charset: UTF-8
+          name: Content-Transfer-Encoding
+          length: 
+          tree: 
+          element: !ruby/object:Mail::ContentTransferEncodingElement
+            encoding: quoted-printable
+          value: quoted-printable
+    charset: UTF-8
+    defaulted_charset: true
+    smtp_envelope_from: 
+    smtp_envelope_to: 
+    perform_deliveries: true
+    raise_delivery_errors: true
+    delivery_handler: 
+    delivery_method: !ruby/object:Mail::SMTP
+      settings: *1
+    transport_encoding: *2
+    mark_for_delete: false
+    raw_source: "\r\nContent-Type: text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding:
+      quoted-printable\r\n\r\n<html xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+      xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+      xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+      content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+      content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font
+      Definitions */\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2
+      4 5 3 5 4 6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2
+      15 5 2 2 2 4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal,
+      div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+      span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+      span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+      WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n--></style><!--[if
+      gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+      gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+      data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+      link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+      class=3D\"MsoNormal\">No subject in this email, it should be murdered by m=\r\nailtojekyll<o:p></o:p></p>\r\n</div>\r\n</body>\r\n</html>\r\n"
+  raw_source: "--_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\r\nContent-Type:
+    text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nNo
+    subject in this email, it should be murdered by mailtojekyll\r\n\r\n--_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\r\nContent-Type:
+    text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n<html
+    xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+    xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+    xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+    content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+    content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font Definitions
+    */\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2 4 5 3 5 4
+    6 3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2 15 5 2 2 2
+    4 3 2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+    span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+    span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+    WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n--></style><!--[if
+    gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+    gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+    data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+    link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+    class=3D\"MsoNormal\">No subject in this email, it should be murdered by m=\r\nailtojekyll<o:p></o:p></p>\r\n</div>\r\n</body>\r\n</html>\r\n\r\n--_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_--\r\n"
+  encoding: 7bit
+body_raw: 
+separate_parts: true
+text_part: 
+html_part: 
+errors: 
+header: !ruby/object:Mail::Header
+  charset: UTF-8
+  raw_source: "Delivered-To: jekylltester@gmail.com\r\nReceived: by 10.31.65.6 with
+    SMTP id o6csp721784vka;\r\n        Mon, 8 Jun 2015 13:45:46 -0700 (PDT)\r\nX-Received:
+    by 10.43.96.5 with SMTP id ce5mr17933854icc.96.1433796346091;\r\n        Mon,
+    08 Jun 2015 13:45:46 -0700 (PDT)\r\nReturn-Path: <kklemp@misdepartment.com>\r\nReceived:
+    from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n        by
+    mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45\r\n        for
+    <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+    bits=128/128);\r\n        Mon, 08 Jun 2015 13:45:46 -0700 (PDT)\r\nReceived-SPF:
+    pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3 as
+    permitted sender) client-ip=12.32.148.3;\r\nAuthentication-Results: mx.google.com;\r\n
+    \      spf=pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+    as permitted sender) smtp.mail=kklemp@misdepartment.com\r\nReceived: from IO.misdepartment.com
+    (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17) with Microsoft SMTP Server
+    (TLS) id 15.0.913.22; Mon, 8 Jun 2015\r\n 15:45:13 -0500\r\nReceived: from IO.misdepartment.com
+    ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12])
+    with mapi id\r\n 15.00.0913.011; Mon, 8 Jun 2015 15:45:13 -0500\r\nFrom: Kate
+    Klemp <kklemp@MISDepartment.com>\r\nTo: \"jekylltester@gmail.com\" <jekylltester@gmail.com>\r\nSubject:\r\nThread-Index:
+    AdCiLAPCPEjN8bk6QwaVvuAOo0M1OA==\r\nDate: Mon, 8 Jun 2015 20:45:12 +0000\r\nMessage-ID:
+    <d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com>\r\nAccept-Language: en-US\r\nContent-Language:
+    en-US\r\nX-MS-Has-Attach:\r\nX-MS-TNEF-Correlator:\r\nx-originating-ip: [10.1.1.148]\r\nContent-Type:
+    multipart/alternative;\r\n\tboundary=\"_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\"\r\nMIME-Version:
+    1.0"
+  fields: !ruby/array:Mail::FieldList
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Return-Path
+    raw_value: 'Return-Path: <kklemp@misdepartment.com>'
+    value: "<kklemp@misdepartment.com>"
+    field_order_id: 0
+    field: !ruby/object:Mail::ReturnPathField
+      charset: UTF-8
+      name: Return-Path
+      length: 
+      tree: 
+      element: 
+      value: "<kklemp@misdepartment.com>"
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: "<kklemp@misdepartment.com>"
+            domain: misdepartment.com
+            comments: []
+            local: kklemp
+            obs_domain_list: 
+            display_name: 
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: by 10.31.65.6 with SMTP id o6csp721784vka;\r\n        Mon,
+      8 Jun 2015 13:45:46 -0700 (PDT)"
+    value: "by 10.31.65.6 with SMTP id o6csp721784vka;\r\n        Mon, 8 Jun 2015
+      13:45:46 -0700 (PDT)"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-06-08 13:45:46.000000000 -07:00
+        info: by 10.31.65.6 with SMTP id o6csp721784vka
+      value: by 10.31.65.6 with SMTP id o6csp721784vka; Mon, 8 Jun 2015 13:45:46 -0700
+        (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n
+      \       by mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45\r\n
+      \       for <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+      bits=128/128);\r\n        Mon, 08 Jun 2015 13:45:46 -0700 (PDT)"
+    value: "from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n
+      \       by mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45\r\n
+      \       for <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA
+      bits=128/128);\r\n        Mon, 08 Jun 2015 13:45:46 -0700 (PDT)"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-06-08 13:45:46.000000000 -07:00
+        info: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])
+          by mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45 for
+          <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128)
+      value: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by
+        mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45 for <jekylltester@gmail.com>
+        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Mon, 08 Jun 2015
+        13:45:46 -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n
+      (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 8 Jun 2015\r\n
+      15:45:13 -0500"
+    value: "from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17)
+      with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 8 Jun 2015\r\n 15:45:13
+      -0500"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-06-08 15:45:13.000000000 -05:00
+        info: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17)
+          with Microsoft SMTP Server (TLS) id 15.0.913.22
+      value: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17)
+        with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 8 Jun 2015 15:45:13
+        -0500
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received
+    raw_value: "Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96])
+      by\r\n io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n
+      15.00.0913.011; Mon, 8 Jun 2015 15:45:13 -0500"
+    value: "from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com
+      ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n 15.00.0913.011; Mon, 8 Jun
+      2015 15:45:13 -0500"
+    field_order_id: 1
+    field: !ruby/object:Mail::ReceivedField
+      charset: UTF-8
+      name: Received
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ReceivedElement
+        date_time: !ruby/object:DateTime 2015-06-08 15:45:13.000000000 -05:00
+        info: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com
+          ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011
+      value: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com
+        ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Mon, 8 Jun 2015
+        15:45:13 -0500
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Date
+    raw_value: 'Date: Mon, 8 Jun 2015 20:45:12 +0000'
+    value: Mon, 8 Jun 2015 20:45:12 +0000
+    field_order_id: 9
+    field: !ruby/object:Mail::DateField
+      charset: UTF-8
+      name: Date
+      length: 
+      tree: 
+      element: 
+      value: Mon, 08 Jun 2015 20:45:12 +0000
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: From
+    raw_value: 'From: Kate Klemp <kklemp@MISDepartment.com>'
+    value: Kate Klemp <kklemp@MISDepartment.com>
+    field_order_id: 10
+    field: !ruby/object:Mail::FromField
+      charset: UTF-8
+      name: From
+      length: 
+      tree: 
+      element: 
+      value: Kate Klemp <kklemp@MISDepartment.com>
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: Kate Klemp <kklemp@MISDepartment.com>
+            domain: MISDepartment.com
+            comments: []
+            local: kklemp
+            obs_domain_list: 
+            display_name: Kate Klemp
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: To
+    raw_value: 'To: "jekylltester@gmail.com" <jekylltester@gmail.com>'
+    value: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+    field_order_id: 13
+    field: !ruby/object:Mail::ToField
+      charset: UTF-8
+      name: To
+      length: 
+      tree: 
+      element: 
+      value: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+      address_list: !ruby/object:Mail::AddressList
+        addresses_grouped_by_group: 
+        address_list: !ruby/struct:Mail::Parsers::AddressListStruct
+          addresses:
+          - !ruby/struct:Mail::Parsers::AddressStruct
+            raw: '"jekylltester@gmail.com" <jekylltester@gmail.com>'
+            domain: gmail.com
+            comments: []
+            local: jekylltester
+            obs_domain_list: 
+            display_name: jekylltester@gmail.com
+            group: 
+            error: 
+          group_names: []
+          error: 
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Message-ID
+    raw_value: 'Message-ID: <d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com>'
+    value: "<d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com>"
+    field_order_id: 16
+    field: !ruby/object:Mail::MessageIdField
+      charset: UTF-8
+      uniq: 1
+      name: Message-ID
+      length: 
+      tree: 
+      element: !ruby/object:Mail::MessageIdsElement
+        message_ids:
+        - d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com
+      value: "<d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com>"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Subject
+    raw_value: 'Subject:'
+    value: ''
+    field_order_id: 19
+    field: !ruby/object:Mail::SubjectField
+      charset: UTF-8
+      errors: []
+      name: Subject
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Mime-Version
+    raw_value: 'MIME-Version: 1.0'
+    value: '1.0'
+    field_order_id: 22
+    field: !ruby/object:Mail::MimeVersionField
+      charset: UTF-8
+      name: Mime-Version
+      length: 
+      tree: 
+      element: !ruby/object:Mail::MimeVersionElement
+        major: '1'
+        minor: '0'
+      value: '1.0'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Type
+    raw_value: "Content-Type: multipart/alternative;\r\n\tboundary=\"_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\""
+    value: "multipart/alternative;\r\n\tboundary=\"_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\""
+    field_order_id: 23
+    field: !ruby/object:Mail::ContentTypeField
+      charset: UTF-8
+      main_type: multipart
+      sub_type: 
+      parameters: !ruby/hash:Mail::ParameterHash
+        boundary: _000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_
+      name: Content-Type
+      length: 
+      tree: 
+      element: !ruby/object:Mail::ContentTypeElement
+        main_type: multipart
+        sub_type: alternative
+        parameters:
+        - boundary: _000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_
+      value: multipart/alternative; boundary="_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_"
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Delivered-To
+    raw_value: 'Delivered-To: jekylltester@gmail.com'
+    value: jekylltester@gmail.com
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Delivered-To
+      length: 
+      tree: 
+      element: 
+      value: jekylltester@gmail.com
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-Received
+    raw_value: "X-Received: by 10.43.96.5 with SMTP id ce5mr17933854icc.96.1433796346091;\r\n
+      \       Mon, 08 Jun 2015 13:45:46 -0700 (PDT)"
+    value: "by 10.43.96.5 with SMTP id ce5mr17933854icc.96.1433796346091;\r\n        Mon,
+      08 Jun 2015 13:45:46 -0700 (PDT)"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-Received
+      length: 
+      tree: 
+      element: 
+      value: by 10.43.96.5 with SMTP id ce5mr17933854icc.96.1433796346091; Mon, 08
+        Jun 2015 13:45:46 -0700 (PDT)
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Received-SPF
+    raw_value: 'Received-SPF: pass (google.com: domain of kklemp@misdepartment.com
+      designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;'
+    value: 'pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+      as permitted sender) client-ip=12.32.148.3;'
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Received-SPF
+      length: 
+      tree: 
+      element: 
+      value: 'pass (google.com: domain of kklemp@misdepartment.com designates 12.32.148.3
+        as permitted sender) client-ip=12.32.148.3;'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Authentication-Results
+    raw_value: "Authentication-Results: mx.google.com;\r\n       spf=pass (google.com:
+      domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+      smtp.mail=kklemp@misdepartment.com"
+    value: "mx.google.com;\r\n       spf=pass (google.com: domain of kklemp@misdepartment.com
+      designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Authentication-Results
+      length: 
+      tree: 
+      element: 
+      value: 'mx.google.com; spf=pass (google.com: domain of kklemp@misdepartment.com
+        designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com'
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Thread-Index
+    raw_value: 'Thread-Index: AdCiLAPCPEjN8bk6QwaVvuAOo0M1OA=='
+    value: AdCiLAPCPEjN8bk6QwaVvuAOo0M1OA==
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Thread-Index
+      length: 
+      tree: 
+      element: 
+      value: AdCiLAPCPEjN8bk6QwaVvuAOo0M1OA==
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Accept-Language
+    raw_value: 'Accept-Language: en-US'
+    value: en-US
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Accept-Language
+      length: 
+      tree: 
+      element: 
+      value: en-US
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: Content-Language
+    raw_value: 'Content-Language: en-US'
+    value: en-US
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: Content-Language
+      length: 
+      tree: 
+      element: 
+      value: en-US
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-MS-Has-Attach
+    raw_value: 'X-MS-Has-Attach:'
+    value: ''
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-MS-Has-Attach
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: X-MS-TNEF-Correlator
+    raw_value: 'X-MS-TNEF-Correlator:'
+    value: ''
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: X-MS-TNEF-Correlator
+      length: 
+      tree: 
+      element: 
+      value: ''
+  - !ruby/object:Mail::Field
+    charset: UTF-8
+    name: x-originating-ip
+    raw_value: 'x-originating-ip: [10.1.1.148]'
+    value: "[10.1.1.148]"
+    field_order_id: 100
+    field: !ruby/object:Mail::OptionalField
+      errors: []
+      charset: UTF-8
+      name: x-originating-ip
+      length: 
+      tree: 
+      element: 
+      value: "[10.1.1.148]"
+charset: UTF-8
+defaulted_charset: true
+smtp_envelope_from: 
+smtp_envelope_to: 
+perform_deliveries: true
+raise_delivery_errors: true
+delivery_handler: 
+delivery_method: !ruby/object:Mail::SMTP
+  settings: *1
+transport_encoding: *2
+mark_for_delete: false
+raw_source: "Delivered-To: jekylltester@gmail.com\r\nReceived: by 10.31.65.6 with
+  SMTP id o6csp721784vka;\r\n        Mon, 8 Jun 2015 13:45:46 -0700 (PDT)\r\nX-Received:
+  by 10.43.96.5 with SMTP id ce5mr17933854icc.96.1433796346091;\r\n        Mon, 08
+  Jun 2015 13:45:46 -0700 (PDT)\r\nReturn-Path: <kklemp@misdepartment.com>\r\nReceived:
+  from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3])\r\n        by
+  mx.google.com with ESMTPS id i17si4795714ich.22.2015.06.08.13.45.45\r\n        for
+  <jekylltester@gmail.com>\r\n        (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128);\r\n
+  \       Mon, 08 Jun 2015 13:45:46 -0700 (PDT)\r\nReceived-SPF: pass (google.com:
+  domain of kklemp@misdepartment.com designates 12.32.148.3 as permitted sender) client-ip=12.32.148.3;\r\nAuthentication-Results:
+  mx.google.com;\r\n       spf=pass (google.com: domain of kklemp@misdepartment.com
+  designates 12.32.148.3 as permitted sender) smtp.mail=kklemp@misdepartment.com\r\nReceived:
+  from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com\r\n (10.1.1.17) with
+  Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 8 Jun 2015\r\n 15:45:13 -0500\r\nReceived:
+  from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by\r\n io.misdepartment.com
+  ([fe80::d076:2133:8acf:fb96%12]) with mapi id\r\n 15.00.0913.011; Mon, 8 Jun 2015
+  15:45:13 -0500\r\nFrom: Kate Klemp <kklemp@MISDepartment.com>\r\nTo: \"jekylltester@gmail.com\"
+  <jekylltester@gmail.com>\r\nSubject:\r\nThread-Index: AdCiLAPCPEjN8bk6QwaVvuAOo0M1OA==\r\nDate:
+  Mon, 8 Jun 2015 20:45:12 +0000\r\nMessage-ID: <d11bfa98df8d4d779c36f4594d976d5c@io.misdepartment.com>\r\nAccept-Language:
+  en-US\r\nContent-Language: en-US\r\nX-MS-Has-Attach:\r\nX-MS-TNEF-Correlator:\r\nx-originating-ip:
+  [10.1.1.148]\r\nContent-Type: multipart/alternative;\r\n\tboundary=\"_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\"\r\nMIME-Version:
+  1.0\r\n\r\n--_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\r\nContent-Type:
+  text/plain; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\nNo
+  subject in this email, it should be murdered by mailtojekyll\r\n\r\n--_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_\r\nContent-Type:
+  text/html; charset=\"us-ascii\"\r\nContent-Transfer-Encoding: quoted-printable\r\n\r\n<html
+  xmlns:v=3D\"urn:schemas-microsoft-com:vml\" xmlns:o=3D\"urn:schemas-micr=\r\nosoft-com:office:office\"
+  xmlns:w=3D\"urn:schemas-microsoft-com:office:word\" =\r\nxmlns:m=3D\"http://schemas.microsoft.com/office/2004/12/omml\"
+  xmlns=3D\"http:=\r\n//www.w3.org/TR/REC-html40\">\r\n<head>\r\n<meta http-equiv=3D\"Content-Type\"
+  content=3D\"text/html; charset=3Dus-ascii\"=\r\n>\r\n<meta name=3D\"Generator\"
+  content=3D\"Microsoft Word 15 (filtered medium)\">\r\n<style><!--\r\n/* Font Definitions
+  */\r\n@font-face\r\n\t{font-family:\"Cambria Math\";\r\n\tpanose-1:2 4 5 3 5 4 6
+  3 2 4;}\r\n@font-face\r\n\t{font-family:Calibri;\r\n\tpanose-1:2 15 5 2 2 2 4 3
+  2 4;}\r\n/* Style Definitions */\r\np.MsoNormal, li.MsoNormal, div.MsoNormal\r\n\t{margin:0in;\r\n\tmargin-bottom:.0001pt;\r\n\tfont-size:11.0pt;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\na:link,
+  span.MsoHyperlink\r\n\t{mso-style-priority:99;\r\n\tcolor:#0563C1;\r\n\ttext-decoration:underline;}\r\na:visited,
+  span.MsoHyperlinkFollowed\r\n\t{mso-style-priority:99;\r\n\tcolor:#954F72;\r\n\ttext-decoration:underline;}\r\nspan.EmailStyle17\r\n\t{mso-style-type:personal-compose;\r\n\tfont-family:\"Calibri\",sans-serif;\r\n\tcolor:windowtext;}\r\n.MsoChpDefault\r\n\t{mso-style-type:export-only;\r\n\tfont-family:\"Calibri\",sans-serif;}\r\n@page
+  WordSection1\r\n\t{size:8.5in 11.0in;\r\n\tmargin:1.0in 1.0in 1.0in 1.0in;}\r\ndiv.WordSection1\r\n\t{page:WordSection1;}\r\n--></style><!--[if
+  gte mso 9]><xml>\r\n<o:shapedefaults v:ext=3D\"edit\" spidmax=3D\"1026\" />\r\n</xml><![endif]--><!--[if
+  gte mso 9]><xml>\r\n<o:shapelayout v:ext=3D\"edit\">\r\n<o:idmap v:ext=3D\"edit\"
+  data=3D\"1\" />\r\n</o:shapelayout></xml><![endif]-->\r\n</head>\r\n<body lang=3D\"EN-US\"
+  link=3D\"#0563C1\" vlink=3D\"#954F72\">\r\n<div class=3D\"WordSection1\">\r\n<p
+  class=3D\"MsoNormal\">No subject in this email, it should be murdered by m=\r\nailtojekyll<o:p></o:p></p>\r\n</div>\r\n</body>\r\n</html>\r\n\r\n--_000_d11bfa98df8d4d779c36f4594d976d5ciomisdepartmentcom_--\r\n"
