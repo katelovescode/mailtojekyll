@@ -10,10 +10,24 @@ class JekyllEmail
   include Mail
   
   def initialize(thismail)
+    
+    @atts = {}
+    
     thismail = Mail.read(thismail)    
+    
+    # get the subject for validation
     @subject = thismail.subject
+    
+    # split the subject to get the title for creating posts and the secret for validation
     (@title, @secret) = @subject.split((/\|\|/)) unless @subject.nil?    
     
+    thismail.attachments.each do |att|
+      fn = att.filename
+      cid = att.content_id.to_s.delete("<>")
+      @atts[fn] = cid
+    end
+    
+    # process the body with the striphtml method    
     if thismail.multipart?
       !thismail.html_part.nil? ? @body = striphtml(thismail.html_part.decoded) : @body = striphtml(thismail.body.decoded)
       if @body == "" && thismail.has_attachments?
@@ -22,6 +36,7 @@ class JekyllEmail
     else
       @body = striphtml(thismail.body.decoded)
     end
+    
   end
   
   # validate the subject; if valid, return title
@@ -44,17 +59,10 @@ class JekyllEmail
     end
   end
   
-  # validate the body; return body
+  # validate the body
   def v_bod
     if @body == ""
       raise StandardError, "No body text" 
-    else
-      # strip = Nokogiri::HTML(decode).at("body").inner_text.gsub(/\s+/,"").length        
-      # if strip == 0 && !thismail.has_attachments?
-      #   @body = ""
-      # else
-      # puts "body incoming!"
-      # puts @body
     end
   end
   
