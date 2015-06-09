@@ -37,37 +37,53 @@ describe JekyllEmail do
     
     context 'with attached & inline images' do
       let(:email) { path + "attached-inline.eml" }
+      let(:title) { "Attached & Inline images from Android Gmail app" }
       it 'does not raise an error on subject, secret, or body' do
         expect { JekyllEmail.new(email).v_sub }.not_to raise_error
         expect { JekyllEmail.new(email).v_sec }.not_to raise_error
         expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+      end
+      it 'creates the correct title' do
+        expect( JekyllEmail.new(email).v_sub ).to eq(title)
       end
     end
     
     context 'with attached images & text' do
       let(:email) { path + "attached-text.eml" }
+      let(:title) { "Attached images with text from Android Gmail app" }
       it 'does not raise an error on subject, secret, or body' do
         expect { JekyllEmail.new(email).v_sub }.not_to raise_error
         expect { JekyllEmail.new(email).v_sec }.not_to raise_error
         expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+      end
+      it 'creates the correct title' do
+        expect( JekyllEmail.new(email).v_sub ).to eq(title)
       end
     end
     
     context 'with attached images & no text' do
       let(:email) { path + "attached-no-text.eml" }
+      let(:title) { "Attached images no text" }
       it 'does not raise an error on subject, secret, or body' do
         expect { JekyllEmail.new(email).v_sub }.not_to raise_error
         expect { JekyllEmail.new(email).v_sec }.not_to raise_error
         expect { JekyllEmail.new(email).v_bod }.not_to raise_error
       end
+      it 'creates the correct title' do
+        expect( JekyllEmail.new(email).v_sub ).to eq(title)
+      end
     end
     
     context 'with inline images only' do
       let(:email) { path + "inline.eml" }
+      let(:title) { "Inline only from Android Gmail app" }
       it 'does not raise an error on subject, secret, or body' do
         expect { JekyllEmail.new(email).v_sub }.not_to raise_error
         expect { JekyllEmail.new(email).v_sec }.not_to raise_error
         expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+      end
+      it 'creates the correct title' do
+        expect( JekyllEmail.new(email).v_sub ).to eq(title)
       end
     end
     
@@ -77,6 +93,9 @@ describe JekyllEmail do
         expect { JekyllEmail.new(email).v_sub }.not_to raise_error
         expect { JekyllEmail.new(email).v_sec }.not_to raise_error
         expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+      end
+      it 'creates the correct title' do
+        expect( JekyllEmail.new(email).v_sub ).to eq("Emoji from Android Gmail app")
       end
     end
 

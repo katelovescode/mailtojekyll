@@ -109,7 +109,7 @@ require_relative 'jekyllemail'
 # TESTING BLOCK
 
 path = 'spec/mocks/'
-device = 'gmail/'
+device = 'lgmail/'
 mail1 = JekyllEmail.new( path + device + 'no-subject.eml' )
 mail2 = JekyllEmail.new( path + device + 'empty.eml' )
 mail3 = JekyllEmail.new( path + device + 'no-secret.eml' )
@@ -122,16 +122,17 @@ mail9 = JekyllEmail.new( path + device + 'emoji.eml' )
 mail10 = JekyllEmail.new( path + device + 'html-format.eml' )
 mail11 = JekyllEmail.new( path + device + 'html-no-format.eml' )
 mail12 = JekyllEmail.new( path + device + 'plain-text.eml' )
+# mail10,mail11,mail12 = "nope"
 
 
-# # DEMO OF CONTINUING LOOP AFTER EXCEPTIONS
-# 
-# ary = [mail1, mail2, mail3]
-# ary.each do |item|
-#   begin
-#     item.v_sub
-#   rescue
-#     next
-#   end
-# end
-# 
+# DEMO OF CONTINUING LOOP AFTER EXCEPTIONS - use for outputting subject, body, etc.
+
+ary = [mail1,mail2,mail3,mail4,mail5,mail6,mail7,mail8,mail9,mail10,mail11,mail12]
+ary.each do |item|
+  begin
+    item.v_sub
+  rescue
+    next
+  end
+end
+

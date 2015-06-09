@@ -26,16 +26,16 @@ class JekyllEmail
     end
   end
   
-  # validate the subject
+  # validate the subject; if valid, return title
   def v_sub
     if @subject.nil?
       raise StandardError, "No subject"
-    # else
-    #   puts @subject
+    else
+      @title.strip
     end
   end
   
-  # validate the secret
+  # validate the secret; no return
   def v_sec # parse the title for the secret
     unless @secret.nil?
       (key, @secret) = @secret.split(/:\s?/)
@@ -44,7 +44,7 @@ class JekyllEmail
     raise StandardError, "Secret incorrect" if (@secret.nil? || @secret != "jekyllmail")
   end
   
-  # validate the body
+  # validate the body; return body
   def v_bod
     nbsp = 160.chr(Encoding::UTF_8)
     clr = Nokogiri::HTML(@body).at("body")
