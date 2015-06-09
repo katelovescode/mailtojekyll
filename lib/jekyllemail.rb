@@ -10,7 +10,6 @@ class JekyllEmail
   def initialize(thismail)
     thismail = Mail.read(thismail)    
     @subject = thismail.subject
-    puts @subject
     if thismail.multipart?
       unless thismail.html_part.nil?
         @body = thismail.html_part.decoded.delete("\u200b")
@@ -25,11 +24,10 @@ class JekyllEmail
   end
   
   def p_sub
-    puts @subject.nil?
     if @subject.nil?
       raise StandardError, "No subject"
     else
-      puts @subject
+      # puts @subject
     end
   end
   
