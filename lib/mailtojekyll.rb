@@ -111,7 +111,7 @@ require_relative 'jekyllemail'
 path = 'spec/mocks/'
 device = 'gmail/'
 # mail1 = JekyllEmail.new( path + device + 'no-subject.eml' )
-mail2 = JekyllEmail.new( path + device + 'empty.eml' )
+# mail2 = JekyllEmail.new( path + device + 'empty.eml' )
 # mail3 = JekyllEmail.new( path + device + 'no-secret.eml' )
 # mail4 = JekyllEmail.new( path + device + 'wrong-secret.eml' )
 # mail5 = JekyllEmail.new( path + device + 'attached-inline.eml' )
