@@ -1,4 +1,4 @@
-def parsebody(email)
+def striphtml(email)
   
   doc = Nokogiri::HTML(email)
 

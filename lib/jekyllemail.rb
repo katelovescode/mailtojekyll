@@ -3,7 +3,7 @@
 require 'mail'
 require 'nokogiri'
 require 'reverse_markdown'
-require_relative 'parsebody'
+require_relative 'striphtml'
 
 class JekyllEmail
   
@@ -15,12 +15,12 @@ class JekyllEmail
     (@title, @secret) = @subject.split((/\|\|/)) unless @subject.nil?    
     
     if thismail.multipart?
-      !thismail.html_part.nil? ? @body = parsebody(thismail.html_part.decoded) : @body = parsebody(thismail.body.decoded)
+      !thismail.html_part.nil? ? @body = striphtml(thismail.html_part.decoded) : @body = striphtml(thismail.body.decoded)
       if @body == "" && thismail.has_attachments?
         @body = " "
       end
     else
-      @body = parsebody(thismail.body.decoded)
+      @body = striphtml(thismail.body.decoded)
     end
   end
   
