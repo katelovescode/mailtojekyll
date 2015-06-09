@@ -12,7 +12,8 @@ class JekyllEmail
   def initialize(thismail)
     thismail = Mail.read(thismail)    
     @subject = thismail.subject
-    (@title, @secret) = @subject.split((/\|\|/)) unless @subject.nil?
+    (@title, @secret) = @subject.split((/\|\|/)) unless @subject.nil?    
+    
     if thismail.multipart?
       !thismail.html_part.nil? ? @body = parsebody(thismail.html_part.decoded) : @body = parsebody(thismail.body.decoded)
       if @body == "" && thismail.has_attachments?

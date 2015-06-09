@@ -31,7 +31,11 @@ def parsebody(email)
     end
   end
   
-  doc = doc.at("body").inner_html
+  if doc.at("body").nil?
+    doc = ""
+  else
+    doc = doc.at("body").inner_html
+  end
   
   nbsp = Nokogiri::HTML("&nbsp;").text
   blanktest = doc.gsub(/\n/,"").gsub(/\s+/,"").gsub(nbsp,"").gsub("<br>","")
