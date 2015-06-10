@@ -36,32 +36,42 @@ require_relative 'jekyllemail'
 device = 'lgmail/'
 
 filearray = [
-  # "no-subject.eml",
-  # "empty.eml",
-  # "no-secret.eml",
-  # "wrong-secret.eml",
-  # "attached-inline.eml",
-  # "attached-text.eml",
-  # "attached-no-text.eml",
-  # "inline.eml",
+  "no-subject.eml",
+  "empty.eml",
+  "no-secret.eml",
+  "wrong-secret.eml",
+  "attached-inline.eml",
+  "attached-text.eml",
+  "attached-no-text.eml",
+  "inline.eml",
   "emoji.eml",
-  # "html-format.eml",
-  # "html-no-format.eml",
-  # "plain-text.eml"
+  "html-format.eml",
+  "html-no-format.eml",
+  "plain-text.eml"
 ]
 
 filearray.map! { |x| 'spec/mocks/' + device + x }
 
 h = {}
+posts = {}
 
 filearray.each_with_index do |x, idx|
   ind = "mail" + idx.to_s
   h[ind] = JekyllEmail.new(x)
 
   # puts h[ind].title
-  puts h[ind].body
+  # puts h[ind].body
+  # puts h[ind].atts.keys
+  
+  # posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
 
 end
+
+
+
+
+
+
 
 # DEMO OF CONTINUING LOOP AFTER EXCEPTIONS - use for outputting subject, body, etc.
 # ary = [mail1,mail2,mail3,mail4,mail5,mail6,mail7,mail8,mail9,mail10,mail11,mail12]
