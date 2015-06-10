@@ -4,9 +4,13 @@ describe JekyllEmail do
 
   context 'given a message sent from Android (5.0.2) LG Mail app' do
     let(:path) { "spec/mocks/lgmail/" }
+    let(:finalspath) { path + 'finals/'}
+    let(:jmail) { JekyllEmail.new(email) }
+    let(:jmail2) { JekyllEmail.new(email2) }
 
     context 'with an empty subject' do
-      let(:email) { path + "no-subject.eml" }
+      let(:fn) { 'no-subject' }
+      let(:email) { path + fn + ".eml" }
       it 'raises an error' do
         expect{ JekyllEmail.new(email).v_sub }.to raise_error("No subject")
       end
@@ -49,8 +53,10 @@ describe JekyllEmail do
     end
     
     context 'with attached images & text' do
-      let(:email) { path + "attached-text.eml" }
+      let(:fn) { 'attached-text' }
       let(:title) { "Attached with text Android mail app" }
+      let(:email) { path + fn + ".eml" }
+      let(:final) { File.read( finalspath + fn + '.md' ) }
       it 'does not raise an error on subject, secret, or body' do
         expect { JekyllEmail.new(email).v_sub }.not_to raise_error
         expect { JekyllEmail.new(email).v_sec }.not_to raise_error
@@ -59,6 +65,8 @@ describe JekyllEmail do
       it 'creates the correct title' do
         expect( JekyllEmail.new(email).v_sub ).to eq(title)
       end
+      it 'strips unnecessary html and outputs the correct decoded body' do
+        expect( )
     end
     
     context 'with attached images & no text' do

@@ -33,7 +33,7 @@ require_relative 'jekyllemail'
 
 # TESTING BLOCK
 
-device = 'lgmail/'
+device = 'outlook/'
 
 filearray = [
   "no-subject.eml",
@@ -57,21 +57,17 @@ posts = {}
 
 filearray.each_with_index do |x, idx|
   ind = "mail" + idx.to_s
-  h[ind] = JekyllEmail.new(x)
+  if File.exist?(x)
+    h[ind] = JekyllEmail.new(x)
 
-  # puts h[ind].title
-  # puts h[ind].body
-  # puts h[ind].atts.keys
-  
-  # posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
+    puts h[ind].title
+    # puts h[ind].body
+    # puts h[ind].atts.keys
+
+    # posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
+  end
 
 end
-
-
-
-
-
-
 
 # DEMO OF CONTINUING LOOP AFTER EXCEPTIONS - use for outputting subject, body, etc.
 # ary = [mail1,mail2,mail3,mail4,mail5,mail6,mail7,mail8,mail9,mail10,mail11,mail12]

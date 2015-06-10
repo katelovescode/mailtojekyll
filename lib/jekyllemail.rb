@@ -2,26 +2,29 @@
 
 require 'mail'
 require 'nokogiri'
-require_relative 'striphtml'
+require_relative 'processbody'
 
 class JekyllEmail
   
   include Mail
+  include ProcessBody
 
   attr_reader :atts, :title, :body
   
   def initialize(thismail)
     
+    # empties
     @atts = {}
+    body = ""
     
+    # process w/ mail gem
     thismail = Mail.read(thismail)    
     
-    # get the subject for validation
+    # get the subject for validation & split to get title/secret
     @subject = thismail.subject
-    
-    # split the subject to get the title for creating posts and the secret for validation
     (@title, @secret) = (@subject.split((/\|\|/))).collect { |x| x.strip } unless @subject.nil?
     
+    # list the attachments
     thismail.attachments.each do |att|
       if att.content_type.start_with?("image/")
         fn = att.filename
@@ -30,16 +33,15 @@ class JekyllEmail
       end      
     end
 
-    # process the body with the striphtml method    
+    # process the body with markdown and blanktest
     if thismail.multipart?
-      !thismail.html_part.nil? ? @body = striphtml(thismail.html_part.decoded) : @body = striphtml(thismail.text_part.decoded)
-      if @body == "" && thismail.has_attachments?
-        @body = " "
-      end
+      !thismail.html_part.nil? ? body = thismail.html_part.decoded : body = thismail.text_part.decoded
     else
-      @body = striphtml(thismail.body.decoded)
+      body = thismail.body.decoded.gsub(/\n{2}/,"<br><br>")
     end
-    @body.delete!("\u200b")
+    body = markdown(body)
+    blanktest(body) ? (thismail.has_attachments? ? body = " " : body = "") : body
+    @body = body
     
   end
   

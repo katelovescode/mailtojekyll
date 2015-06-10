@@ -2,9 +2,13 @@ require 'jekyllemail'
 
 describe JekyllEmail do
 
+  # to reuse: change context title
   context 'given a message sent from Gmail' do
-    let(:path) { "spec/mocks/gmail/" }
-    let(:finalspath) { path + "finals/" }
+    # to reuse: change program path
+    let(:prog) { "gmail/" }
+    
+    let(:mocks) { "spec/mocks/" }
+    let(:path) { mocks + prog }
     let(:jmail) { JekyllEmail.new(email) }
     let(:jmail2) { JekyllEmail.new(email2) }
 
@@ -44,8 +48,11 @@ describe JekyllEmail do
     end
     
     context 'with attached & inline images' do
-      let(:email) { path + "attached-inline.eml" }
+      #to reuse: change email title variable
       let(:title) { "Attached & Inline images from Gmail" }
+      
+      let(:fn) { 'attached-inline' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
         expect { jmail.v_sub }.not_to raise_error
         expect { jmail.v_sec }.not_to raise_error
@@ -57,8 +64,11 @@ describe JekyllEmail do
     end
     
     context 'with attached images & text' do
-      let(:email) { path + "attached-text.eml" }
+      #to reuse: change email title variable
       let(:title) { "Attached image with text from Gmail" }
+      
+      let(:fn) { 'attached-text' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
         expect { jmail.v_sub }.not_to raise_error
         expect { jmail.v_sec }.not_to raise_error
@@ -70,8 +80,11 @@ describe JekyllEmail do
     end
     
     context 'with attached images & no text' do
-      let(:email) { path + "attached-no-text.eml" }
+      #to reuse: change email title variable
       let(:title) { "Attached image no text only from Gmail" }
+      
+      let(:fn) { 'attached-no-text' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
         expect { jmail.v_sub }.not_to raise_error
         expect { jmail.v_sec }.not_to raise_error
@@ -83,70 +96,82 @@ describe JekyllEmail do
     end
     
     context 'with inline images only' do
-      let(:email) { path + "inline.eml" }
+      #to reuse: change email title variable
       let(:title) { "Inline Images only from Gmail" }
+      
+      let(:fn) { 'inline' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
         expect { jmail.v_sub }.not_to raise_error
         expect { jmail.v_sec }.not_to raise_error
         expect { jmail.v_bod }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( JekyllEmail.new(email).v_sub ).to eq(title)
+        expect( jmail.v_sub ).to eq(title)
       end
     end
     
     context 'with emoji' do
-      let(:email) { path + "emoji.eml" }
+      #to reuse: change email title variable
       let(:title) { "Emoji from Gmail" }
+      
+      let(:fn) { 'emoji' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { JekyllEmail.new(email).v_sub }.not_to raise_error
-        expect { JekyllEmail.new(email).v_sec }.not_to raise_error
-        expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+        expect { jmail.v_sub }.not_to raise_error
+        expect { jmail.v_sec }.not_to raise_error
+        expect { jmail.v_bod }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( JekyllEmail.new(email).v_sub ).to eq(title)
+        expect( jmail.v_sub ).to eq(title)
       end
     end
     
     context 'with html formatted text' do
-      let(:email) { path + "html-format.eml" }
+      #to reuse: change email title variable
       let(:title) { "HTML formatting from Gmail" }
-      let(:final) { File.read( finalspath + 'html-format.md' ) }
+      
+      let(:fn) { 'html-format' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { JekyllEmail.new(email).v_sub }.not_to raise_error
-        expect { JekyllEmail.new(email).v_sec }.not_to raise_error
-        expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+        expect { jmail.v_sub }.not_to raise_error
+        expect { jmail.v_sec }.not_to raise_error
+        expect { jmail.v_bod }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( JekyllEmail.new(email).v_sub ).to eq(title)
+        expect( jmail.v_sub ).to eq(title)
       end
     end
     
     context 'with html text with no special formatting' do
-      let(:email) { path + "html-no-format.eml" }
+      #to reuse: change email title variable
       let(:title) { "HTML no formatting from Gmail" }
-      let(:final) { File.read( finalspath + 'html-no-format.md' ) }
+      
+      let(:fn) { 'html-no-format' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { JekyllEmail.new(email).v_sub }.not_to raise_error
-        expect { JekyllEmail.new(email).v_sec }.not_to raise_error
-        expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+        expect { jmail.v_sub }.not_to raise_error
+        expect { jmail.v_sec }.not_to raise_error
+        expect { jmail.v_bod }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( JekyllEmail.new(email).v_sub ).to eq(title)
+        expect( jmail.v_sub ).to eq(title)
       end
     end
     
     context 'with plain text' do
-      let(:email) { path + "plain-text.eml" }
+      #to reuse: change email title variable
       let(:title) { "Plain Text from Gmail" }
-      let(:final) { File.read( finalspath + 'plain-text.md' ) }
+
+      let(:fn) { 'plain-text' }
+      let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { JekyllEmail.new(email).v_sub }.not_to raise_error
-        expect { JekyllEmail.new(email).v_sec }.not_to raise_error
-        expect { JekyllEmail.new(email).v_bod }.not_to raise_error
+        expect { jmail.v_sub }.not_to raise_error
+        expect { jmail.v_sec }.not_to raise_error
+        expect { jmail.v_bod }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( JekyllEmail.new(email).v_sub ).to eq(title)
+        expect( jmail.v_sub ).to eq(title)
       end
     end
 
