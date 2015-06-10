@@ -9,6 +9,7 @@ describe JekyllEmail do
     
     let(:mocks) { "spec/mocks/" }
     let(:path) { mocks + prog }
+    let(:mdpath) { path + "md/" }
     let(:jmail) { JekyllEmail.new(email) }
     let(:jmail2) { JekyllEmail.new(email2) }
 
@@ -53,6 +54,7 @@ describe JekyllEmail do
       
       let(:fn) { 'attached-inline' }
       let(:email) { path + fn + ".eml" }
+      let(:md) { File.read(mdpath + fn + ".eml.md") }
       it 'does not raise an error on subject, secret, or body' do
         expect { jmail.v_sub }.not_to raise_error
         expect { jmail.v_sec }.not_to raise_error
@@ -60,6 +62,9 @@ describe JekyllEmail do
       end
       it 'creates the correct title' do
         expect( jmail.v_sub ).to eq(title)
+      end
+      it 'outputs body correctly to markdown' do
+        expect( jmail.body ).to eq(md)
       end
     end
     

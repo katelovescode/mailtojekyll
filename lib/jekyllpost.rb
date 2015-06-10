@@ -1,9 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'mail'
-require 'nokogiri'
-require_relative 'striphtml'
-
 class JekyllPost
   
   attr_reader :date, :title, :body

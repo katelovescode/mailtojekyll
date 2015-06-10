@@ -39,8 +39,13 @@ class JekyllEmail
     else
       body = thismail.body.decoded.gsub(/\n{2}/,"<br><br>")
     end
+    
     body = markdown(body)
-    blanktest(body) ? (thismail.has_attachments? ? body = " " : body = "") : body
+    
+    if blanktest(body)
+      thismail.has_attachments? ? body = " " : body = ""
+    end
+
     @body = body
     
   end

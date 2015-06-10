@@ -5,17 +5,14 @@ require 'nokogiri'
 require 'reverse_markdown'
 
 require_relative 'jekyllemail'
+require_relative 'jekyllpost'
 
-# use or mixin the emailparser module? or include the emailparser code here
 # loop through emails to create multiple Post objects (based on Post Class)
 # each Post instantiates multiple Image objects (based on Image Class)
+# ^-- may not be necessary?
 
 # Post has: Title, Date, Body, Images, Markdown file (save location)
 # Image has: Alt text (maybe), file (save location)
-
-
-
-
 
 # KATE'S LIST
 # class for images, class for posts
@@ -33,7 +30,7 @@ require_relative 'jekyllemail'
 
 # TESTING BLOCK
 
-device = 'outlook/'
+device = 'droidgmail/'
 
 filearray = [
   "no-subject.eml",
@@ -60,7 +57,12 @@ filearray.each_with_index do |x, idx|
   if File.exist?(x)
     h[ind] = JekyllEmail.new(x)
 
-    puts h[ind].title
+    # for grabbing markdown in a more efficient way than copy-paste from the terminal
+    # 
+    # output = x + ".md"
+    # File.open(output, 'w') { |file| file.write(h[ind].body) }
+
+    # puts h[ind].title
     # puts h[ind].body
     # puts h[ind].atts.keys
 

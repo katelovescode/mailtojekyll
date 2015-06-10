@@ -20,16 +20,13 @@ module ProcessBody
     #strip out unicode character that gives us false blanks
     badspc = Nokogiri::HTML("&#8203;").text
     nbsp = Nokogiri::HTML("&nbsp;").text
-    doc.gsub!(badspc,"")
-    doc.gsub!(nbsp,"")
-    doc.gsub!("\&nbsp;","")
-    doc.gsub!(/\n/,"")
-    doc.gsub!(/\s+/,"")
-    if doc == ""
+    isblank = doc.gsub(badspc,"").gsub(nbsp,"").gsub("\&nbsp;","").gsub(/\n/,"").gsub(/\s+/,"")
+    if isblank == ""
       blank = true
     else
       blank = false
     end
-    
+
   end
+  
 end
