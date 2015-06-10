@@ -24,16 +24,12 @@ require_relative 'jekyllpost'
 # TODO: Put the logic in to not run parse if the emails list is empty
 # TODO: Figure something out for mail signatures
 
-
-
-
-
 # TESTING BLOCK
 
-device = 'droidgmail/'
+device = 'gmail/'
 
 filearray = [
-  "no-subject.eml",
+  # "no-subject.eml",
   "empty.eml",
   "no-secret.eml",
   "wrong-secret.eml",
@@ -57,19 +53,34 @@ filearray.each_with_index do |x, idx|
   if File.exist?(x)
     h[ind] = JekyllEmail.new(x)
 
-    # for grabbing markdown in a more efficient way than copy-paste from the terminal
+    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
     # 
     # output = x + ".md"
     # File.open(output, 'w') { |file| file.write(h[ind].body) }
 
     # puts h[ind].title
     # puts h[ind].body
-    # puts h[ind].atts.keys
+    puts h[ind].atts
 
-    # posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
+    posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
+    posts[ind].replace_images
+    posts[ind].make_slug
+    puts posts[ind].path
+    
+    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
+    
+    # output = x + "final.md"
+    # File.open(output, 'w') { |file| file.write(posts[ind].post) }
+    
   end
 
 end
+
+
+
+
+
+
 
 # DEMO OF CONTINUING LOOP AFTER EXCEPTIONS - use for outputting subject, body, etc.
 # ary = [mail1,mail2,mail3,mail4,mail5,mail6,mail7,mail8,mail9,mail10,mail11,mail12]
