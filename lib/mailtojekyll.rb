@@ -1,11 +1,70 @@
 #!/usr/bin/env ruby
-
 require 'mail'
-require 'nokogiri'
-require 'reverse_markdown'
-
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'
+require_relative 'blogsetup'
+
+# get config
+environment = 'development'
+environment = ENV['APP_ENV'] unless ENV['APP_ENV'].nil?
+
+yaml = YAML::load(File.open('_config.yml'))[environment]
+blogs = yaml['blogs']
+
+include BlogSetup
+
+blogs.each do |blog|
+
+  # empties, initializers & setup
+  emails = []
+  create_dirs("#{blog['jekyll_repo']}/#{blog['images_dir']}","#{blog['jekyll_repo']}/#{blog['posts_dir']}")
+  config = { layout: blog['layout'], categories: blog['categories'] }
+  
+  # get files or emails from pop server
+  if blog['retrieve'] == "file"
+    emails = Dir["#{blog['source']}/*.eml"]
+  elsif blog['retrieve'] == "pop"
+    # set mail retrieval defaults for the Mail gem
+    Mail.defaults do
+      mail_settings = {
+        address: blog['pop_server'],
+        port: 995,
+        user_name: blog['pop_user'],
+        password: blog['pop_password'],
+        enable_ssl: true
+      }
+      retriever_method :pop3, mail_settings
+    end
+    emails = Mail.all
+  end
+  
+  # test for validity and create posts
+  emails.each do |email|
+  
+    # make a new email
+    email = JekyllEmail.new(email)
+    
+    # validity tests
+    begin
+      email.v_sub
+      email.v_sec
+      email.v_bod
+    rescue
+      next
+    end
+
+    post = JekyllPost.new(email.title, email.body, email.atts, blog['jekyll_repo'], blog['images_dir'], blog['posts_dir'], config)
+    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
+    # emails 
+    # output = email.title + ".md"
+    # File.open(output, 'w') { |file| file.write(email.body) }
+    # posts
+    # output = post.title + ".md"
+    # File.open(output, 'w') { |file| file.write(post.post) }
+
+  end
+
+end
 
 # loop through emails to create multiple Post objects (based on Post Class)
 # each Post instantiates multiple Image objects (based on Image Class)
@@ -15,82 +74,6 @@ require_relative 'jekyllpost'
 # Image has: Alt text (maybe), file (save location)
 
 # KATE'S LIST
-# class for images, class for posts
-# use "let" for rspec testing variables, like in rbemail
-# body tests - check to make sure it exists, and check to make sure it is *exactly* what I want it to be (copy-paste the body of the email and format to final result, then code to make it pass)
-# what order do the images come in?
-# keep CID logic from JekyllMail
-# turn parse into a module with smaller methods?
-# TODO: Put the logic in to not run parse if the emails list is empty
 # TODO: Figure something out for mail signatures
+# TODO: Save images to file
 
-# TESTING BLOCK
-
-device = 'gmail/'
-
-filearray = [
-  # "no-subject.eml",
-  "empty.eml",
-  "no-secret.eml",
-  "wrong-secret.eml",
-  "attached-inline.eml",
-  "attached-text.eml",
-  "attached-no-text.eml",
-  "inline.eml",
-  "emoji.eml",
-  "html-format.eml",
-  "html-no-format.eml",
-  "plain-text.eml"
-]
-
-filearray.map! { |x| 'spec/mocks/' + device + x }
-
-h = {}
-posts = {}
-
-filearray.each_with_index do |x, idx|
-  ind = "mail" + idx.to_s
-  if File.exist?(x)
-    h[ind] = JekyllEmail.new(x)
-
-    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
-    # 
-    # output = x + ".md"
-    # File.open(output, 'w') { |file| file.write(h[ind].body) }
-
-    # puts h[ind].title
-    # puts h[ind].body
-    puts h[ind].atts
-
-    posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
-    posts[ind].replace_images
-    posts[ind].make_slug
-    puts posts[ind].path
-    
-    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
-    
-    # output = x + "final.md"
-    # File.open(output, 'w') { |file| file.write(posts[ind].post) }
-    
-  end
-
-end
-
-
-
-
-
-
-
-# DEMO OF CONTINUING LOOP AFTER EXCEPTIONS - use for outputting subject, body, etc.
-# ary = [mail1,mail2,mail3,mail4,mail5,mail6,mail7,mail8,mail9,mail10,mail11,mail12]
-# ary = [mail2]
-# ary.each do |item|
-#   begin
-#     # item.v_sub
-#     # item.v_sec
-#     item.v_bod
-#   rescue
-#     next
-#   end
-# end

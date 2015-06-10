@@ -1,7 +1,6 @@
 #!/usr/bin/env ruby
 
 require 'mail'
-require 'nokogiri'
 require_relative 'processbody'
 
 class JekyllEmail
@@ -12,7 +11,6 @@ class JekyllEmail
   attr_reader :atts, :title, :body
   
   def initialize(thismail)
-    
     # empties
     @atts = {}
     body = ""
@@ -39,13 +37,10 @@ class JekyllEmail
     else
       body = thismail.body.decoded.gsub(/\n{2}/,"<br><br>")
     end
-    
     body = markdown(body)
-    
     if blanktest(body)
       thismail.has_attachments? ? body = " " : body = ""
     end
-
     @body = body
     
   end
