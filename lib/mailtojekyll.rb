@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+
 require 'mail'
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'

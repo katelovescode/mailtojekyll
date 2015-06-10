@@ -22,15 +22,16 @@ class JekyllEmail
     @subject = thismail.subject
     (@title, @secret) = (@subject.split((/\|\|/))).collect { |x| x.strip } unless @subject.nil?
     
-    # list the attachments
-    thismail.attachments.each do |att|
+    # list the attachments & save them
+    thismail.attachments.each_with_index do |att,idx|
       if att.content_type.start_with?("image/")
-        fn = att.filename
+        fn = att.filename.gsub(/[^0-9a-z. ]/i, ' ')
+        fn = fn.split(" ").join("-")
         cid = att.content_id.to_s.delete("<>")
-        @atts[fn] = cid
+        @atts["image#{idx}".to_sym] = {fn: fn, cid: cid, cont: att.body.decoded, type: att.content_type}
       end      
     end
-
+    
     # process the body with markdown and blanktest
     if thismail.multipart?
       !thismail.html_part.nil? ? body = thismail.html_part.decoded : body = thismail.text_part.decoded
