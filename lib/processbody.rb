@@ -1,4 +1,4 @@
-#!/usr/bin/ruby
+#!/usr/bin/env ruby
 
 require 'nokogiri'
 require 'reverse_markdown'
@@ -28,5 +28,7 @@ module ProcessBody
     end
 
   end
+  
+
   
 end
