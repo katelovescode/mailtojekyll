@@ -1,0 +1,12 @@
+(no subject)
+Empty email, no body from Gmail iOS app || secret: jekyllmail
+No secret from Gmail iOS app
+Wrong secret from Gmail iOS app || secret: jekyllwin
+Attached & Inline images from Gmail iOS app || secret: jekyllmail
+Attached image with text from Gmail iOS app || secret: jekyllmail
+Attached image w/ no text from Gmail iOS app || secret: jekyllmail
+Inline Images only from Gmail iOS app || secret: jekyllmail
+Emoji from Gmail iOS app || secret: jekyllmail
+HTML formatting from Gmail iOS app || secret: jekyllmail
+HTML no formatting from Gmail iOS app || secret: jekyllmail
+Plain Text from Gmail iOS app || secret: jekyllmail

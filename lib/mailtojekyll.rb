@@ -4,16 +4,15 @@ require 'mail'
 require 'nokogiri'
 require 'reverse_markdown'
 
-# use or mixin the emailparser module? or include the emailparser code here
+require_relative 'jekyllemail'
+require_relative 'jekyllpost'
+
 # loop through emails to create multiple Post objects (based on Post Class)
 # each Post instantiates multiple Image objects (based on Image Class)
+# ^-- may not be necessary?
 
 # Post has: Title, Date, Body, Images, Markdown file (save location)
 # Image has: Alt text (maybe), file (save location)
-
-
-
-
 
 # KATE'S LIST
 # class for images, class for posts
@@ -23,52 +22,75 @@ require 'reverse_markdown'
 # keep CID logic from JekyllMail
 # turn parse into a module with smaller methods?
 # TODO: Put the logic in to not run parse if the emails list is empty
+# TODO: Figure something out for mail signatures
 
-def parse(email)
+# TESTING BLOCK
 
-  email = Mail.read(email)
+device = 'gmail/'
 
-  # parse the subject to create the title
-  @subject = email.subject
-  (@title, secret) = @subject.split(/\|\|/)
-  @title.strip!
+filearray = [
+  # "no-subject.eml",
+  "empty.eml",
+  "no-secret.eml",
+  "wrong-secret.eml",
+  "attached-inline.eml",
+  "attached-text.eml",
+  "attached-no-text.eml",
+  "inline.eml",
+  "emoji.eml",
+  "html-format.eml",
+  "html-no-format.eml",
+  "plain-text.eml"
+]
 
-  raise StandardError, "No subject" if @subject.nil? || @subject.empty?
+filearray.map! { |x| 'spec/mocks/' + device + x }
 
-  # parse the metadata to check for the secret and create additional key/value pairs
-  unless secret.nil?
-    (key, @secret) = secret.split(/:\s?/)
-    @secret.strip!
-  end
+h = {}
+posts = {}
 
-  raise StandardError, "Secret incorrect" unless @secret == "jekyllmail"
+filearray.each_with_index do |x, idx|
+  ind = "mail" + idx.to_s
+  if File.exist?(x)
+    h[ind] = JekyllEmail.new(x)
 
-  # parse the body - if there are inline images, leave them in place
-  if email.multipart?
-    @body = email.html_part.decoded.delete("\u200b")
-    @body = Nokogiri::HTML.parse(@body).at("div")
-    @body.css("br").each { |node| node.replace('<br />') }
-    @body.css("div").each { |node| node.replace(node.inner_html)}
-    @body = @body.inner_html
-    @body = ReverseMarkdown.convert(@body)
-    if @body.gsub(/\s+/, "").length == 0
-      unless email.attachments.length > 0
-        @body == ""
-        raise StandardError, "Empty email"
-      end
-    end
-  else
-    @body = email.body.decoded
-    @body.gsub!(/\n/,"<br />")
-    @body = ReverseMarkdown.convert(@body)
-    if @body == ""
-      raise StandardError, "Empty email"
-    end
+    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
+    # 
+    # output = x + ".md"
+    # File.open(output, 'w') { |file| file.write(h[ind].body) }
+
+    # puts h[ind].title
+    # puts h[ind].body
+    puts h[ind].atts
+
+    posts[ind] = JekyllPost.new(h[ind].title, h[ind].body, h[ind].atts)
+    posts[ind].replace_images
+    posts[ind].make_slug
+    puts posts[ind].path
+    
+    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
+    
+    # output = x + "final.md"
+    # File.open(output, 'w') { |file| file.write(posts[ind].post) }
+    
   end
 
 end
 
-# test block for formatting html
-# TODO: remove
-# mail = 'spec/mocks/gmail-no-secret.eml'
-# parse(mail)
+
+
+
+
+
+
+# DEMO OF CONTINUING LOOP AFTER EXCEPTIONS - use for outputting subject, body, etc.
+# ary = [mail1,mail2,mail3,mail4,mail5,mail6,mail7,mail8,mail9,mail10,mail11,mail12]
+# ary = [mail2]
+# ary.each do |item|
+#   begin
+#     # item.v_sub
+#     # item.v_sec
+#     item.v_bod
+#   rescue
+#     next
+#   end
+# end

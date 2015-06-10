@@ -1,0 +1,32 @@
+Return-Path: <kklemp@misdepartment.com>
+Received: by 10.31.65.6 with SMTP id o6csp736487vka; Mon, 08 Jun 2015 14:46:36 -0700
+Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by mx.google.com with ESMTPS id a64si3034636ioj.25.2015.06.08.14.46.35 for <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Mon, 08 Jun 2015 14:46:35 -0700
+Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Mon, 08 Jun 2015 16:46:21 -0500
+Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Mon, 08 Jun 2015 16:46:21 -0500
+Date: Mon, 08 Jun 2015 21:46:20 +0000
+From: Kate Klemp <kklemp@MISDepartment.com>
+To: "jekylltester@gmail.com" <jekylltester@gmail.com>
+Message-ID: <q24ma0ao7s63bco9poa9it8c.1433799652529@email.lge.com>
+Subject: 
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.43.17.135 with SMTP id qc7mr26018652icb.14.1433799995667;
+ Mon, 08 Jun 2015 14:46:35 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates
+ 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+ smtp.mail=kklemp@misdepartment.com
+Thread-Index: AQHQojSOlMJRb/J0ZkGIgHxe+FUPmg==
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Content-ID: <469C29E5FD2D844C9E89D341AE3D8844@misdepartment.com>
+
+Tm8gc3ViamVjdCBmcm9tIEFuZHJvaWQgZW1haWwgYXBwIG9uIExHIFN0eWxv
+IHZlciA2LjYwLjIyLiBTaG91bGQgZ2V0IHN0b3BwZWQgYnkgbWFpbHRvamVr
+eWxsLiBEcm9pZCB2ZXJzaW9uIDUuMC4yLg0K

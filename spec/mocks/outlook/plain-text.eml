@@ -1,0 +1,83 @@
+Return-Path: <kklemp@misdepartment.com>
+Received: by 10.27.31.206 with SMTP id f197csp2470726wlf; Tue, 05 May 2015 12:59:18 -0700
+Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by mx.google.com with ESMTPS id 29si752341iol.77.2015.05.05.12.59.16 for <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Tue, 05 May 2015 12:59:17 -0700
+Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Tue, 05 May 2015 14:58:53 -0500
+Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Tue, 05 May 2015 14:58:53 -0500
+Date: Tue, 05 May 2015 19:58:53 +0000
+From: Kate Klemp <kklemp@MISDepartment.com>
+To: "jekylltester@gmail.com" <jekylltester@gmail.com>
+Message-ID: <4dedf73548a84629af2c956386cd5be1@io.misdepartment.com>
+Subject: Plain Text from Outlook || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.107.137.143 with SMTP id t15mr36463013ioi.16.1430855957492;
+ Tue, 05 May 2015 12:59:17 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates
+ 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+ smtp.mail=kklemp@misdepartment.com
+Thread-Topic: Plain Text from Outlook || secret: jekyllmail
+Thread-Index: AdCHbei/BtcMHUPLRrmAZn4+/1BCUQ==
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.1.1.148]
+x-signature: Yes
+
+Here's a bunch of plain text
+
+If I put a break in, it seems to work
+
+More line breaks.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur hendre=
+rit dictum felis, eu iaculis tortor egestas non. Nunc consectetur placera=
+t ex nec vestibulum. In sapien tellus, maximus et ipsum eget, aliquet veh=
+icula massa. Sed ornare, leo eget tincidunt lacinia, augue mi facilisis a=
+rcu, aliquet lacinia ante sem non magna. Donec luctus bibendum ligula, a =
+molestie libero lobortis ut. Maecenas vel neque molestie, vehicula tellus=
+ sed, tempus tellus. Sed in sem et
+purus rhoncus sodales. Proin egestas maximus molestie.
+
+Nulla velit erat, lacinia quis eros faucibus, pretium condimentum erat. E=
+tiam bibendum ultrices massa quis hendrerit. Phasellus ullamcorper conseq=
+uat tempus. Morbi tincidunt, dolor ac faucibus luctus, nisi nulla ultrice=
+s est, a pulvinar metus ligula id est. Phasellus semper libero eget lacus=
+ auctor posuere. Ut et metus non enim varius molestie. In nec odio enim. =
+Suspendisse vitae pellentesque tortor. Maecenas consectetur mollis mattis=
+. Etiam aliquam accumsan ex nec vulputate. Quisque tristique nunc urna, n=
+ec fermentum magna laoreet sit amet. Nullam pharetra augue at lacinia sag=
+ittis. Morbi eget ante efficitur, scelerisque ligula id, bibendum elit. I=
+n dapibus, massa at finibus porttitor, turpis lectus euismod massa, non a=
+liquot tortor nunc nec urna.
+
+Morbi malesuada auctor semper. Aliquam non ipsum vitae odio maximus laore=
+et nec sed massa. Sed eu urna ante. Integer pharetra, turpis eu auctor bi=
+bendum, ex enim vulputate odio, sit amet ornare magna sem consectetur jus=
+to. Mauris sit amet metus aliquet, posuere risus a, placerat tortor. Vest=
+ibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubi=
+lia Curae; Ut lacus nunc, laoreet ut varius at, placerat ut sem. Suspendi=
+sse efficitur vehicula venenatis. Aliquam augue erat, rhoncus quis venena=
+tis feugiat, cursus at tellus. Duis ac est tristique nisi elementum trist=
+ique. Vestibulum in dui gravida,
+tempor magna vitae, semper arcu. Vestibulum tempus ultricies porttitor. N=
+unc id diam pulvinar, condimentum leo non, feugiat dolor. Aliquam quis nu=
+nc vel ipsum semper commodo. Sed feugiat justo quis nisl pulvinar blandit=
+.
+--
+
+Kate Klemp
+ | The MIS Department, Inc.
+(773) 644-5515 | http://www.misdepartment.com
+
+For Support Issues: (773) 231-7997
+
+  *   Facebook: http://www.misdepartment.com/facebook
+  *   Twitter: http://www.misdepartment.com/twitter
+  *   LinkedIn: http://www.misdepartment.com/linkedin
+  *   Google+: http://www.misdepartment.com/googleplus
