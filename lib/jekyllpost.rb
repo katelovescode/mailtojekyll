@@ -3,25 +3,26 @@
 class JekyllPost
 
   def initialize(title, body, atts, repo, imgdir, pstdir, config)
-    time = "#{Time.now.year.to_s}-#{Time.now.month.to_s.rjust(2,'0')}-#{Time.now.day.to_s.rjust(2,'0')}"
-    
-    daydir = time.split("-").join("/")
+    time = Time.now
+    postday = time.strftime("%Y-%m-%d")
+    posttime = time.strftime("%H:%M:%S")
+    daydir = time.strftime("%Y/%m/%d")
     imgdir = "#{imgdir}/#{daydir}"
-    path = make_slug(title,time)
+    path = make_slug(title,postday)
     postfn = "#{repo}/#{pstdir}/#{path}"
     
     content = replace_images(body, atts, imgdir)
     create_imgdir(repo,imgdir)
     save_attachments(repo, imgdir, atts)
-    create_post(postfn, config, title, time, atts, imgdir, content)
+    create_post(postfn, config, title, postday, posttime, atts, imgdir, content)
   end
   
-  def create_post(postfn, config, title, time, atts, imgdir, content)
+  def create_post(postfn, config, title, postday, posttime, atts, imgdir, content)
     open(postfn, 'w') do |post|
       post << "---\n"
       post << "layout: #{config[:layout]}\n"
       post << "title: #{title}\n"
-      post << "date: #{time}\n"
+      post << "date: #{postday} #{posttime}\n"
       post << "categories: #{config[:categories]}\n"
       unless atts.empty?
         key,val = atts[:image0][:fn]
