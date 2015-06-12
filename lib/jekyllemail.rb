@@ -25,10 +25,10 @@ class JekyllEmail
     # list the attachments & save them
     thismail.attachments.each_with_index do |att,idx|
       if att.content_type.start_with?("image/")
-        fn = att.filename.gsub(/[^0-9a-z. ]/i, ' ')
-        fn = fn.split(" ").join("-")
+        filename = att.filename.gsub(/[^0-9a-z. ]/i, ' ')
+        filename = filename.split(" ").join("-")
         cid = att.content_id.to_s.delete("<>")
-        @atts["image#{idx}".to_sym] = {fn: fn, cid: cid, cont: att.body.decoded, type: att.content_type}
+        @atts["image#{idx}".to_sym] = {filename: filename, cid: cid, content: att.body.decoded, type: att.content_type}
       end      
     end
     
