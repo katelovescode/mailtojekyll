@@ -47,9 +47,9 @@ blogs.each do |blog|
     
     # validity tests
     begin
-      email.v_sub
-      email.v_sec
-      email.v_bod
+      email.validate_subject
+      email.validate_secret
+      email.validate_body
     rescue
       next
     end

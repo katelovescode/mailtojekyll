@@ -17,7 +17,7 @@ describe JekyllEmail do
       let(:email) { path + "no-subject.eml" }
       let(:error) { "No subject" }
       it 'raises an error' do
-        expect{ jmail.v_sub }.to raise_error(error)
+        expect{ jmail.validate_subject }.to raise_error(error)
       end
     end
     
@@ -25,7 +25,7 @@ describe JekyllEmail do
       let(:email) { path + "wrong-secret.eml" }
       let(:error) { "Secret incorrect" }
       it 'raises an error' do
-        expect { jmail.v_sec }.to raise_error(error)
+        expect { jmail.validate_secret }.to raise_error(error)
       end
     end
     
@@ -34,8 +34,8 @@ describe JekyllEmail do
       let(:email2) { path + "no-subject.eml" }
       let(:error) { "Secret incorrect" }
       it 'raises an error' do
-        expect { jmail.v_sec }.to raise_error(error)
-        expect { jmail2.v_sec }.to raise_error(error)
+        expect { jmail.validate_secret }.to raise_error(error)
+        expect { jmail2.validate_secret }.to raise_error(error)
       end
     end
     
@@ -43,7 +43,7 @@ describe JekyllEmail do
       let(:email) { path + "empty.eml"}
       let(:error) { "No body text" }
       it 'raises an error' do
-        expect { jmail.v_bod }.to raise_error(error)
+        expect { jmail.validate_body }.to raise_error(error)
         expect( jmail.body ).to eq("")
       end
     end
@@ -56,12 +56,12 @@ describe JekyllEmail do
       let(:email) { path + fn + ".eml" }
       let(:md) { File.read(mdpath + fn + ".eml.md") }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -72,12 +72,12 @@ describe JekyllEmail do
       let(:fn) { 'attached-text' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -88,12 +88,12 @@ describe JekyllEmail do
       let(:fn) { 'attached-no-text' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -104,12 +104,12 @@ describe JekyllEmail do
       let(:fn) { 'inline' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -120,12 +120,12 @@ describe JekyllEmail do
       let(:fn) { 'emoji' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -136,12 +136,12 @@ describe JekyllEmail do
       let(:fn) { 'html-format' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -152,12 +152,12 @@ describe JekyllEmail do
       let(:fn) { 'html-no-format' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
     
@@ -168,12 +168,12 @@ describe JekyllEmail do
       let(:fn) { 'plain-text' }
       let(:email) { path + fn + ".eml" }
       it 'does not raise an error on subject, secret, or body' do
-        expect { jmail.v_sub }.not_to raise_error
-        expect { jmail.v_sec }.not_to raise_error
-        expect { jmail.v_bod }.not_to raise_error
+        expect { jmail.validate_subject }.not_to raise_error
+        expect { jmail.validate_secret }.not_to raise_error
+        expect { jmail.validate_body }.not_to raise_error
       end
       it 'creates the correct title' do
-        expect( jmail.v_sub ).to eq(title)
+        expect( jmail.validate_subject ).to eq(title)
       end
     end
 
