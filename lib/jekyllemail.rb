@@ -1,12 +1,12 @@
 #!/usr/bin/env ruby
 
 require 'mail'
-require_relative 'processbody'
+require 'nokogiri'
+require 'reverse_markdown'
 
 class JekyllEmail
   
   include Mail
-  include ProcessBody
 
   attr_reader :atts, :title, :body
   
@@ -47,7 +47,7 @@ class JekyllEmail
   end
   
   # validate the subject; if valid, return title
-  def v_sub
+  def validate_subject
     if @subject.nil?
       raise StandardError, "No subject"
     else
@@ -56,7 +56,7 @@ class JekyllEmail
   end
   
   # validate the secret; no return
-  def v_sec # parse the title for the secret
+  def validate_secret # parse the title for the secret
     unless @secret.nil?
       (key, @secret) = @secret.split(/:\s?/)
       @secret.strip!
@@ -67,10 +67,34 @@ class JekyllEmail
   end
   
   # validate the body
-  def v_bod
+  def validate_body
     if @body == ""
       raise StandardError, "No body text" 
     end
+  end
+  
+  def markdown(doc)
+    doc = Nokogiri::HTML(doc)
+    if doc.at("body").nil?
+      doc = ""
+    else
+      doc = ReverseMarkdown.convert(doc.at("body").inner_html)
+    end
+  end
+  
+  
+  def blanktest(doc)
+    
+    #strip out unicode character that gives us false blanks
+    badspc = Nokogiri::HTML("&#8203;").text
+    nbsp = Nokogiri::HTML("&nbsp;").text
+    isblank = doc.gsub(badspc,"").gsub(nbsp,"").gsub("\&nbsp;","").gsub(/\n/,"").gsub(/\s+/,"")
+    if isblank == ""
+      blank = true
+    else
+      blank = false
+    end
+
   end
   
 end
