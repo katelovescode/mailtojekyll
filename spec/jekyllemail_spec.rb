@@ -63,9 +63,6 @@ describe JekyllEmail do
       it 'creates the correct title' do
         expect( jmail.v_sub ).to eq(title)
       end
-      it 'outputs body correctly to markdown' do
-        expect( jmail.body ).to eq(md)
-      end
     end
     
     context 'with attached images & text' do
