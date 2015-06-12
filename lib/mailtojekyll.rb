@@ -55,13 +55,6 @@ blogs.each do |blog|
     end
 
     post = JekyllPost.new(email.title, email.body, email.atts, blog['jekyll_repo'], blog['images_dir'], blog['posts_dir'], config)
-    # for grabbing markdown in a more efficient/accurate way than copy-paste from the terminal
-    # emails 
-    # output = email.title + ".md"
-    # File.open(output, 'w') { |file| file.write(email.body) }
-    # posts
-    # output = post.title + ".md"
-    # File.open(output, 'w') { |file| file.write(post.post) }
 
   end
 
