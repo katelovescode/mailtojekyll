@@ -60,14 +60,3 @@ blogs.each do |blog|
 
 end
 
-# loop through emails to create multiple Post objects (based on Post Class)
-# each Post instantiates multiple Image objects (based on Image Class)
-# ^-- may not be necessary?
-
-# Post has: Title, Date, Body, Images, Markdown file (save location)
-# Image has: Alt text (maybe), file (save location)
-
-# KATE'S LIST
-# TODO: Figure something out for mail signatures
-# TODO: Save images to file
-
