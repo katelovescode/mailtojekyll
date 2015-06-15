@@ -38,5 +38,65 @@ describe JekyllEmail do
       it_behaves_like 'a valid email'
     end
     
+    context 'with attached and inline images' do
+      let(:filename) {'attached-inline.eml'}
+      it_behaves_like 'a valid email'
+    end
+
+    context 'with attached images and text' do
+      let(:filename) {'attached-text.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with attached images and no text' do
+      let(:filename) {'attached-no-text.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with inline images' do
+      let(:filename) {'inline.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'as html with formatting' do
+      let(:filename) {'html-format.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'as html with no formatting' do
+      let(:filename) {'html-no-format.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with emoji' do
+      let(:filename) {'emoji.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with bold-italic-underline formatting' do
+      let(:filename) {'bold-italic-underline.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with links' do
+      let(:filename) {'links.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with the image tag method and attached images' do
+      let(:filename) {'peter-method-attached.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with the image tag method and copy-pasted images' do
+      let(:filename) {'peter-method-copy-paste.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
+    context 'with the image tag method and inline images' do
+      let(:filename) {'peter-method-inline.eml'}
+      it_behaves_like 'a valid email'
+    end
+    
   end
 end
