@@ -9,3 +9,10 @@ shared_context 'all emails' do
     @thismail = JekyllEmail.new(email)
   end
 end
+
+shared_context 'all valid emails' do
+  before(:each) do
+    @thispost = JekyllPost.new(@thismail.title, @thismail.body, @thismail.atts, '/tmp/jekyllblog', 'images', 'latest/_posts', { layout: 'post', categories: 'latest' })
+  end
+
+end
