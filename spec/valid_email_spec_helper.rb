@@ -32,7 +32,7 @@ end
 
 shared_examples 'an email with attachments' do
   include_context 'all emails'
-  include_context 'all valid emails'
+  include_context 'all valid emails'  
   describe '.atts' do
     subject { @thismail.atts.length }
     it { is_expected.to be > 0 }
