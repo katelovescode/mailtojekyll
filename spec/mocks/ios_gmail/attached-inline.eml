@@ -1,0 +1,155 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp97940vka; Fri, 12 Jun 2015 14:25:23 -0700
+Received: from mail-qc0-x232.google.com (mail-qc0-x232.google.com. [2607:f8b0:400d:c01::232]) by mx.google.com with ESMTPS id l67si5007127qgd.96.2015.06.12.14.25.22 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 14:25:22 -0700
+Received: by mail-qc0-x232.google.com with SMTP id l8so14172535qcj.3 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 14:25:22 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 14:25:22 -0700
+Date: Fri, 12 Jun 2015 16:25:22 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXEyw0ZwZCw392kHx5ZcRKT9wTjqPdM0Ny25HLfOTYFSyQ@mail.gmail.com>
+Subject: Attached inline from iOS Gmail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/mixed;
+ boundary=001a11433952eae8bc051858be14;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.140.237.68 with SMTP id i65mr22354651qhc.42.1434144322931;
+ Fri, 12 Jun 2015 14:25:22 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c01::232 as permitted sender)
+ client-ip=2607:f8b0:400d:c01::232;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c01::232 as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=JZweu9ThoFMDtFb3gB4pJ8Ri3ER42e/1okWLeXSIjb8=;
+ b=DXVLDGd0wt1glbUyXbmuJmIFVeWSCmAPfAlWj2nmXHtOVa/2R/sY5hsG97tj+y8AKB
+ e/9S5HhMh2oW50sfF5FdR11FrYSRMmrJ7YMBBgPn4eY6pQ40x7mXqh/uCWqcR0MaXawB
+ VAjSbsZrm1doPEVLdQOP6vTIflxtSfpJfSutAudxSFnivHOm1xWok7Fs1IgP+HnphkMo
+ 2NcChgk00b3PMfrIY6Wd6sCZca9sHOsBeQkB6Br58RJp723v0Zs8qiRgyfTBAGb9SL6g
+ fI7+hNMSTO2uGoOmqyPMXFZn6NinJ5JBOZZWi7Zmc/SbCses4iQ6R0AemEaHfmc7RRii z2rw==
+X-Received: by 10.140.196.129 with SMTP id r123mr22241038qha.93.1434144322776;
+ Fri, 12 Jun 2015 14:25:22 -0700 (PDT)
+
+
+--001a11433952eae8bc051858be14
+Content-Type: multipart/alternative;
+ boundary=001a11433952eae8b3051858be12;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+--001a11433952eae8b3051858be12
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Inline image 1:
+
+Inline image 2:
+
+Attached images: three & four
+
+--001a11433952eae8b3051858be12
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+Inline image 1:=C2=A0<img src=3D"webkit-fake-url://0cd21768-5b99-43aa-b53=
+0-c5b4a1fea35f/imagejpeg"><br><div><br></div><div>Inline image 2:=C2=A0<i=
+mg src=3D"webkit-fake-url://7c53bf5a-dc2a-4a37-ab57-cb451bff6bea/imagejpe=
+g"></div><div><br></div><div>Attached images: three &amp; four=C2=A0</div=
+>
+
+--001a11433952eae8b3051858be12--
+
+--001a11433952eae8bc051858be14
+Content-Type: image/jpeg;
+ charset=UTF-8;
+ name=IMG_0336.jpg
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename=IMG_0336.jpg
+X-Attachment-Id: 92b12b8d0c7b0f33_0.1
+
+/9j/4AAQSkZJRgABAQAASABIAAD/4QBYRXhpZgAATU0AKgAAAAgAAgESAAMA
+AAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+AAAAMKADAAQAAAABAAAAMAAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQA
+AAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/8AAEQgAMAAwAwEi
+AAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQ
+AAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEV
+UtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpj
+ZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/E
+AB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQH
+BQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoW
+JDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpz
+dHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLD
+xMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMACQkJCQkJ
+EAkJEBYQEBAWHhYWFhYeJh4eHh4eJi4mJiYmJiYuLi4uLi4uLjc3Nzc3N0BA
+QEBASEhISEhISEhISP/bAEMBCwwMEhESHxERH0szKjNLS0tLS0tLS0tLS0tL
+S0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS//dAAQAA//a
+AAwDAQACEQMRAD8A9xqKAloELcEqM/l7gfyH0FBggY7iikjvgex/oPyHpXh2
+l6WdPOB/o2pW2C7kb/L35K/KSVOVP4fWmlc5sRiFRSlJaHu1FYeia1Fq0Txs
+nk3MOPOhzu2bs7fmwAcgZ46dK3KRvGSklKL0Ciiigo//0Pcaw9a0SLVokaN/
+JuYc+TNjds3Y3fLkA5Axz07VuUUEyipJxktDx/8A0gXH/Pnf2f0k8nzB/wB8
+vvX64z613Fr4r09tPmvNS/0V7Xb9oj+aTy/MbCcqvzbuDxnGeaPFdrp7af8A
+2leTfZXtf9XcbWk8vzGVT8g+9u6cg4zmvEdU1CW9lgee38oxbvLj37t+7Gfm
+AGMYzz1q201dnmU6dTDVOSGsX96/r+vP2bwr4qbxK10j2v2Y22z+Pfnfu/2R
+jGK7CuZ8HwWlt4ctobC4+1Qrv2y7Cm7LsT8p5GDxXTVB6ivbU//R9xooooA4
+/wAVeFW8Staul19mNtv/AIN+d+3/AGhjGKt23hHw9aWs9lb222K52eau9zu2
+HK8lsjB9K6WigVle5866hf6n4P1a9sNOvNso8re/lqfN+UEcMGC7Qx+tfRVF
+FJJJWQa3bbP/2Q==
+
+--001a11433952eae8bc051858be14
+Content-Type: image/jpeg;
+ charset=UTF-8;
+ name=IMG_0335.jpg
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment;
+ filename=IMG_0335.jpg
+X-Attachment-Id: fefbfa8fcccb0cd0_0.1
+
+/9j/4AAQSkZJRgABAQAASABIAAD/4QBYRXhpZgAATU0AKgAAAAgAAgESAAMA
+AAABAAEAAIdpAAQAAAABAAAAJgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAAB
+AAAAQKADAAQAAAABAAAAQAAAAAD/7QA4UGhvdG9zaG9wIDMuMAA4QklNBAQA
+AAAAAAA4QklNBCUAAAAAABDUHYzZjwCyBOmACZjs+EJ+/8AAEQgAQABAAwEi
+AAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQ
+AAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEV
+UtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpj
+ZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1
+tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29/j5+v/E
+AB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC//EALURAAIBAgQEAwQH
+BQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoW
+JDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpz
+dHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLD
+xMXGx8jJytLT1NXW19jZ2uLj5OXm5+jp6vLz9PX29/j5+v/bAEMACQkJCQkJ
+EAkJEBYQEBAWHhYWFhYeJh4eHh4eJi4mJiYmJiYuLi4uLi4uLjc3Nzc3N0BA
+QEBASEhISEhISEhISP/bAEMBCwwMEhESHxERH0szKjNLS0tLS0tLS0tLS0tL
+S0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS//dAAQABP/a
+AAwDAQACEQMRAD8A9xrN1DU7bTkzKcseijqaNT1BNOtjMeWPCj1NeazTS3Er
+TztuduprkxGI9notztw2G9p70tjYuvEF/cEiNvKX0Xr+f+FY8k0spzK7Mfck
+1HQimRwg4yQK8qU5TfvM9iNOEF7qHxzSxnMTMv0OK6O01q+tLfzbk+aGYBFb
+qRzk56+lY8tzJDI0VsTGikgbeCcdye5qlJI8jbpGLMe5OTVxm4P3WZypqove
+Wh6bZapbX6ZgPzDqp6itEZ715JbzS2sqzwttdehr0zTb+PULYTrww4Yehr0s
+PiPae69zy8ThfZ+9HY//0Ot8QXRuL9owfli+UfXv/hWHUk0hlleU9WYn8zUP
+Wvn6kuaTkz6WnDkioos2drLfXC28XVu/YDua6u/0nT9K0qa7ZTI8Kbix9uuB
+0/OqHhcqL98/88zj8xXT61CLzTJ7NeTKm3jrg9cV6OCpRa52jysfWmm4RfQ5
+e2srPUNPiuY1KNKoYEe/TI6VhT2720zQyfeWuw0yBLOxhtif9WoUZPOBXL+I
+5dmooyc/uxn8zVYyjG3NFak4CvO6hJ3RSrb8PXZgvxET8kvyn69v8Pxrn0cS
+jcvSrMLmKVJB/CwP5GvMhLkkpHrVIqcXE//R1JozHM8R/hYg/gaZW74htDb3
+5lA+Wb5h9e/+P41gk18/Ui4ycT6WnNSipI3vDhI1Hj+4f6V36rjk9a4Xwso/
+tBye0R/mK70nHJr1cH/DPHx38U5rpXC+IMtqHtsH9a7blz7Vx3iIAXy4/wCe
+Y/mavFfAZ4P+IYscjRNkfiK1rfFxIiJzvYD86xCa6bwpZvcakJv4IRub6/wj
+8+fwry40+aSR68qnJFs//9L1/VLJL+2MDcN1U+hrzae3ltZWhnXa69RXrWOc
+1Qv9NttQj2zjDDow6iuTEYf2msdztwuJ9n7stjz/AEy+/s+7W4IyvRgPQ13s
+OpWN3zFMmPQkA/kea4278PX8BJiHmp6r1/L/AAzWFc2cgGJEZGHqCK5KdWdH
+3ZI7atKnX96L1OylvbO3XdJIox2zk/lXB6lefbbppgMDoo9hVdbe4kbZHGzN
+6KCf5VvWHhXU7ohpl8hPV+v4L1/PFaTqzq6JGVOlCj7zZhWtrPdzrb26lnY8
+AV6/pOmR6VZi3Xljy7erf4elGmaTZ6VHttxlj95z94//AFvatHkn2rpoUOTV
+7nJiMRz+7HY//9k=
+
+--001a11433952eae8bc051858be14--

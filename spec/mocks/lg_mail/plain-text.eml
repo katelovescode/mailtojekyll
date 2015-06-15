@@ -1,0 +1,34 @@
+Return-Path: <kklemp@misdepartment.com>
+Received: by 10.31.65.6 with SMTP id o6csp128238vka; Fri, 12 Jun 2015 16:05:55 -0700
+Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by mx.google.com with ESMTPS id bx19si2484335igb.63.2015.06.12.16.05.55 for <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Fri, 12 Jun 2015 16:05:55 -0700
+Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Fri, 12 Jun 2015 18:05:36 -0500
+Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Fri, 12 Jun 2015 18:05:36 -0500
+Date: Fri, 12 Jun 2015 23:05:35 +0000
+From: Kate Klemp <kklemp@MISDepartment.com>
+To: "jekylltester@gmail.com" <jekylltester@gmail.com>
+Message-ID: <d8bscnva16qs0ijufveqgnms.1434150352274@email.lge.com>
+Subject: Plain text from LG Mail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.42.48.9 with SMTP id q9mr16115873icf.21.1434150355266; Fri,
+ 12 Jun 2015 16:05:55 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates
+ 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+ smtp.mail=kklemp@misdepartment.com
+Thread-Topic: Plain text from LG Mail || secret: jekyllmail
+Thread-Index: AQHQpWRKcKi7NK2MNk2nsaADqz80HQ==
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Content-ID: <4584DB78E6474A40B1518BC8EF44ACB9@misdepartment.com>
+
+UGxhaW4gdGV4dCB3aXRoIGxpbmUgYnJlYWtzDQoNClBsYWluIHRleHQgd2l0
+aCBsaW5lIGJyZWFrcw0KDQoNClBsYWluIHRleHQgd2l0aCBkb3VibGUgbGlu
+ZSBicmVha3MNCg0KDQpQbGFpbiB0ZXh0IHdpdGggZG91YmxlIGxpbmUgYnJl
+YWtzDQo=

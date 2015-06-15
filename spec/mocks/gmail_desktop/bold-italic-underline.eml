@@ -1,0 +1,56 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp109588vka; Fri, 12 Jun 2015 15:02:06 -0700
+Received: from mail-qg0-x231.google.com (mail-qg0-x231.google.com. [2607:f8b0:400d:c04::231]) by mx.google.com with ESMTPS id n17si4915458qhb.104.2015.06.12.15.02.06 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 15:02:06 -0700
+Received: by mail-qg0-x231.google.com with SMTP id p100so14938263qge.3 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 15:02:06 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 15:01:26 -0700
+Date: Fri, 12 Jun 2015 17:01:26 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXHAGZmb5COeVD9nfJqxXmQmXAqiW=_gsHE9AsMRZvBLNQ@mail.gmail.com>
+Subject: Bold italic underline from Gmail Desktop || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=001a1143395248472b0518594205;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.55.23.92 with SMTP id i89mr34805496qkh.75.1434146526845;
+ Fri, 12 Jun 2015 15:02:06 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c04::231 as permitted sender)
+ client-ip=2607:f8b0:400d:c04::231;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c04::231 as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:from:date:message-id:subject:to:content-type;
+ bh=iVejAt+V/CsD39pSxNa9MFxYZdNwjXCyoovqV3w5W84=;
+ b=S9vufI7XHpH4XADZXyN918KGuRta7kmZlfeV6atgUzbMCCtGdl+GBykMDeE8qWppo5
+ UcFNqgLw8/WaCVvHfz25lGpla4xVBEFUwlIRSI8qiQKWzoyp7DghzNXUrRjZ+cPoRFky
+ flP+s4outSgBDSqCgjQrRuaTB6qAJWkUKkyXq2GZ1bRMpXKqK6C70v9fhbh1Qj3zW2Eo
+ KGMcdVEPXTj/PqVR/DFdmrLCllXuPqRTLZxaBTwlWWjurr3XkLCnout6YVeVYnZwIq5y
+ 1Tslpu4l63a4hDvvhKdvavufEU9dTsiO/W5zgai8l6zf9jTRh2apsKEf4PzgnS5HWooS FneA==
+X-Received: by 10.140.196.129 with SMTP id r123mr22405208qha.93.1434146526740;
+ Fri, 12 Jun 2015 15:02:06 -0700 (PDT)
+
+
+--001a1143395248472b0518594205
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+*Bold* *Italic* *Underline*
+**Bold** *Italic* Underline
+
+--001a1143395248472b0518594205
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:tahoma=
+,sans-serif;color:#073763"><b>Bold</b> <i>Italic</i> <u>Underline</u></di=
+v><div class=3D"gmail_default" style=3D"font-family:tahoma,sans-serif;col=
+or:#073763">**Bold** *Italic* Underline</div></div>
+
+--001a1143395248472b0518594205--

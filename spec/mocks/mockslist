@@ -1,12 +1,33 @@
 (no subject)
-Empty email, no body from Gmail iOS app || secret: jekyllmail
-No secret from Gmail iOS app
-Wrong secret from Gmail iOS app || secret: jekyllwin
-Attached & Inline images from Gmail iOS app || secret: jekyllmail
-Attached image with text from Gmail iOS app || secret: jekyllmail
-Attached image w/ no text from Gmail iOS app || secret: jekyllmail
-Inline Images only from Gmail iOS app || secret: jekyllmail
-Emoji from Gmail iOS app || secret: jekyllmail
-HTML formatting from Gmail iOS app || secret: jekyllmail
-HTML no formatting from Gmail iOS app || secret: jekyllmail
-Plain Text from Gmail iOS app || secret: jekyllmail
+
+No secret from OWA
+
+Wrong secret from OWA || secret: no
+
+Empty from OWA || secret: jekyllmail
+
+Attached inline from OWA || secret: jekyllmail
+
+Attached with text from OWA || secret: jekyllmail
+
+Attached with no text from OWA || secret: jekyllmail
+
+Inline from OWA || secret: jekyllmail
+
+Emoji from OWA || secret: jekyllmail
+
+HTML with formatting from OWA || secret:jekyllmail
+
+HTML with no formatting from OWA || secret: jekyllmail
+
+Links from OWA || secret: jekyllmail
+
+Plain text from OWA || secret: jekyllmail
+
+Peter's method inline from OWA || secret: jekyllmail
+
+Peter's method copy-paste from OWA || secret: jekyllmail
+
+Peter's method attached from OWA || secret: jekyllmail
+
+Bold italic underline from OWA || secret: jekyllmail

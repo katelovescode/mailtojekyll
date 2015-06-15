@@ -62,7 +62,7 @@ class JekyllEmail
       @secret.strip!
     end
     if (@secret.nil? || @secret != "jekyllmail")
-      raise StandardError, "Secret incorrect" 
+      raise StandardError, "Secret incorrect or missing" 
     end
   end
   

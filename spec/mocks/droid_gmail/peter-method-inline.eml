@@ -1,0 +1,53 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp134028vka; Fri, 12 Jun 2015 16:25:30 -0700
+Received: from mail-qk0-x22e.google.com (mail-qk0-x22e.google.com. [2607:f8b0:400d:c09::22e]) by mx.google.com with ESMTPS id o82si5309111qko.9.2015.06.12.16.25.30 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 16:25:30 -0700
+Received: by mail-qk0-x22e.google.com with SMTP id q76so23744596qkh.2 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 16:25:30 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 16:25:30 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 16:25:30 -0700
+Date: Fri, 12 Jun 2015 18:25:30 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXHw8o6N37NTSq=adMMSrfcdkWn78sSF7WwQoaqb+rGzaw@mail.gmail.com>
+Subject: Peter's method inline from Android Gmail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=001a11c03fb482ea3505185a6c81;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.55.23.7 with SMTP id i7mr35714217qkh.26.1434151530317; Fri,
+ 12 Jun 2015 16:25:30 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c09::22e as permitted sender)
+ client-ip=2607:f8b0:400d:c09::22e;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c09::22e as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=V6lQOIDSSc1gxbvLPdwv10iVue1datGOyTveHZ9+HpI=;
+ b=GamBsEHKCmPJcc7+0ZS3NOFwcu5SiZN+3Vhy9j4wwMsxZJ6fa3/KkYheHRgemRbRfz
+ jqu/bdOmtQk7EPsyhMU8rUo3fUDkNp+/M+zx1GdUkuuagGTNXL3zCkRWsDIeh9V+EdN6
+ IKIMi2SvdZ16GC4TdWKoVumWgM8fPrKhzXFzoF2xFHFkz6xFHryOX+lS8USMgznfXxxW
+ 44eROUQhe5NPRvXuayGqH843CdqGp1ByIyZG+1Uxrmh6jGELzwoKGmP7wsVjea786YZH
+ Z0o4WLnqlDTGvFK7lmd3PZPgjppcGxLGSmM9N9DsO8dfc5EJ2NoH/wR8vlMJn2BGWqIs 3uqw==
+X-Received: by 10.140.35.230 with SMTP id n93mr21204175qgn.7.1434151530193;
+ Fri, 12 Jun 2015 16:25:30 -0700 (PDT)
+
+
+--001a11c03fb482ea3505185a6c81
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Attached images are ![](image1.pkg) and ![](image2.png)
+
+--001a11c03fb482ea3505185a6c81
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p dir="ltr">Attached images are ![](image1.pkg) and ![](image2.png)</p>
+
+--001a11c03fb482ea3505185a6c81--
