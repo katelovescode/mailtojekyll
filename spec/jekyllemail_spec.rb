@@ -50,24 +50,28 @@ describe JekyllEmail do
       let(:filename) {'attached-inline.eml'}
       let(:thistitle) {'Attached inline' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
 
     context 'with attached images and text' do
       let(:filename) {'attached-text.eml'}
       let(:thistitle) {'Attached with text' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
     
     context 'with attached images and no text' do
       let(:filename) {'attached-no-text.eml'}
       let(:thistitle) {'Attached with no text' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
     
     context 'with inline images' do
       let(:filename) {'inline.eml'}
       let(:thistitle) {'Inline' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
     
     context 'as html with formatting' do
@@ -86,6 +90,7 @@ describe JekyllEmail do
       let(:filename) {'emoji.eml'}
       let(:thistitle) {'Emoji' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
     
     context 'with bold-italic-underline formatting' do
@@ -104,18 +109,21 @@ describe JekyllEmail do
       let(:filename) {'peter-method-attached.eml'}
       let(:thistitle) {'Peter\'s method attached' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
     
     context 'with the image tag method and copy-pasted images' do
       let(:filename) {'peter-method-copy-paste.eml'}
       let(:thistitle) {'Peter\'s method copy-paste' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
     
     context 'with the image tag method and inline images' do
       let(:filename) {'peter-method-inline.eml'}
       let(:thistitle) {'Peter\'s method inline' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with attachments'
     end
 
   end
