@@ -57,4 +57,8 @@ shared_examples 'an empty email' do
       expect{ @thismail.validate_body }.to raise_error("#{no_body_error}")
     end
   end
+  describe '.body' do
+    subject { @thismail.body }
+    it { is_expected.to eq("") }
+  end
 end

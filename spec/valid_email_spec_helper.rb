@@ -21,8 +21,11 @@ shared_examples 'a valid email' do
     end
   end
   describe '.title' do
-    it 'parses the title correctly' do
-      expect( @thismail.title ).to eq(thistitle)
-    end
+    subject { @thismail.title }
+    it { is_expected.to eq(thistitle) }
+  end
+  describe '.body' do
+    subject { @thismail.body }
+    it { is_expected.not_to eq("") }
   end
 end
