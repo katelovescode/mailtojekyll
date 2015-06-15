@@ -16,8 +16,13 @@ shared_examples 'a valid email' do
     end
   end
   describe '#validate_body' do
-    it 'does not raise a no body error' do
+    it 'does not raise a body error' do
       expect{ @thismail.validate_body }.not_to raise_error
+    end
+  end
+  describe '.title' do
+    it 'parses the title correctly' do
+      expect( @thismail.title ).to eq(thistitle)
     end
   end
 end

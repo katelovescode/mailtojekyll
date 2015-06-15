@@ -7,6 +7,9 @@ require 'invalid_email_spec_helper'
 require 'valid_email_spec_helper'
 require 'shared_contexts'
 
+# TODO: [:atts, :body, :markdown, :blanktest] 
+# TODO: All client sources (not just gmail)
+
 include BlogSetup
 create_dirs('/tmp/jekyllblog/images','/tmp/jekyllblog/latest/_posts')
 
@@ -15,7 +18,7 @@ describe JekyllEmail do
   
   context 'given an email sent from gmail' do
     let(:device) { 'gmail_desktop/' }
-    let(:identification) { 'from Gmail Desktop' }
+    let(:identification) { ' from Gmail Desktop' }
 
     context 'with no subject' do
       let(:filename) {'no-subject.eml'}
@@ -39,66 +42,79 @@ describe JekyllEmail do
     
     context 'as plain text' do
       let(:filename) {'plain-text.eml'}
+      let(:thistitle) {'Plain text' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with attached and inline images' do
       let(:filename) {'attached-inline.eml'}
+      let(:thistitle) {'Attached inline' + identification }
       it_behaves_like 'a valid email'
     end
 
     context 'with attached images and text' do
       let(:filename) {'attached-text.eml'}
+      let(:thistitle) {'Attached with text' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with attached images and no text' do
       let(:filename) {'attached-no-text.eml'}
+      let(:thistitle) {'Attached with no text' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with inline images' do
       let(:filename) {'inline.eml'}
+      let(:thistitle) {'Inline' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'as html with formatting' do
       let(:filename) {'html-format.eml'}
+      let(:thistitle) {'HTML with formatting' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'as html with no formatting' do
       let(:filename) {'html-no-format.eml'}
+      let(:thistitle) {'HTML with no formatting' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with emoji' do
       let(:filename) {'emoji.eml'}
+      let(:thistitle) {'Emoji' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with bold-italic-underline formatting' do
       let(:filename) {'bold-italic-underline.eml'}
+      let(:thistitle) {'Bold italic underline' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with links' do
       let(:filename) {'links.eml'}
+      let(:thistitle) {'Links' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with the image tag method and attached images' do
       let(:filename) {'peter-method-attached.eml'}
+      let(:thistitle) {'Peter\'s method attached' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with the image tag method and copy-pasted images' do
       let(:filename) {'peter-method-copy-paste.eml'}
+      let(:thistitle) {'Peter\'s method copy-paste' + identification }
       it_behaves_like 'a valid email'
     end
     
     context 'with the image tag method and inline images' do
       let(:filename) {'peter-method-inline.eml'}
+      let(:thistitle) {'Peter\'s method inline' + identification }
       it_behaves_like 'a valid email'
     end
 
