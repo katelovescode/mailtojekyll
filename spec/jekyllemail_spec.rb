@@ -44,6 +44,7 @@ describe JekyllEmail do
       let(:filename) {'plain-text.eml'}
       let(:thistitle) {'Plain text' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with no attachments'
     end
     
     context 'with attached and inline images' do
@@ -78,12 +79,14 @@ describe JekyllEmail do
       let(:filename) {'html-format.eml'}
       let(:thistitle) {'HTML with formatting' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with no attachments'
     end
     
     context 'as html with no formatting' do
       let(:filename) {'html-no-format.eml'}
       let(:thistitle) {'HTML with no formatting' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with no attachments'
     end
     
     context 'with emoji' do
@@ -97,6 +100,7 @@ describe JekyllEmail do
       let(:filename) {'bold-italic-underline.eml'}
       let(:thistitle) {'Bold italic underline' + identification }
       it_behaves_like 'a valid email'
+      it_behaves_like 'an email with no attachments'
     end
     
     context 'with links' do
