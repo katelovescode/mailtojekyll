@@ -18,7 +18,7 @@ describe JekyllEmail do
   
   context 'given an email sent from Android Gmail' do
     
-    let(:device) { 'droid_gmail/' }
+    let(:device) { 'android_gmail/' }
     let(:identification) { ' from Android Gmail' }
 
     context 'with no subject' do
@@ -69,13 +69,6 @@ describe JekyllEmail do
       it_behaves_like 'an email with attachments'
     end
     
-    context 'with inline images' do
-      let(:filename) {'inline.eml'}
-      let(:thistitle) {'Inline' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
-    
     context 'as html with formatting' do
       let(:filename) {'html-format.eml'}
       let(:thistitle) {'HTML with formatting' + identification }
@@ -94,7 +87,7 @@ describe JekyllEmail do
       let(:filename) {'emoji.eml'}
       let(:thistitle) {'Emoji' + identification }
       it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
+      it_behaves_like 'an email with no attachments'
     end
     
     context 'with bold-italic-underline formatting' do
@@ -119,18 +112,5 @@ describe JekyllEmail do
       it_behaves_like 'an email with attachments'
     end
     
-    context 'with the image tag method and copy-pasted images' do
-      let(:filename) {'peter-method-copy-paste.eml'}
-      let(:thistitle) {'Peter\'s method copy-paste' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
-    
-    context 'with the image tag method and inline images' do
-      let(:filename) {'peter-method-inline.eml'}
-      let(:thistitle) {'Peter\'s method inline' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
   end
 end
