@@ -21,29 +21,36 @@ shared_examples 'a valid email' do
     end
   end
   describe '.title' do
-    subject { @thismail.title }
-    it { is_expected.to eq(thistitle) }
+    subject { @thismail }
+    it 'sets the title correctly' do
+      expect(subject.title).to eq(thistitle)
+    end
   end
   describe '.body' do
-    subject { @thismail.body }
-    it { is_expected.not_to eq("") }
+    subject { @thismail }
+    it 'has a body' do
+      expect(subject.body).not_to eq("")
+      expect(subject.body).not_to be_nil
+    end
   end
 end
 
 shared_examples 'an email with attachments' do
   include_context 'all emails'
-  include_context 'all valid emails'  
   describe '.atts' do
-    subject { @thismail.atts.length }
-    it { is_expected.to be > 0 }
+    subject { @thismail }
+    it 'has attachments' do
+      expect(subject.atts).not_to be_empty, "expected attachments, got #{subject.inspect}"
+    end
   end
 end
 
 shared_examples 'an email with no attachments' do
   include_context 'all emails'
-  include_context 'all valid emails'
   describe '.atts' do
-    subject { @thismail.atts.length }
-    it { is_expected.to eq(0) }
+    subject { @thismail }
+    it 'has attachments' do
+      expect(subject.atts).to be_empty
+    end
   end
 end
