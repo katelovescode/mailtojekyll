@@ -6,18 +6,18 @@ module BlogSetup
   
   def create_dirs(images,posts)
     unless Dir.exists?(images)
-      puts "creating directory"
+      # TODO: LOG THIS puts "creating directory"
       FileUtils.mkdir_p(images)
     else
-      puts images
-      puts "images directory already exists"
+      # TODO: LOG THIS puts images
+      # TODO: LOG THIS puts "images directory already exists"
     end
     unless Dir.exists?(posts)
-      puts "creating directory"
+      # TODO: LOG THIS puts "creating directory"
       FileUtils.mkdir_p(posts)
     else
-      puts posts
-      puts "posts directory already exists"
+      # TODO: LOG THIS puts posts
+      # TODO: LOG THIS puts "posts directory already exists"
     end
   end
   

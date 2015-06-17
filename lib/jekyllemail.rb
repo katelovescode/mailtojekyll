@@ -21,17 +21,9 @@ class JekyllEmail
     # get the subject for validation & split to get title/secret
     @subject = thismail.subject
     (@title, @secret) = (@subject.split((/\|\|/))).collect { |x| x.strip } unless @subject.nil?
-    
-    # list the attachments & save them
-    thismail.attachments.each_with_index do |att,idx|
-      if att.content_type.start_with?("image/")
-        fn = att.filename.gsub(/[^0-9a-z. ]/i, ' ')
-        fn = fn.split(" ").join("-")
-        cid = att.content_id.to_s.delete("<>")
-        @atts["image#{idx}".to_sym] = {fn: fn, cid: cid, cont: att.body.decoded, type: att.content_type}
-      end      
-    end
-    
+
+    save_attachments(thismail)
+
     # process the body with markdown and blanktest
     if thismail.multipart?
       !thismail.html_part.nil? ? body = thismail.html_part.decoded : body = thismail.text_part.decoded
@@ -62,7 +54,7 @@ class JekyllEmail
       @secret.strip!
     end
     if (@secret.nil? || @secret != "jekyllmail")
-      raise StandardError, "Secret incorrect" 
+      raise StandardError, "Secret incorrect or missing" 
     end
   end
   
@@ -73,6 +65,7 @@ class JekyllEmail
     end
   end
   
+  # convert body to markdown
   def markdown(doc)
     doc = Nokogiri::HTML(doc)
     if doc.at("body").nil?
@@ -82,9 +75,8 @@ class JekyllEmail
     end
   end
   
-  
+  # test body to see if it's empty
   def blanktest(doc)
-    
     #strip out unicode character that gives us false blanks
     badspc = Nokogiri::HTML("&#8203;").text
     nbsp = Nokogiri::HTML("&nbsp;").text
@@ -94,7 +86,21 @@ class JekyllEmail
     else
       blank = false
     end
+  end
 
+  # find and save attachments
+  def save_attachments(thismail)
+    if thismail.has_attachments?
+      # list the attachments & save them
+      thismail.attachments.each_with_index do |att,idx|
+        if att.content_type.start_with?("image/")
+          filename = att.filename.gsub(/[^0-9a-z. ]/i, ' ')
+          filename = filename.split(" ").join("-")
+          cid = att.content_id.to_s.delete("<>")
+          @atts["image#{idx}".to_sym] = {filename: filename, cid: cid, content: att.body.decoded, type: att.content_type}
+        end
+      end
+    end
   end
   
 end

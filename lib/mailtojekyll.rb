@@ -59,4 +59,3 @@ blogs.each do |blog|
   end
 
 end
-

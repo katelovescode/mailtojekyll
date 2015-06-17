@@ -1,0 +1,1 @@
+Attached images are ![](/images/2015/06/12/image1.png) and ![](/images/2015/06/12/image2.png)

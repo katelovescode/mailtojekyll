@@ -1,0 +1,57 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp102579vka; Fri, 12 Jun 2015 14:39:44 -0700
+Received: from mail-qc0-x231.google.com (mail-qc0-x231.google.com. [2607:f8b0:400d:c01::231]) by mx.google.com with ESMTPS id f17si4729402qkh.48.2015.06.12.14.39.44 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 14:39:44 -0700
+Received: by mail-qc0-x231.google.com with SMTP id l8so13349955qcj.3 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 14:39:44 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 14:39:44 -0700
+Date: Fri, 12 Jun 2015 16:39:44 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXHeLAfk6+yFRHWVmCEO7OEXMci9r2sOXiB1SrZ=Q-=y-Q@mail.gmail.com>
+Subject: Plain text from iOS Gmail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=001a11376a084b6986051858f295;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.140.48.103 with SMTP id n94mr21278257qga.8.1434145184894;
+ Fri, 12 Jun 2015 14:39:44 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c01::231 as permitted sender)
+ client-ip=2607:f8b0:400d:c01::231;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c01::231 as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=kriOFDq/hOgm86G+J7ys4yPshNBbgRfy3nImspsvPis=;
+ b=tY5+jGpyFB+5j1NaamNYpnVXr0XA1a0TDuhwmRxLIF29RnPOmr2oCO77rbPJByVu2o
+ iFRjXLEXLNcfwBZtkynshboBrvA3N2qKhlfe0pyfBDY5VRmDsKFXtdC3BYBAub65KE/J
+ 4K4YdjKruUzgddWZXgpkoXb/0YlXygj6C0yYD1kaZpQhbxxL5+pGR79q7r67KSeVfcaJ
+ pv9pRPzrPECL1ncVDJfSxLDf4olNU0DYf2wBz75VkxHmAGlW5oOZhRoWjiBghQp3m5eI
+ rmHMzJpyZXWYmcpvtSS3ilyCmsJKABXaJZ/zgI6d5QBBdIoPvCby5J5lqLXabOuHx1Mp k1AQ==
+X-Received: by 10.140.151.200 with SMTP id 191mr22114994qhx.95.1434145184768;
+ Fri, 12 Jun 2015 14:39:44 -0700 (PDT)
+
+
+--001a11376a084b6986051858f295
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Plain text with line breaks
+Plain text with line breaks
+
+Plain text with double line breaks
+
+Plain text with double line breaks
+
+--001a11376a084b6986051858f295
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Plain text with line breaks<div>Plain text with line breaks</div><div><br></div><div>Plain text with double line breaks</div><div><br></div><div>Plain text with double line breaks</div>
+
+--001a11376a084b6986051858f295--

@@ -1,0 +1,188 @@
+Return-Path: <kklemp@misdepartment.com>
+Received: by 10.31.65.6 with SMTP id o6csp117741vka; Fri, 12 Jun 2015 15:27:46 -0700
+Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by mx.google.com with ESMTPS id bx19si2431164igb.63.2015.06.12.15.27.46 for <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Fri, 12 Jun 2015 15:27:46 -0700
+Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Fri, 12 Jun 2015 17:27:21 -0500
+Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Fri, 12 Jun 2015 17:27:21 -0500
+Date: Fri, 12 Jun 2015 22:27:20 +0000
+From: Kate Klemp <kklemp@MISDepartment.com>
+To: "jekylltester@gmail.com" <jekylltester@gmail.com>
+Message-ID: <1a6b2efa38874ea69948d4468cb06f53@io.misdepartment.com>
+Subject: Peter's method inline from OWA || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/related;
+ boundary=_003_1a6b2efa38874ea69948d4468cb06f53iomisdepartmentcom_;
+ charset=UTF-8;
+ type="text/plain"
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.107.11.38 with SMTP id v38mr20843737ioi.83.1434148066596;
+ Fri, 12 Jun 2015 15:27:46 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates
+ 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+ smtp.mail=kklemp@misdepartment.com
+Thread-Topic: Peter's method inline from OWA || secret: jekyllmail
+Thread-Index: AQHQpV7nfHnFhD+fjUiFzLaWUymblQ==
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator: 
+x-originating-ip: [10.1.5.62]
+
+
+--_003_1a6b2efa38874ea69948d4468cb06f53iomisdepartmentcom_
+Content-Type: text/plain;
+ charset=us-ascii
+Content-Transfer-Encoding: quoted-printable
+
+Attached images are ![](image1.png) and ![](image2.png)
+
+[cid:2060f6b9-3b9d-4a51-a3ae-db34fbe70260][cid:9bb199f0-63ca-4e06-b6fd-11=
+cc01669e54]
+
+--_003_1a6b2efa38874ea69948d4468cb06f53iomisdepartmentcom_
+Content-Type: image/png;
+ charset=UTF-8;
+ name=image1.png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ creation-date="Fri, 12 Jun 2015 22:27:03 GMT";
+ filename=image1.png;
+ modification-date="Fri, 12 Jun 2015 22:27:03 GMT";
+ size=3217
+Content-Description: image1.png
+Content-ID: <2060f6b9-3b9d-4a51-a3ae-db34fbe70260>
+
+iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAACXBIWXMAAAsT
+AAALEwEAmpwYAAAKTWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAHjanVN3
+WJP3Fj7f92UPVkLY8LGXbIEAIiOsCMgQWaIQkgBhhBASQMWFiApWFBURnEhV
+xILVCkidiOKgKLhnQYqIWotVXDjuH9yntX167+3t+9f7vOec5/zOec8PgBES
+JpHmomoAOVKFPDrYH49PSMTJvYACFUjgBCAQ5svCZwXFAADwA3l4fnSwP/wB
+r28AAgBw1S4kEsfh/4O6UCZXACCRAOAiEucLAZBSAMguVMgUAMgYALBTs2QK
+AJQAAGx5fEIiAKoNAOz0ST4FANipk9wXANiiHKkIAI0BAJkoRyQCQLsAYFWB
+UiwCwMIAoKxAIi4EwK4BgFm2MkcCgL0FAHaOWJAPQGAAgJlCLMwAIDgCAEMe
+E80DIEwDoDDSv+CpX3CFuEgBAMDLlc2XS9IzFLiV0Bp38vDg4iHiwmyxQmEX
+KRBmCeQinJebIxNI5wNMzgwAABr50cH+OD+Q5+bk4eZm52zv9MWi/mvwbyI+
+IfHf/ryMAgQAEE7P79pf5eXWA3DHAbB1v2upWwDaVgBo3/ldM9sJoFoK0Hr5
+i3k4/EAenqFQyDwdHAoLC+0lYqG9MOOLPv8z4W/gi372/EAe/tt68ABxmkCZ
+rcCjg/1xYW52rlKO58sEQjFu9+cj/seFf/2OKdHiNLFcLBWK8ViJuFAiTcd5
+uVKRRCHJleIS6X8y8R+W/QmTdw0ArIZPwE62B7XLbMB+7gECiw5Y0nYAQH7z
+LYwaC5EAEGc0Mnn3AACTv/mPQCsBAM2XpOMAALzoGFyolBdMxggAAESggSqw
+QQcMwRSswA6cwR28wBcCYQZEQAwkwDwQQgbkgBwKoRiWQRlUwDrYBLWwAxqg
+EZrhELTBMTgN5+ASXIHrcBcGYBiewhi8hgkEQcgIE2EhOogRYo7YIs4IF5mO
+BCJhSDSSgKQg6YgUUSLFyHKkAqlCapFdSCPyLXIUOY1cQPqQ28ggMor8irxH
+MZSBslED1AJ1QLmoHxqKxqBz0XQ0D12AlqJr0Rq0Hj2AtqKn0UvodXQAfYqO
+Y4DRMQ5mjNlhXIyHRWCJWBomxxZj5Vg1Vo81Yx1YN3YVG8CeYe8IJAKLgBPs
+CF6EEMJsgpCQR1hMWEOoJewjtBK6CFcJg4Qxwicik6hPtCV6EvnEeGI6sZBY
+Rqwm7iEeIZ4lXicOE1+TSCQOyZLkTgohJZAySQtJa0jbSC2kU6Q+0hBpnEwm
+65Btyd7kCLKArCCXkbeQD5BPkvvJw+S3FDrFiOJMCaIkUqSUEko1ZT/lBKWf
+MkKZoKpRzame1AiqiDqfWkltoHZQL1OHqRM0dZolzZsWQ8ukLaPV0JppZ2n3
+aC/pdLoJ3YMeRZfQl9Jr6Afp5+mD9HcMDYYNg8dIYigZaxl7GacYtxkvmUym
+BdOXmchUMNcyG5lnmA+Yb1VYKvYqfBWRyhKVOpVWlX6V56pUVXNVP9V5qgtU
+q1UPq15WfaZGVbNQ46kJ1Bar1akdVbupNq7OUndSj1DPUV+jvl/9gvpjDbKG
+hUaghkijVGO3xhmNIRbGMmXxWELWclYD6yxrmE1iW7L57Ex2Bfsbdi97TFND
+c6pmrGaRZp3mcc0BDsax4PA52ZxKziHODc57LQMtPy2x1mqtZq1+rTfaetq+
+2mLtcu0W7eva73VwnUCdLJ31Om0693UJuja6UbqFutt1z+o+02PreekJ9cr1
+Dund0Uf1bfSj9Rfq79bv0R83MDQINpAZbDE4Y/DMkGPoa5hpuNHwhOGoEcto
+upHEaKPRSaMnuCbuh2fjNXgXPmasbxxirDTeZdxrPGFiaTLbpMSkxeS+Kc2U
+a5pmutG003TMzMgs3KzYrMnsjjnVnGueYb7ZvNv8jYWlRZzFSos2i8eW2pZ8
+ywWWTZb3rJhWPlZ5VvVW16xJ1lzrLOtt1ldsUBtXmwybOpvLtqitm63Edptt
+3xTiFI8p0in1U27aMez87ArsmuwG7Tn2YfYl9m32zx3MHBId1jt0O3xydHXM
+dmxwvOuk4TTDqcSpw+lXZxtnoXOd8zUXpkuQyxKXdpcXU22niqdun3rLleUa
+7rrStdP1o5u7m9yt2W3U3cw9xX2r+00umxvJXcM970H08PdY4nHM452nm6fC
+85DnL152Xlle+70eT7OcJp7WMG3I28Rb4L3Le2A6Pj1l+s7pAz7GPgKfep+H
+vqa+It89viN+1n6Zfgf8nvs7+sv9j/i/4XnyFvFOBWABwQHlAb2BGoGzA2sD
+HwSZBKUHNQWNBbsGLww+FUIMCQ1ZH3KTb8AX8hv5YzPcZyya0RXKCJ0VWhv6
+MMwmTB7WEY6GzwjfEH5vpvlM6cy2CIjgR2yIuB9pGZkX+X0UKSoyqi7qUbRT
+dHF09yzWrORZ+2e9jvGPqYy5O9tqtnJ2Z6xqbFJsY+ybuIC4qriBeIf4RfGX
+EnQTJAntieTE2MQ9ieNzAudsmjOc5JpUlnRjruXcorkX5unOy553PFk1WZB8
+OIWYEpeyP+WDIEJQLxhP5aduTR0T8oSbhU9FvqKNolGxt7hKPJLmnVaV9jjd
+O31D+miGT0Z1xjMJT1IreZEZkrkj801WRNberM/ZcdktOZSclJyjUg1plrQr
+1zC3KLdPZisrkw3keeZtyhuTh8r35CP5c/PbFWyFTNGjtFKuUA4WTC+oK3hb
+GFt4uEi9SFrUM99m/ur5IwuCFny9kLBQuLCz2Lh4WfHgIr9FuxYji1MXdy4x
+XVK6ZHhp8NJ9y2jLspb9UOJYUlXyannc8o5Sg9KlpUMrglc0lamUycturvRa
+uWMVYZVkVe9ql9VbVn8qF5VfrHCsqK74sEa45uJXTl/VfPV5bdra3kq3yu3r
+SOuk626s91m/r0q9akHV0IbwDa0b8Y3lG19tSt50oXpq9Y7NtM3KzQM1YTXt
+W8y2rNvyoTaj9nqdf13LVv2tq7e+2Sba1r/dd3vzDoMdFTve75TsvLUreFdr
+vUV99W7S7oLdjxpiG7q/5n7duEd3T8Wej3ulewf2Re/ranRvbNyvv7+yCW1S
+No0eSDpw5ZuAb9qb7Zp3tXBaKg7CQeXBJ9+mfHvjUOihzsPcw83fmX+39Qjr
+SHkr0jq/dawto22gPaG97+iMo50dXh1Hvrf/fu8x42N1xzWPV56gnSg98fnk
+gpPjp2Snnp1OPz3Umdx590z8mWtdUV29Z0PPnj8XdO5Mt1/3yfPe549d8Lxw
+9CL3Ytslt0utPa49R35w/eFIr1tv62X3y+1XPK509E3rO9Hv03/6asDVc9f4
+1y5dn3m978bsG7duJt0cuCW69fh29u0XdwruTNxdeo94r/y+2v3qB/oP6n+0
+/rFlwG3g+GDAYM/DWQ/vDgmHnv6U/9OH4dJHzEfVI0YjjY+dHx8bDRq98mTO
+k+GnsqcTz8p+Vv9563Or59/94vtLz1j82PAL+YvPv655qfNy76uprzrHI8cf
+vM55PfGm/K3O233vuO+638e9H5ko/ED+UPPR+mPHp9BP9z7nfP78L/eE8/sl
+0p8zAAAABGdBTUEAALGOfPtRkwAAACBjSFJNAAB6JQAAgIMAAPn/AACA6QAA
+dTAAAOpgAAA6mAAAF2+SX8VGAAAAw1BMVEUDBhogIzQjJjcsLz9HSVdNT115
+e4V6e4adnqatrrK0tbm7u8DCwsfDw8fGx8vHyMzIyc3Jys7Kys/P0NPU1NTW
+1tbX19fY2NjZ2dna2trb29vc3Nzd3d3e3t7f39/g4ODh4eHi4uLj4+Pk5OTl
+5eXl5efl5ujm5ubn5+fo6Ojp6enq6urr6+vs7Ozt7e3u7u7v7+/w8PDx8fHy
+8vLz8/P09PT19fX29vb39/f4+Pj5+fn6+vr7+/v8/Pz9/f3+/v7///8pKp2z
+AAAA30lEQVQ4y82T2Q6CMBBFxzog7uK+K4q473tFyv9/lRQxBIv44oOTPkwy
+J+c2kxbsLwV/BqiIaiSA7okAICzx9wC831MwFDHIiBEOAziKBBjkfOIFcLEH
+WCZcs/gOgGEg75l1v1E4HUAwGG7P7ia9no+7jQCoDpFglnlzxvvteikAtiKx
+gmO/nA67zXI+FQGb5D37ajEdp+IioEiefTbRNVkWAUoyT7s+6HdJKWRRiuTa
+h1q3nYyHbZKSNLf3Oq2GnxBYtSJze7tZr/oJAYASjY9rlXLsw6tG8Ar/92eF
+1gOUDOC1/rssjgAAAABJRU5ErkJggg==
+
+--_003_1a6b2efa38874ea69948d4468cb06f53iomisdepartmentcom_
+Content-Type: image/png;
+ charset=UTF-8;
+ name=image2.png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ creation-date="Fri, 12 Jun 2015 22:27:16 GMT";
+ filename=image2.png;
+ modification-date="Fri, 12 Jun 2015 22:27:16 GMT";
+ size=1976
+Content-Description: image2.png
+Content-ID: <9bb199f0-63ca-4e06-b6fd-11cc01669e54>
+
+iVBORw0KGgoAAAANSUhEUgAAACwAAAAtCAYAAADV2ImkAAAAIGNIUk0AAHol
+AACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAGYktHRAD/AP8A
+/6C9p5MAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAJdnBBZwAAACwAAAAtAEWW
+IqsAAAcXSURBVFjD7Zl/UFTXFce/+wRhERBZFsVGfhogIlD5oYlBUFB2Exp+
+2UiUybQ67aTVxtBoU22rBRM19Z9oOtOEYqPGHzgkmLYgEYMWyo+sOMWFAIvs
+srD8kC1rYFkWBBb29I/IlsXd9e0Ko87kzNyZN/edd+7nnfu97573HoeI8DQZ
+87gBvgd+0syOjZNKpTIcXym9QkUlxXjW/1n8cufOV55ZurTYhD8DQG8uHp/P
+Zz3eTH+rMlxRUdGxZ8/biPhhGKStjVgRFFgkbZPvNuGqtyauNcZh+5TQarUc
+vwB//fWyMoSGhgEAsg/8Dn/JPYna2tr5CxYs0NmawZlm6XrWGT5//rz2+dXR
+BlgAyH73CBLi1+PgwYPjc5VRm4HPnD7jtH//7x/oP3vuAurrb+Hq1asfPDHA
+Y2Nj9n2qPvj6+j5wzs7ODpeLi7Fz1xtZEokk7YkA5nA4uvvgJs8/s8wHx49/
+gKQk4aWu7q5ljx14/vz58Pb2RnV1lVmf7T/9OV7b8mMkJyd3aoeHeXNGTESs
+WklJSUFAgB/p9ZNkydLSkinouSCSyWSvm4vV19dnsVniYL3ohELhFm8fb6Rv
+TrboV1j4BVy4DohaHfVpY3PzO48lw1N3LpfL7VaEBNJr2zZbzPLIyAhFRoaT
+s4sLlf+7Yo01GTQ1AzZlGACcnZ0niv5ZwhfXNWD7jtfN+nG5XFRVfo3IVWEQ
+JCaKPvu8sHC2Emx18ePi4npXJKrldHR04tix9836OXK5KLtWjm2vvop39r6d
+/tavd5N2eNjlkYmtkcS0KQqWyWQednYMHcr+I91VqWhkZMSsRMpKv6LFiz0o
+fFUoicVi3qNIglUtMXPvl0qlqVu3ZnzBgBC+MhSJL72MHyzzBo/Hw/Lly+Hp
+6QmGMZ68O713ELduLe6NjaGqSiT09fEpZTueUW1hbYbr6v4TY29vR6mpSaTV
+DhllcnJykgYHB0mr1ZrM9EB/P4WGBFFkZARNTEzYlGGrgTdtSqD18evIVhsc
+VFNggA9l5xygOQdub2+3W7TIjbq7O60G1ev1JJfLiYhIqbxDrq5O1NzcvGBO
+gKdaa2urY3Bw4EN3O3Mml8voo7/+mYiI9u37DUVGRtCc7XQA4ODgEMUw8zAx
+MYmujg5IJBKo1WrW1/v5BUCjHsT1f13F4cNHoeztQYdCEW0Ng1XASqUyprOr
+ExsTEnD+3FkABIaZZ00IvLkrCyeOnwDDzMO2zAxcKvyswKoAbOWgUChiuFwH
+2r79J/Ttt3fZy6BNRmXXSo36cvM+orY2KXUq2il+QxzNuiSICCkpKZWxsevx
+ySen4e7Ovnr08fWDVqNFZmaGoZ4WbBJAo9Fgmbcv+vv70dTU9MqsZvjmzZt7
+3N3dSa1W27TYiIhu3KihjQnrSTc+TkTfPbOJiNJSk8jZ2YlkbTI3NhlmBZyT
+k0M/27HDRlS94ehy8T9o794so7M1X1dReuqPSCDYRCaA3YloidWSuN3Sgph1
+L7KeNZ1Oh66ubkxMjAPgGPpfTkpGVFQ05HLZ1PwiYlUELhZ8jhaJBG3yNs8Z
+oWIBGOmPFfBCNzeI68UAgJ6eHuh0Oov+DMOgt6cLu3a+gdOnTk4XIDIytsLD
+w8PQ4+DAhb29A/bt/y0uXSqs5PP5UKlUU+3vKpWqyWoNX7lScsCDz6OhIQ1p
+NBo6duxPZuuF6TY+PkaHDv2BBAnxpOy9Y0IqU41IoWij9LQUotnY6ZRKJV5Y
+s4bCw1YS6fVUUHCR8vJyWau48ZtvKGNzOqn6/jsD9v8aHxnRUlJS0kOBWUmC
+YRicOvOpv6+vH4KDA3Hu3FmUXL7MWtMhK1ci79Qp1N+6BSK9YWaHh7VGGp9Z
+kppkYTuou/ui9ryTf+McPvJ+7oBajZqaKmg0GhZXEgCCi4srEhIF9/s4UCgU
+GB0dNXgNDPTD1fXhLyRWvyLFxsb+oqK8Mmix11Ls2fsWC1hj43AYaDRqVFSU
+g8fzMPhUVlUjOGSF9OH3b9srUohIJCInriMVFxWZfe4aa/U7Gx29R1lZb9LA
+QL+Rf1zMiyQWi5NnZdGZCMAQkdPRo0fIietI+fn5rBZfa+tt2rJlMzU2NhjB
+lpYUU8zaF8jCeLbVw6YClpV9leDhwaPExI33QfQPgCqVvbR7969ow4Y4Uip7
+jWDb2+W00G0hiUQiLzZbM6tfBpYsLCz82o0btfM+/PDEZGxcHJZ48hGxKgpL
+lnpCpboLSbMETY1NELwkxPXr5dPVjIaGeggEArz37nt1/v7+vWzGY/0FfrqZ
++4I+pB1iGuobEusb6r/s6emGowMX0dFRNS0tkrUX8i9AKBRgQ0I8xu/pkH/x
+Aqqqq5GTfaglc1vmc9PjWPoCP6vAlgaUSluFH3+c++Xt2xJwOAxWr47WpaSk
+Pe/l5VXH5vpHAn6c9tT9p3vqgP8HDUDgHKku+gMAAAAASUVORK5CYII=
+
+--_003_1a6b2efa38874ea69948d4468cb06f53iomisdepartmentcom_--
