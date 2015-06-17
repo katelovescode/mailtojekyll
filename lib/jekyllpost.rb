@@ -49,11 +49,13 @@ class JekyllPost
   
   def replace_images(post, atts, imgdir)
     atts.each do |img,vals|
-      srchimg = "cid:" + vals[:cid].to_s
-      post.gsub!(srchimg,"/#{imgdir}/#{vals[:filename]}")
-      if vals[:cid] == ""
-        newimg = "![](/#{imgdir}/#{vals[:filename]})\n\n"
-        post << newimg
+      srchimg = "![](#{vals[:filename]})"
+      unless post.nil?
+        post.gsub!(srchimg,"/#{imgdir}/#{vals[:filename]}")
+        # if vals[:cid] == ""
+        #   newimg = "![](/#{imgdir}/#{vals[:filename]})\n\n"
+        #   post << newimg
+        # end
       end
     end
     post

@@ -26,13 +26,15 @@ class JekyllEmail
 
     # process the body with markdown and blanktest
     if thismail.multipart?
-      !thismail.html_part.nil? ? body = thismail.html_part.decoded : body = thismail.text_part.decoded
+      body = thismail.text_part.decoded.gsub(/\n{2}/,"<br><br>").gsub(/\n{1}/,"<br>")
     else
-      body = thismail.body.decoded.gsub(/\n{2}/,"<br><br>")
+      body = thismail.body.decoded.gsub(/\n{2}/,"<br><br>").gsub(/\n{1}/,"<br>")
     end
     body = markdown(body)
-    if blanktest(body)
-      thismail.has_attachments? ? body = " " : body = ""
+    unless body.nil?
+      if blanktest(body)
+        thismail.has_attachments? ? body = " " : body = ""
+      end
     end
     @body = body
     
@@ -73,6 +75,10 @@ class JekyllEmail
     else
       doc = ReverseMarkdown.convert(doc.at("body").inner_html)
     end
+    File.open("testmarkdown","a") do |f|
+      f << doc
+    end
+    doc
   end
   
   # test body to see if it's empty

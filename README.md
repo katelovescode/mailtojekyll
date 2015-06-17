@@ -1,0 +1,1 @@
+https://github.com/franklsf95/ruby-emoji-regex
