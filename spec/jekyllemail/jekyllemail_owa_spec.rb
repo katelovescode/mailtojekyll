@@ -94,7 +94,7 @@ describe JekyllEmail do
       let(:filename) {'emoji.eml'}
       let(:thistitle) {'Emoji' + identification }
       it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
+      it_behaves_like 'an email with no attachments'
     end
     
     context 'with bold-italic-underline formatting' do
@@ -115,13 +115,6 @@ describe JekyllEmail do
     context 'with the image tag method and attached images' do
       let(:filename) {'peter-method-attached.eml'}
       let(:thistitle) {'Peter\'s method attached' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
-    
-    context 'with the image tag method and copy-pasted images' do
-      let(:filename) {'peter-method-copy-paste.eml'}
-      let(:thistitle) {'Peter\'s method copy-paste' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with attachments'
     end
