@@ -1,7 +1,10 @@
 #!/usr/bin/env ruby
 
 shared_context 'all emails' do
-  let(:email) { sourcepath + device + filename }
+  let(:sourcepath) { 'spec/mocks/' }
+  let(:mdpath) { 'spec/mocks/markdown/'}
+  let(:email) { sourcepath + device + filename + '.eml' }
+  let(:markdown) { mdpath + filename + '.md' }
   let(:no_subject_error) { "No subject" }
   let(:no_secret_error) { "Secret incorrect or missing" }
   let(:no_body_error) { "No body text" }

@@ -32,6 +32,9 @@ shared_examples 'a valid email' do
       expect(subject.body).not_to eq("")
       expect(subject.body).not_to be_nil
     end
+    it 'has a body that matches the expected final markdown' do
+      expect(subject.body).to eq(File.read(markdown))
+    end
   end
 end
 

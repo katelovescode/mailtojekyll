@@ -22,76 +22,76 @@ describe JekyllEmail do
     let(:identification) { ' from iOS Gmail' }
 
     context 'with no subject' do
-      let(:filename) {'no-subject.eml'}
+      let(:filename) {'no-subject'}
       it_behaves_like 'a bad subject'
     end
     
     context 'with no secret' do
-      let(:filename) {'no-secret.eml'}
+      let(:filename) {'no-secret'}
       it_behaves_like 'a bad secret'
     end
     
     context 'with the wrong secret' do
-      let(:filename) {'wrong-secret.eml'}
+      let(:filename) {'wrong-secret'}
       it_behaves_like 'a bad secret'
     end
     
     context 'with no body text' do
-      let(:filename) {'empty.eml'}
+      let(:filename) {'empty'}
       it_behaves_like 'an empty email'
     end
     
     context 'as plain text' do
-      let(:filename) {'plain-text.eml'}
+      let(:filename) {'plain-text'}
       let(:thistitle) {'Plain text' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
     end
     
     context 'with attached and inline images' do
-      let(:filename) {'attached-inline.eml'}
+      let(:filename) {'attached-inline'}
       let(:thistitle) {'Attached inline' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with attachments'
     end
 
     context 'with attached images and text' do
-      let(:filename) {'attached-text.eml'}
+      let(:filename) {'attached-text'}
       let(:thistitle) {'Attached with text' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with attachments'
     end
     
     context 'with attached images and no text' do
-      let(:filename) {'attached-no-text.eml'}
+      let(:filename) {'attached-no-text'}
       let(:thistitle) {'Attached with no text' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with attachments'
     end
     
     context 'as html with formatting' do
-      let(:filename) {'html-format.eml'}
+      let(:filename) {'html-format'}
       let(:thistitle) {'HTML with formatting' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
     end
     
     context 'as html with no formatting' do
-      let(:filename) {'html-no-format.eml'}
+      let(:filename) {'html-no-format'}
       let(:thistitle) {'HTML with no formatting' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
     end
     
     context 'with emoji' do
-      let(:filename) {'emoji.eml'}
+      let(:filename) {'emoji'}
       let(:thistitle) {'Emoji' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
     end
     
     context 'with bold-italic-underline formatting' do
-      let(:filename) {'bold-italic-underline.eml'}
+      let(:filename) {'bold-italic-underline'}
       let(:thistitle) {'Bold italic underline' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
@@ -99,14 +99,14 @@ describe JekyllEmail do
     end
     
     context 'with links' do
-      let(:filename) {'links.eml'}
+      let(:filename) {'links'}
       let(:thistitle) {'Links' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
     end
     
     context 'with the image tag method and attached images' do
-      let(:filename) {'peter-method-attached.eml'}
+      let(:filename) {'peter-method-attached'}
       let(:thistitle) {'Peter\'s method attached' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with attachments'
