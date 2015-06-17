@@ -3,6 +3,7 @@ GEM
   specs:
     diff-lcs (1.2.5)
     docile (1.1.5)
+    emoji_strip (0.1.2)
     json (1.8.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -35,6 +36,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  emoji_strip
   mail
   nokogiri
   reverse_markdown
