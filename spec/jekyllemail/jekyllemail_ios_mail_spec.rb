@@ -47,13 +47,6 @@ describe JekyllEmail do
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with no attachments'
     end
-    
-    context 'with attached and inline images' do
-      let(:filename) {'attached-inline'}
-      let(:thistitle) {'Attached inline' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
 
     context 'with attached images and text' do
       let(:filename) {'attached-text'}
@@ -65,13 +58,6 @@ describe JekyllEmail do
     context 'with attached images and no text' do
       let(:filename) {'attached-no-text'}
       let(:thistitle) {'Attached with no text' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
-    
-    context 'with inline images' do
-      let(:filename) {'inline'}
-      let(:thistitle) {'Inline' + identification }
       it_behaves_like 'a valid email'
       it_behaves_like 'an email with attachments'
     end
@@ -93,8 +79,7 @@ describe JekyllEmail do
     context 'with emoji' do
       let(:filename) {'emoji'}
       let(:thistitle) {'Emoji' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with no attachments'
+      it_behaves_like 'an empty email'
     end
     
     context 'with bold-italic-underline formatting' do

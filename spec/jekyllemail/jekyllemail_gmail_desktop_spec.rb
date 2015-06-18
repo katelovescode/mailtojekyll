@@ -118,13 +118,6 @@ describe JekyllEmail do
       it_behaves_like 'an email with attachments'
     end
     
-    context 'with the image tag method and copy-pasted images' do
-      let(:filename) {'peter-method-copy-paste'}
-      let(:thistitle) {'Peter\'s method copy-paste' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with attachments'
-    end
-    
     context 'with the image tag method and inline images' do
       let(:filename) {'peter-method-inline'}
       let(:thistitle) {'Peter\'s method inline' + identification }

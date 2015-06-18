@@ -28,12 +28,13 @@ shared_examples 'a valid email' do
   end
   describe '.body' do
     subject { @thismail }
+    let(:filecompare) { File.read(markdown).to_s }
     it 'has a body' do
       expect(subject.body).not_to eq("")
       expect(subject.body).not_to be_nil
     end
     it 'has a body that matches the expected final markdown' do
-      expect(subject.body).to eq(File.read(markdown))
+      expect(subject.body.gsub("\&nbsp;","").gsub(/\n/,"").gsub(/\s+/,"").gsub(/\r/,"")).to eq(filecompare.gsub("\&nbsp;","").gsub(/\n/,"").gsub(/\s+/,"").gsub(/\r/,""))
     end
   end
 end
@@ -43,7 +44,7 @@ shared_examples 'an email with attachments' do
   describe '.atts' do
     subject { @thismail }
     it 'has attachments' do
-      expect(subject.atts).not_to be_empty, "expected attachments, got #{subject.inspect}"
+      expect(subject.atts).not_to be_empty
     end
   end
 end

@@ -47,14 +47,14 @@ Content-Type: text/plain;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-Attached images are ![](image1.png) and ![](image2.png)
+Attached images are #image1.png# and #image2.png#
 
 --001a11433952fcd2fa05185919ee
 Content-Type: text/html;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-Attached images are ![](image1.png) and ![](image2.png)<br><br>
+Attached images are #image1.png# and #image2.png#<br><br>
 
 --001a11433952fcd2fa05185919ee--
 
