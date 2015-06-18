@@ -13,7 +13,7 @@ shared_context 'all emails' do
   end
 end
 
-shared_context 'all valid emails' do
+shared_context 'all posts' do
   before(:each) do
     @thispost = JekyllPost.new(@thismail.title, @thismail.body, @thismail.atts, '/tmp/jekyllblog', 'images', 'latest/_posts', { layout: 'post', categories: 'latest' })
   end

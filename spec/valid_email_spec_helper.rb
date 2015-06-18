@@ -4,7 +4,6 @@ require 'shared_contexts'
 
 shared_examples 'a valid email' do
   include_context 'all emails'
-  include_context 'all valid emails'
   describe '#validate_subject' do
     it 'does not raise a subject error' do
       expect{ @thismail.validate_subject }.not_to raise_error
