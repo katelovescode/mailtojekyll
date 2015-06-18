@@ -43,7 +43,7 @@ Content-Type: text/plain;
  charset=us-ascii
 Content-Transfer-Encoding: quoted-printable
 
-Attached images are ![](image1.png) and ![](image2.png)
+Attached images are #image1.png# and #image2.png#
 [cid:image001.png@01D0A537.57D89360][cid:image002.png@01D0A537.57D89360]
 
 --_000_5de08dab4c9a451e930a805e1408a2e5iomisdepartmentcom_
@@ -107,7 +107,7 @@ div.WordSection1
 </head>
 <body lang=3D"EN-US" link=3D"#0563C1" vlink=3D"#954F72">
 <div class=3D"WordSection1">
-<p class=3D"MsoNormal">Attached images are ![](image1.png) and ![](image2=
+<p class=3D"MsoNormal">Attached images are #image1.png# and ![](image2=
 .png)<o:p></o:p></p>
 <p class=3D"MsoNormal"><img width=3D"32" height=3D"32" id=3D"Picture_x002=
 0_1" src=3D"cid:image001.png@01D0A537.57D89360"><img width=3D"44" height=3D=

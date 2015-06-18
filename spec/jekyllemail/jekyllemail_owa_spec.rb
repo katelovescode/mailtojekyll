@@ -93,8 +93,7 @@ describe JekyllEmail do
     context 'with emoji' do
       let(:filename) {'emoji'}
       let(:thistitle) {'Emoji' + identification }
-      it_behaves_like 'a valid email'
-      it_behaves_like 'an email with no attachments'
+      it_behaves_like 'an empty email'
     end
     
     context 'with bold-italic-underline formatting' do

@@ -35,7 +35,7 @@ Content-Type: text/plain;
  charset=us-ascii
 Content-Transfer-Encoding: quoted-printable
 
-Attached images are ![](image1.png) and ![](image2.png)
+Attached images are #image1.png# and #image2.png#
 
 --_003_f70d2a272e894a37b4833d7e73bde3cfiomisdepartmentcom_
 Content-Type: image/png;

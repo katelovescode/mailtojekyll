@@ -4,6 +4,7 @@ require 'mail'
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'
 require_relative 'blogsetup'
+require 'emoji_strip'
 
 # get config
 environment = 'development'
@@ -53,7 +54,7 @@ blogs.each do |blog|
     rescue
       next
     end
-
+    
     post = JekyllPost.new(email.title, email.body, email.atts, blog['jekyll_repo'], blog['images_dir'], blog['posts_dir'], config)
 
   end

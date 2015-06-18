@@ -46,7 +46,7 @@ Content-Type: text/plain;
  charset=us-ascii
 Content-Transfer-Encoding: 7bit
 
-Attached images are ![](image1.png) and ![](image2.png)
+Attached images are #image1.png# and #image2.png#
 
 --Apple-Mail-D37BB887-6AA7-4A23-89C2-48AB8CA12426
 Content-Type: text/plain;

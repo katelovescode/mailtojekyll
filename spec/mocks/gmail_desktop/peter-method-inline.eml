@@ -47,7 +47,7 @@ Content-Type: text/plain;
  charset=UTF-8
 Content-Transfer-Encoding: 7bit
 
-Attached images are ![](image1.png) and ![](image2.png)
+Attached images are #image1.png# and #image2.png#
 
 --001a11433952d673660518593853
 Content-Type: text/html;
@@ -55,7 +55,7 @@ Content-Type: text/html;
 Content-Transfer-Encoding: quoted-printable
 
 <div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:tahoma=
-,sans-serif;color:#073763">Attached images are ![](image1.png) and ![](im=
+,sans-serif;color:#073763">Attached images are #image1.png# and ![](im=
 age2.png)</div><div class=3D"gmail_default" style=3D"font-family:tahoma,s=
 ans-serif;color:#073763"><img src=3D"cid:ii_iau5ojki0_14de9c7f704d87c1" w=
 idth=3D"32" height=3D"32"><br><img src=3D"cid:ii_iau5or3f1_14de9c81c983a7=
