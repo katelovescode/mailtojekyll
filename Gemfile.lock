@@ -3,6 +3,7 @@ GEM
   specs:
     diff-lcs (1.2.5)
     docile (1.1.5)
+    highline (1.7.2)
     json (1.8.3)
     mail (2.6.3)
       mime-types (>= 1.16, < 3)
@@ -36,6 +37,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  highline
   mail
   nokogiri
   reverse_markdown
