@@ -1,0 +1,57 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp133599vka; Fri, 12 Jun 2015 16:23:56 -0700
+Received: from mail-qk0-x232.google.com (mail-qk0-x232.google.com. [2607:f8b0:400d:c09::232]) by mx.google.com with ESMTPS id f86si5227021qkh.19.2015.06.12.16.23.56 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 16:23:56 -0700
+Received: by mail-qk0-x232.google.com with SMTP id q76so23409599qkh.2 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 16:23:56 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 16:23:55 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 16:23:55 -0700
+Date: Fri, 12 Jun 2015 18:23:55 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXFnn4tVubuC=8CSPd_i_+yFjpQTBjrrZcxp4ZjVVBwFAg@mail.gmail.com>
+Subject: Links from Android Gmail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=001a11352082e6325005185a66d0;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.141.19.11 with SMTP id v11mr6662567qhd.44.1434151436235;
+ Fri, 12 Jun 2015 16:23:56 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c09::232 as permitted sender)
+ client-ip=2607:f8b0:400d:c09::232;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c09::232 as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:date:message-id:subject:from:to:content-type;
+ bh=PjennJ84DGiB7I+DZMHUqE2DLDxJSfpc7jhhfN/bQ1k=;
+ b=oCOgr9mNduedS2wcWkMy12lse5J/84rUsWlR1iLkLiQkPCHck2zTyuO94iMLg78egX
+ c+16bOz3a4rI/L+386nMu/9uoKgCNflJ8MI+tN+SUoXI2xUZJTiSje1vwocF1J5bPvh8
+ v1uJZSg3hktMIrM3SWtIJeMEJcaU5FZBcuyWwbgq2JoQX6jRBXbY3l7WhcWUzolNcBdv
+ MOZTjqGu0Xpat6xHTSYKgRxBjtonPADkPoKS2ndbsS9DjWQSsqMXz1eDSubUnMYS2XjK
+ l+IY/4bXPVBgcKsytnjiRbLoFIMBDPFj+GaxcXuZZFW7ppsJoUAv0efiaZCsdC7KXfxM ROjA==
+X-Received: by 10.140.48.103 with SMTP id n94mr21707858qga.8.1434151436036;
+ Fri, 12 Jun 2015 16:23:56 -0700 (PDT)
+
+
+--001a11352082e6325005185a66d0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Go to http://www.google.com/
+Go to www.google.com
+Go to google.com
+
+--001a11352082e6325005185a66d0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p dir="ltr">Go to <a href="http://www.google.com/">http://www.google.com/</a><br>
+Go to <a href="http://www.google.com">www.google.com</a><br>
+Go to <a href="http://google.com">google.com</a></p>
+
+--001a11352082e6325005185a66d0--

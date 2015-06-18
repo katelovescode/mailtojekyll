@@ -1,0 +1,33 @@
+(no subject)
+
+No secret from OWA
+
+Wrong secret from OWA || secret: no
+
+Empty from OWA || secret: jekyllmail
+
+Attached inline from OWA || secret: jekyllmail
+
+Attached with text from OWA || secret: jekyllmail
+
+Attached with no text from OWA || secret: jekyllmail
+
+Inline from OWA || secret: jekyllmail
+
+Emoji from OWA || secret: jekyllmail
+
+HTML with formatting from OWA || secret:jekyllmail
+
+HTML with no formatting from OWA || secret: jekyllmail
+
+Links from OWA || secret: jekyllmail
+
+Plain text from OWA || secret: jekyllmail
+
+Peter's method inline from OWA || secret: jekyllmail
+
+Peter's method copy-paste from OWA || secret: jekyllmail
+
+Peter's method attached from OWA || secret: jekyllmail
+
+Bold italic underline from OWA || secret: jekyllmail

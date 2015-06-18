@@ -1,0 +1,94 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp76384vka; Fri, 12 Jun 2015 13:26:05 -0700
+Received: from mail-qg0-x22d.google.com (mail-qg0-x22d.google.com. [2607:f8b0:400d:c04::22d]) by mx.google.com with ESMTPS id z139si4891388qkz.91.2015.06.12.13.26.05 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 13:26:05 -0700
+Received: by mail-qg0-x22d.google.com with SMTP id 3so14858471qgg.2 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 13:26:05 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 13:25:24 -0700
+Date: Fri, 12 Jun 2015 15:25:24 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXE4RyT2ac=cqFiCoYiDop2qHazPJqCVGFi3sBJvfMiv7w@mail.gmail.com>
+Subject: Emoji from Gmail Desktop || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/related;
+ boundary=001a114009e2df517c051857eaf7;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.140.150.198 with SMTP id 189mr22137007qhw.88.1434140765419;
+ Fri, 12 Jun 2015 13:26:05 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c04::22d as permitted sender)
+ client-ip=2607:f8b0:400d:c04::22d;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c04::22d as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:from:date:message-id:subject:to:content-type;
+ bh=3lXCyp2rr6JbKpI300XO8B1m+SyvmIl2DodlKPRkWAk=;
+ b=fnx8/PFPl9HAsq9jQznXw9CXs1lHgr8JHDAY+u5wGjCA+QdjwLJdUcacNOLEu+bNHu
+ H4unrZb0nUlRmmFvuBmSYgX1h+Qrj3LkxiKU5ExOaAALCZUqhgWUmssjzG19EWui+KsX
+ NWmwR0GiMKNRjtYyTWP38dY+7ky4d5Vaupj9T/+/r9oBp7+t0r18+TmEjsI3/2gVHgt0
+ VmylEHZEGLNGvjkY03fic6vDRLBcOY0IcofsZ4Yac8oUsUWR8odUMzyQ6KsUdlkKkGM/
+ 5UM/ZIv8JPtniSxAnemN7ohR2DjCr9a2GXWx48hPPfhZ/oVfgDoqKuEyc6dENPFZMs5A gYtw==
+X-Received: by 10.55.19.99 with SMTP id d96mr7119377qkh.71.1434140765263; Fri,
+ 12 Jun 2015 13:26:05 -0700 (PDT)
+X-Goomoji-Body: true
+
+
+--001a114009e2df517c051857eaf7
+Content-Type: multipart/alternative;
+ boundary=001a114009e2df5179051857eaf6;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+--001a114009e2df5179051857eaf6
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+[?] [?]
+
+--001a114009e2df5179051857eaf6
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:tahoma=
+,sans-serif;color:#073763"><img src=3D"cid:330@goomoji.gmail" goomoji=3D"=
+330" style=3D"margin: 0px 0.2ex; vertical-align: middle;">=C2=A0<img src=3D=
+"cid:7E4@goomoji.gmail" goomoji=3D"7E4" style=3D"margin: 0px 0.2ex; verti=
+cal-align: middle;"><br></div></div>
+
+--001a114009e2df5179051857eaf6--
+
+--001a114009e2df517c051857eaf7
+Content-Type: image/gif;
+ charset=UTF-8;
+ name=7E4.gif
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ filename=7E4.gif
+Content-ID: <7E4@goomoji.gmail>
+X-Attachment-Id: 7E4@goomoji.gmail
+
+R0lGODlhDwAPAKIFAABbAAqdCkTIR////9bz1wAAAAAAAAAAACH5BAEAAAUA
+LAAAAAAPAA8AAAM/WLrc/g7ICR4IOIfawPgfQXDLBQ4isSlTkAqwsEkFEN83
+Z8dZzn4ynuCjQ8lSgeGopmlqKNCojsaYMDINbCEBADs=
+
+--001a114009e2df517c051857eaf7
+Content-Type: image/gif;
+ charset=UTF-8;
+ name=330.gif
+Content-Transfer-Encoding: base64
+Content-Disposition: inline;
+ filename=330.gif
+Content-ID: <330@goomoji.gmail>
+X-Attachment-Id: 330@goomoji.gmail
+
+R0lGODlhDAAMAKIFAF5LAP/zxAAAANyuAP/gaP///wAAAAAAACH5BAEAAAUA
+LAAAAAAMAAwAAAMlWLPcGjDKFYi9lxKBOaGcF35DhWHamZUW0K4mAbiwWtuf
+0uxFAgA7
+
+--001a114009e2df517c051857eaf7--
