@@ -4,7 +4,6 @@ require 'mail'
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'
 require_relative 'blogsetup'
-require 'emoji_strip'
 
 # get config
 environment = 'development'
