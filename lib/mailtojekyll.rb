@@ -24,7 +24,12 @@ blogs.each do |blog|
   
   # get files or emails from pop server
   if blog['retrieve'] == "file"
-    emails = Dir["#{blog['source']}/*.eml"]
+    Mail.defaults do
+      retriever_method :test
+    end
+    Dir["#{blog['source']}/*.eml"].each do |mail|
+      Mail::TestRetriever.emails << Mail.read(mail)
+    end
   elsif blog['retrieve'] == "pop"
     # set mail retrieval defaults for the Mail gem
     Mail.defaults do
@@ -37,9 +42,10 @@ blogs.each do |blog|
       }
       retriever_method :pop3, mail_settings
     end
-    emails = Mail.all
   end
-  
+
+  emails = Mail.all
+
   # test for validity and create posts
   emails.each do |email|
   

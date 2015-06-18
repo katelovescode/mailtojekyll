@@ -18,7 +18,7 @@ class JekyllEmail
     body = ""
     
     # process w/ mail gem
-    thismail = Mail.read(thismail)    
+    # thismail = Mail.read(thismail)    
     
     # get the subject for validation & split to get title/secret
     @subject = thismail.subject
