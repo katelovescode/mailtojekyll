@@ -1,0 +1,25 @@
+---
+development: &defaults
+  jekyll_repo: /home/user/jekyll_repo
+  retrieve: file
+  test_source: spec/mocks/outlook
+  pop_server: pop.test.com
+  pop_user: test@test.com
+  pop_password: xxxxxxxxx
+  secret: mailtojekyll
+  images_dir: images
+  posts_dir: _posts
+  layout: post
+  categories: latest
+
+production:
+  jekyll_repo: /home/user/jekyll_repo
+  retrieve: pop
+  pop_server: pop.test.com
+  pop_user: test@test.com
+  pop_password: xxxxxxxxx
+  secret: mailtojekyll
+  images_dir: images
+  posts_dir: _posts
+  layout: post
+  categories: latest
