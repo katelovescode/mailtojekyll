@@ -15,7 +15,6 @@ class JekyllPost
     create_imgdir(repo,imgdir)
     save_attachments(repo, imgdir, atts)
     create_post(post_filename, meta, title, postday, posttime, atts, imgdir, content)
-    puts title
   end
   
   def create_post(post_filename, meta, title, postday, posttime, atts, imgdir, content)
@@ -49,11 +48,7 @@ class JekyllPost
   end  
   
   def replace_images(post, atts, imgdir)
-    puts post
-    puts imgdir
     atts.each do |img,vals|
-      puts vals[:filename]
-
       srchimg = "![](#{vals[:filename]})"
       unless post.nil?
         post = post.gsub(srchimg,"![](/#{imgdir}/#{vals[:filename]})")
@@ -63,7 +58,6 @@ class JekyllPost
         # end
       end
     end
-    puts post
     post
   end
   
