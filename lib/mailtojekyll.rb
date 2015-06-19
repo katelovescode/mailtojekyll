@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 # TODO: git commits after sending
-
+# TODO: which config options should be command-line accessible?
 
 require_relative "mailtojekyll/version"
 require 'mail'
