@@ -51,7 +51,7 @@ class JekyllPost
     atts.each do |img,vals|
       srchimg = "![](#{vals[:filename]})"
       unless post.nil?
-        post = post.gsub(srchimg,"/#{imgdir}/#{vals[:filename]}")
+        post = post.gsub(srchimg,"![](/#{imgdir}/#{vals[:filename]})")
         # if vals[:cid] == ""
         #   newimg = "![](/#{imgdir}/#{vals[:filename]})\n\n"
         #   post << newimg

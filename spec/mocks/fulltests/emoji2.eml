@@ -1,0 +1,42 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp87158vka; Fri, 12 Jun 2015 13:55:39 -0700
+Received: from mail-ie0-x230.google.com (mail-ie0-x230.google.com. [2607:f8b0:4001:c03::230]) by mx.google.com with ESMTPS id 13si3878834ioe.57.2015.06.12.13.55.38 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 13:55:38 -0700
+Received: by mail-ie0-x230.google.com with SMTP id rd14so768iec.3 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 13:55:38 -0700
+Received: from ?IPv6:2601:d:80:2f7:985:5d3c:3a3a:653f?
+ ([2601:d:80:2f7:985:5d3c:3a3a:653f]) by mx.google.com with ESMTPSA id
+ p4sm1905995igg.20.2015.06.12.13.55.37 for <jekylltester@gmail.com>
+ (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128); Fri, 12 Jun 2015
+ 13:55:38 -0700 (PDT)
+Date: Fri, 12 Jun 2015 15:55:38 -0500
+From: Kate Klemp <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <ADA2A2FE-B7DA-42AA-A00E-607BF0496A26@gmail.com>
+Subject: Emoji from iOS Mail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.43.19.72 with SMTP id qj8mr18200903icb.68.1434142538918;
+ Fri, 12 Jun 2015 13:55:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:4001:c03::230 as permitted sender)
+ client-ip=2607:f8b0:4001:c03::230;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:4001:c03::230 as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=subject:from:content-type:message-id:date:to
+ :content-transfer-encoding:mime-version;
+ bh=mG247UbRMAdEOSp/QcNMNexjNzMNBhdMwoF9NV6pnJ8=;
+ b=sEyJuhPQ7rOqDfFShLsvTymhuRTao6uCF5Q3pXHdxxzo9tCgnzCjYgWO/ryrKJtSFo
+ TRxh6YPiaw9tgTRXLnV4MLUqwX8ppe3MxUad+poBTcYYdquqa1UFA5dti0m2kVm0uz5Q
+ WJW5iznyDxmM/xUvTv/hcQoStyBRdBOvXv7+Y1O2DV6j73KVDuXBDH55TVzoO4RaxV9T
+ soRoya8YIPWHC17qiFG3Oc/R+JXF4E71USvXBSYUsbWLXYeaWLu0FKEmjffdrYfhNEiX
+ mdcaA94PFNHy1LxwwnG7GWRYUeAqLolvKDHg+84Dz3y12WDkSxyulV5lHBVgzoRh/3ki UhlA==
+X-Received: by 10.107.5.210 with SMTP id 201mr20174894iof.88.1434142538695;
+ Fri, 12 Jun 2015 13:55:38 -0700 (PDT)
+X-Mailer: iPad Mail (12F69)
+
+8J+YgCDwn5e/DQo=

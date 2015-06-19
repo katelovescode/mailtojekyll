@@ -1,17 +1,13 @@
 #!/usr/bin/env ruby
 
-require 'blogsetup'
 require 'jekyllemail'
 require 'jekyllpost'
 require 'invalid_email_spec_helper'
 require 'valid_email_spec_helper'
 require 'shared_contexts'
+require 'mailtojekyll'
 
-
-
-
-include BlogSetup
-create_dirs('/tmp/jekyllblog/images','/tmp/jekyllblog/latest/_posts')
+include Mailtojekyll
 
 describe JekyllEmail do
   let(:sourcepath) { 'spec/mocks/' }

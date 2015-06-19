@@ -11,7 +11,16 @@
 ## How it works
 
 
+
 ## How to use it
+
+Users email a post to their dedicated email account for their `jekyll` blog.  Most formatting will be stripped out.  If the user wants to include images in the post, they should use the following syntax:
+
+```
+#image-filename.png#
+```
+
+`mailtojekyll` will replace that tag with the correct markdown image tag, including a reference to the relative image path so `jekyll` processes it correctly
 
 ### External Dependencies
 
@@ -32,23 +41,23 @@
 ## For developers
 
 Best practices  
-1. Set up a dedicated gmail account only for this purpose
-2. `TODO: CONFIG THIS`
-3. Clone `mailtojekyll` to your server
-4. `cd mailtojekyll` - this should create a new gemset if you're using `rvm`
-5. 
+1. Set up a dedicated email account only for this purpose
+2. Clone `mailtojekyll` to your server
+3. `cd mailtojekyll` - this should create a new gemset if you're using `rvm`
+4. 
 
 ### Deployment
 
 ## Contributors
 
- * Manager:
- * Owner:
- * Consulted:
- * Helper:
- * Approver:
-(Manager, Owner, Consulted, Helper, Approver)
+ * **M**anager: Ian Reynolds
+ * **O**wner:
+ * **C**onsulted:
+ * **H**elper:
+ * **A**pprover:
 
 ## ATTRIBUTION
 
 mailtojekyll is based heavily on the concepts of [JekyllMail](https://github.com/masukomi/JekyllMail), and is essentially a ground-up refactor of that existing app.  It has been gemified for ease of use, and updated to work with the most recent versions of `mail`, `nokogiri`, `reverse_markdown`, and `rinku`
+
+I developed this as a standalone because development on JekyllMail is 4 years old, so I wanted to make sure it was available as an app/gem

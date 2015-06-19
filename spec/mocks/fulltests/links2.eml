@@ -1,0 +1,44 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp90490vka; Fri, 12 Jun 2015 14:04:38 -0700
+Received: from mail-ie0-x22d.google.com (mail-ie0-x22d.google.com. [2607:f8b0:4001:c03::22d]) by mx.google.com with ESMTPS id k76si3871504ioi.104.2015.06.12.14.04.38 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 14:04:38 -0700
+Received: by mail-ie0-x22d.google.com with SMTP id mu5so31457637ieb.1 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 14:04:38 -0700
+Received: from ?IPv6:2601:d:80:2f7:b911:3a96:43e2:2f86?
+ ([2601:d:80:2f7:b911:3a96:43e2:2f86]) by mx.google.com with ESMTPSA id
+ o200sm3228321ioo.43.2015.06.12.14.04.37 for <jekylltester@gmail.com>
+ (version=TLSv1 cipher=ECDHE-RSA-RC4-SHA bits=128/128); Fri, 12 Jun 2015
+ 14:04:37 -0700 (PDT)
+Date: Fri, 12 Jun 2015 16:04:37 -0500
+From: Kate Klemp <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <C8747E11-DDAE-46D5-9F11-FA9FDA774D69@gmail.com>
+Subject: Links from iOS Mail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=us-ascii
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.50.43.137 with SMTP id w9mr6921503igl.30.1434143078583; Fri,
+ 12 Jun 2015 14:04:38 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:4001:c03::22d as permitted sender)
+ client-ip=2607:f8b0:4001:c03::22d;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:4001:c03::22d as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=subject:from:content-type:message-id:date:to
+ :content-transfer-encoding:mime-version;
+ bh=zQFdQLj1vkEuO1EBAxDh3Z0GiCTt68c4oNCa7TADLSk=;
+ b=p8eG5gATsu4JOGJBDrX/MWnsv16ExlsJJxPDxA5PyP65HQPBhElD7pz4wacUhy13zk
+ KugZazvkDfx7DFFfN0hsLrHwm0SIKrKbJZqQkT0DLSscWJdyGKoMpo+3FZTLZFyyFIV/
+ /S2Wp1XOp1ascLPdJeKb+3Z2CPR5xmBsI78yMRUCmUraglfQGjoJGo8oOcTPC2UyOzqc
+ +xaYtudwAnRPFLtt3KSezm9eaa+prXx/gEGMm0vIcYbjbIb1P/RxvNm+vZyu3PXKTVVE
+ o+inPDWz9yH6FpNmEKdza3iwujOrlVVE7L/TvE89MHFs4Ijr0C+V033PIs48Z6GciA19 nO2A==
+X-Received: by 10.50.176.228 with SMTP id cl4mr7055392igc.2.1434143078339;
+ Fri, 12 Jun 2015 14:04:38 -0700 (PDT)
+X-Mailer: iPad Mail (12F69)
+
+Go to http://www.google.com/
+Go to www.google.com
+Go to google.com
