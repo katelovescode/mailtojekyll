@@ -18,41 +18,45 @@ module Mailtojekyll
   parser = OptionParser.new do|opts|
   	opts.banner = "Usage: mailtojekyll.rb [options]"
 
-    opts.on('-r', '--repo repo', 'Repo') do |repo|
-      options[:jekyll_repo] = repo;
+    opts.on('-t','--test') do |params|
+      options[:retrieve] = "file"
     end
-    
-  	opts.on('-s', '--server server', 'Server') do |server|
-  		options[:pop_server] = server;
-  	end
 
-  	opts.on('-u', '--user user', 'User') do |user|
-  		options[:pop_user] = user;
-  	end
-    
-    opts.on('-p', '--pass pass', 'Pass') do |pass|
-      options[:pop_password] = pass;
-    end
-    
-    opts.on('-S', '--secret secret', 'Secret') do |secret|
-      options[:secret] = secret;
-    end
-    
-    opts.on('-I', '--imgdir imgdir', 'Imgdir') do |imgdir|
-      options[:images_dir] = imgdir;
-    end
-    
-    opts.on('-P', '--postdir postdir', 'Postdir') do |postdir|
-      options[:posts_dir] = postdir;
-    end
-    
-    opts.on('-l', '--layout layout', 'Layout') do |layout|
-      options[:layout] = layout;
-    end
-    
-    opts.on('-c', '--categories categories', 'Categories') do |categories|
-      options[:categories] = categories;
-    end
+    # opts.on('-r', '--repo repo', 'Repo') do |repo|
+    #   options[:jekyll_repo] = repo;
+    # end
+    # 
+  	# opts.on('-s', '--server server', 'Server') do |server|
+  	# 	options[:pop_server] = server;
+  	# end
+    # 
+  	# opts.on('-u', '--user user', 'User') do |user|
+  	# 	options[:pop_user] = user;
+  	# end
+    # 
+    # opts.on('-p', '--pass pass', 'Pass') do |pass|
+    #   options[:pop_password] = pass;
+    # end
+    # 
+    # opts.on('-S', '--secret secret', 'Secret') do |secret|
+    #   options[:secret] = secret;
+    # end
+    # 
+    # opts.on('-I', '--imgdir imgdir', 'Imgdir') do |imgdir|
+    #   options[:images_dir] = imgdir;
+    # end
+    # 
+    # opts.on('-P', '--postdir postdir', 'Postdir') do |postdir|
+    #   options[:posts_dir] = postdir;
+    # end
+    # 
+    # opts.on('-l', '--layout layout', 'Layout') do |layout|
+    #   options[:layout] = layout;
+    # end
+    # 
+    # opts.on('-c', '--categories categories', 'Categories') do |categories|
+    #   options[:categories] = categories;
+    # end
 
   	opts.on('-h', '--help', 'Displays Help') do
   		puts opts
@@ -62,50 +66,6 @@ module Mailtojekyll
 
   parser.parse!
 
-  if options[:jekyll_repo] == nil
-  	print 'Path to jekyll repo: '
-      options[:jekyll_repo] = gets.chomp
-  end
-
-  if options[:pop_server] == nil
-  	print 'POP account server: '
-      options[:pop_server] = gets.chomp
-  end
-
-  if options[:pop_user] == nil
-  	print 'POP account username: '
-      options[:pop_user] = gets.chomp
-  end
-
-  if options[:pop_password] == nil
-    options[:pop_password] = ask("POP account password: ") { |q| q.echo="*" }
-  end
-
-  if options[:secret] == nil
-  	print 'Subject line secret: '
-      options[:secret] = gets.chomp
-  end
-
-  if options[:images_dir] == nil
-  	print 'Relative path to image directory: '
-      options[:images_dir] = gets.chomp
-  end
-
-  if options[:posts_dir] == nil
-  	print 'Relative path to image directory: '
-      options[:posts_dir] = gets.chomp
-  end
-
-  if options[:layout] == nil
-  	print 'Template layout: '
-      options[:layout] = gets.chomp
-  end
-
-  if options[:categories] == nil
-  	print 'Categories, separated by commas: '
-      options[:categories] = gets.chomp
-  end
-  
   def self.create_dirs(images,posts)
     unless Dir.exists?(images)
       # TODO: LOG THIS puts "creating directory"
@@ -124,31 +84,38 @@ module Mailtojekyll
   end
 
   # get config
-  environment = 'development'
-  environment = ENV['APP_ENV'] unless ENV['APP_ENV'].nil?
-  
-  config = YAML::load(File.open('_config.yml'))[environment]
-  
-  options.each_pair do |k,v|
-    if v.empty?
-      options[k] = config["#{k}"]
-      puts "Using default value for #{k}: #{options[k]}"
+  config = YAML::load(File.open('_config.yml'))
+
+  config['retrieve'] = 'pop'
+
+  #TODO: If retrieve method is file - don't even set pop values
+
+  config.each_pair do |k,v|
+    if options[k.to_sym].nil? || options[k.to_sym].empty?
+      options[k.to_sym] = config[k]
+      #TODO: LOG THIS 
+      print "Using config option for #{k}: "
+    else
+      # TODO: LOG THIS 
+      print "Manually set option for #{k}: "
     end
+    # TODO: LOG THIS 
+    print "#{options[k.to_sym]}\n"
   end
   
   # empties, initializers & setup
   create_dirs("#{options[:jekyll_repo]}/#{options[:images_dir]}","#{options[:jekyll_repo]}/#{options[:posts_dir]}")
   meta = { layout: options[:layout], categories: options[:categories] }
-  
+
   # get files or emails from pop server
-  if config['retrieve'] == "file"
+  if options[:retrieve] == "file"
     Mail.defaults do
       retriever_method :test
     end
     Dir["#{config['test_source']}/*.eml"].each do |mail|
       Mail::TestRetriever.emails << Mail.read(mail)
     end
-  elsif config['retrieve'] == "pop"
+  elsif options[:retrieve] == "pop"
     # set mail retrieval defaults for the Mail gem
     Mail.defaults do
       mail_settings = {

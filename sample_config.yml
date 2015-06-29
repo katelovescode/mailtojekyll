@@ -1,25 +1,11 @@
 ---
-development: &defaults
-  jekyll_repo: /home/user/jekyll_repo
-  retrieve: file
-  test_source: spec/mocks/outlook
+  jekyll_repo: /home/user/jekyll_repo # absolute path to repo on server
+  test_source: spec/mocks/outlook # source of test files when using file retrieve method; relative to mailtojekyll
   pop_server: pop.test.com
   pop_user: test@test.com
   pop_password: xxxxxxxxx
   secret: mailtojekyll
-  images_dir: images
-  posts_dir: _posts
-  layout: post
-  categories: latest
-
-production:
-  jekyll_repo: /home/user/jekyll_repo
-  retrieve: pop
-  pop_server: pop.test.com
-  pop_user: test@test.com
-  pop_password: xxxxxxxxx
-  secret: mailtojekyll
-  images_dir: images
-  posts_dir: _posts
+  images_dir: images # relative to repo path
+  posts_dir: _posts # relative to repo path
   layout: post
   categories: latest
