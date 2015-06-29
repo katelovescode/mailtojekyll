@@ -1,13 +1,14 @@
 #!/usr/bin/env ruby
 
 # TODO: git commits after sending
-# TODO: which config options should be command-line accessible?
 
 require_relative "mailtojekyll/version"
 require 'mail'
 require 'fileutils'
 require 'optparse'
 require 'highline/import'
+require 'git'
+require 'logger'
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'
 
@@ -15,48 +16,13 @@ module Mailtojekyll
   
   options = {}
 
+  # allow a test flag to be set to retrieve files from a server directory rather than a pop account
   parser = OptionParser.new do|opts|
   	opts.banner = "Usage: mailtojekyll.rb [options]"
 
-    opts.on('-t','--test') do |params|
+    opts.on('-t','--test', 'Turns on the test flag, retrieves .eml files from test_source directory in config file') do |params|
       options[:retrieve] = "file"
     end
-
-    # opts.on('-r', '--repo repo', 'Repo') do |repo|
-    #   options[:jekyll_repo] = repo;
-    # end
-    # 
-  	# opts.on('-s', '--server server', 'Server') do |server|
-  	# 	options[:pop_server] = server;
-  	# end
-    # 
-  	# opts.on('-u', '--user user', 'User') do |user|
-  	# 	options[:pop_user] = user;
-  	# end
-    # 
-    # opts.on('-p', '--pass pass', 'Pass') do |pass|
-    #   options[:pop_password] = pass;
-    # end
-    # 
-    # opts.on('-S', '--secret secret', 'Secret') do |secret|
-    #   options[:secret] = secret;
-    # end
-    # 
-    # opts.on('-I', '--imgdir imgdir', 'Imgdir') do |imgdir|
-    #   options[:images_dir] = imgdir;
-    # end
-    # 
-    # opts.on('-P', '--postdir postdir', 'Postdir') do |postdir|
-    #   options[:posts_dir] = postdir;
-    # end
-    # 
-    # opts.on('-l', '--layout layout', 'Layout') do |layout|
-    #   options[:layout] = layout;
-    # end
-    # 
-    # opts.on('-c', '--categories categories', 'Categories') do |categories|
-    #   options[:categories] = categories;
-    # end
 
   	opts.on('-h', '--help', 'Displays Help') do
   		puts opts
@@ -66,42 +32,37 @@ module Mailtojekyll
 
   parser.parse!
 
+  # create image and post directories if they don't exist
   def self.create_dirs(images,posts)
     unless Dir.exists?(images)
-      # TODO: LOG THIS puts "creating directory"
       FileUtils.mkdir_p(images)
-    else
-      # TODO: LOG THIS puts images
-      # TODO: LOG THIS puts "images directory already exists"
     end
     unless Dir.exists?(posts)
-      # TODO: LOG THIS puts "creating directory"
       FileUtils.mkdir_p(posts)
-    else
-      # TODO: LOG THIS puts posts
-      # TODO: LOG THIS puts "posts directory already exists"
     end
   end
 
   # get config
   config = YAML::load(File.open('_config.yml'))
 
+  # default to pop method unless test is set by flag
   config['retrieve'] = 'pop'
-
-  #TODO: If retrieve method is file - don't even set pop values
 
   config.each_pair do |k,v|
     if options[k.to_sym].nil? || options[k.to_sym].empty?
       options[k.to_sym] = config[k]
-      #TODO: LOG THIS 
-      print "Using config option for #{k}: "
+      #TODO: LOG THIS print "Using config option for #{k}: "
     else
-      # TODO: LOG THIS 
-      print "Manually set option for #{k}: "
+      # TODO: LOG THIS print "Manually set option for #{k}: "
     end
-    # TODO: LOG THIS 
-    print "#{options[k.to_sym]}\n"
+    # TODO: LOG THIS print "#{options[k.to_sym]}\n"
   end
+  
+  # open the repo and checkout the content branch
+  testrepo = Git.open(options[:jekyll_repo],:log => Logger.new(STDOUT))
+  testrepo.add_remote('origin',options[:remote_repo]) unless testrepo.remote.url == options[:remote_repo]
+  testrepo.branch('content').checkout
+  testrepo.pull('origin','content') if testrepo.branches.remote.include?("content")
   
   # empties, initializers & setup
   create_dirs("#{options[:jekyll_repo]}/#{options[:images_dir]}","#{options[:jekyll_repo]}/#{options[:posts_dir]}")
@@ -116,7 +77,7 @@ module Mailtojekyll
       Mail::TestRetriever.emails << Mail.read(mail)
     end
   elsif options[:retrieve] == "pop"
-    # set mail retrieval defaults for the Mail gem
+    # set pop retrieval defaults for the Mail gem
     Mail.defaults do
       mail_settings = {
         address: options[:pop_server],
@@ -146,10 +107,25 @@ module Mailtojekyll
       next
     end
     
+    # make a new post
     post = JekyllPost.new(email.title, email.body, email.atts, options[:jekyll_repo], options[:images_dir], options[:posts_dir], meta)
-
+    
   end
   
-
+  # commit the changes to the repo and push
+  unless testrepo.diff.size == 0
+    testrepo.add(:all=>true)
+    testrepo.commit("Adding email post(s) from #{Time.now}")
+  end
+  testrepo.push('origin','content')
+  testrepo.branch("develop").checkout
+  testrepo.pull('origin','develop') if testrepo.branches.remote.include?("develop")
+  testrepo.branch("develop").merge("content")
+  testrepo.push('origin','develop')
+  testrepo.branch("master").checkout
+  testrepo.pull('origin','master') if testrepo.branches.remote.include?("master")
+  testrepo.branch("master").merge("develop")
+  testrepo.push
+  testrepo.branch("content").checkout
   
 end
