@@ -59,7 +59,7 @@ module Mailtojekyll
   end
   
   # open the repo and checkout the content branch
-  testrepo = Git.open(options[:jekyll_repo],:log => Logger.new(STDOUT))
+  testrepo = Git.open(options[:jekyll_repo])
   testrepo.add_remote('origin',options[:remote_repo]) unless testrepo.remote.url == options[:remote_repo]
   testrepo.branch('content').checkout
   testrepo.pull('origin','content') if testrepo.branches.remote.include?("content")
@@ -91,6 +91,13 @@ module Mailtojekyll
   end
 
   emails = Mail.all
+  
+  if emails.empty?
+    puts "No new mails to process via #{options[:retrieve]} method" 
+    exit
+  else
+    puts "Fetching mails via #{options[:retrieve]} method"
+  end
 
   # test for validity and create posts
   emails.each do |email|
@@ -127,5 +134,4 @@ module Mailtojekyll
   testrepo.branch("master").merge("develop")
   testrepo.push
   testrepo.branch("content").checkout
-  
 end

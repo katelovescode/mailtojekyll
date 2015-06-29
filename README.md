@@ -40,6 +40,8 @@ Users email a post to their dedicated email account for their `jekyll` blog.  Mo
 
 ## For developers
 
+You must have a git repo initialized in your jekyll installation.  `mailtojekyll` sets up its own branch `content` to keep content changes separate from development changes.  When `mailtojekyll` runs, it will checkout the content branch and pull any changes (e.g. manually-created post files) from the remote repo.  After creating all of the email posts, it will 
+
 Best practices  
 1. Set up a dedicated email account only for this purpose
 2. Clone `mailtojekyll` to your server
