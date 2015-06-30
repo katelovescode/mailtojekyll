@@ -48,6 +48,21 @@ Best practices
 3. `cd mailtojekyll` - this should create a new gemset if you're using `rvm`
 4. 
 
+`rake install` to install gem executable?
+
+CRON JOB:
+```
+which mailtojekyll # in my case, returns /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/bin/mailtojekyll
+
+rvm cron setup # adds required path variables to the top of your crontab file
+
+crontab -e
+
+* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/wrappers/mailtojekyll
+```
+
+**Note the change from /bin/ to /wrappers/ in the cron path
+
 ### Deployment
 
 ## Contributors

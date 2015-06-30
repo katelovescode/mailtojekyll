@@ -4,8 +4,6 @@ gem 'mail'
 gem 'nokogiri'
 gem 'reverse_markdown'
 gem 'rinku'
-gem 'highline'
-gem 'git'
 gem 'logger'
 
 group :test do

@@ -1,7 +1,5 @@
 #!/usr/bin/env ruby
 
-require 'jekyllemail'
-require 'jekyllpost'
 require 'invalid_email_spec_helper'
 require 'valid_email_spec_helper'
 require 'shared_contexts'

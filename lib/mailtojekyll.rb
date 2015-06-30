@@ -1,37 +1,15 @@
 #!/usr/bin/env ruby
 
-# TODO: git commits after sending
-
 require_relative "mailtojekyll/version"
 require 'mail'
 require 'fileutils'
 require 'optparse'
-require 'highline/import'
-require 'git'
 require 'logger'
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'
 
 module Mailtojekyll
   
-  options = {}
-
-  # allow a test flag to be set to retrieve files from a server directory rather than a pop account
-  parser = OptionParser.new do|opts|
-  	opts.banner = "Usage: mailtojekyll.rb [options]"
-
-    opts.on('-t','--test', 'Turns on the test flag, retrieves .eml files from test_source directory in config file') do |params|
-      options[:retrieve] = "file"
-    end
-
-  	opts.on('-h', '--help', 'Displays Help') do
-  		puts opts
-  		exit
-  	end
-  end
-
-  parser.parse!
-
   # create image and post directories if they don't exist
   def self.create_dirs(images,posts)
     unless Dir.exists?(images)
@@ -41,39 +19,111 @@ module Mailtojekyll
       FileUtils.mkdir_p(posts)
     end
   end
+  
+  # empties and initializers
+  home = Dir.pwd
+  options = {jekyll_repo: nil, retrieve: nil, test_source: nil, pop_server: nil, pop_user: nil, pop_password: nil, secret: nil, images_dir: nil, posts_dir: nil, layout: nil, categories: nil, deploy_repo: nil, origin_repo: nil}
 
-  # get config
-  config = YAML::load(File.open('_config.yml'))
-
-  # default to pop method unless test is set by flag
-  config['retrieve'] = 'pop'
-
-  config.each_pair do |k,v|
-    if options[k.to_sym].nil? || options[k.to_sym].empty?
-      options[k.to_sym] = config[k]
-      #TODO: LOG THIS print "Using config option for #{k}: "
-    else
-      # TODO: LOG THIS print "Manually set option for #{k}: "
+  # command line options for cron job settings
+  parser = OptionParser.new do|opts|
+  	opts.banner = "\nRequired flags are marked with an asterisk(*)\n\nUsage: mailtojekyll.rb [options]\n\n\n"
+    
+    opts.on('-t','--test path/to/emails', "Retrieves saved emails from this directory (path is relative to your gem installation root)\n\t\t\t\t     When using the test flag, the POP flags are not required\n\n") do |param|
+      options[:retrieve] = "file"
+      options[:test_source] = param
     end
-    # TODO: LOG THIS print "#{options[k.to_sym]}\n"
+
+    opts.on('-j','--jekyll path/to/repo', '*Local absolute path to the git repo for your jekyll installation') do |param|
+      options[:jekyll_repo] = param
+    end
+    
+    opts.on('-s','--server pop.example.com', '*POP server for mail retrieval') do |param|
+      options[:pop_server] = param
+    end
+    
+    opts.on('-u','--user example@example.com', '*POP username (may be a full email address)') do |param|
+      options[:pop_user] = param
+    end
+    
+    opts.on('-p','--pass examplepassword', '*POP password') do |param|
+      options[:pop_password] = param
+    end
+    
+    opts.on('-S','--secret secretword', '*Secret word mailtojekyll should look for in the subject line') do |param|
+      options[:secret] = param
+    end
+    
+    opts.on('-i','--imgdir path/to/imgs', '*Image directory (path is relative to your jekyll repo root)') do |param|
+      options[:images_dir] = param
+    end
+    
+    opts.on('-P','--postdir path/to/posts', '*Posts directory (path is relative to your jekyll repo root)') do |param|
+      options[:posts_dir] = param
+    end
+    
+    opts.on('-d','--deploy path/to/remote', "*Deployment remote repo URL\n\n") do |param|
+      options[:deploy_repo] = param
+    end
+
+    opts.on('-o','--origin path/to/remote', "*Origin remote repo URL\n\n") do |param|
+      options[:origin_repo] = param
+    end
+
+
+    opts.on('-l','--layout layout', 'Jekyll template layout (default is "post")') do |param|
+      options[:layout] = param
+    end
+
+    opts.on('-c','--cats "cat 1, cat 2, cat 3"', 'Jekyll post categories (default is "latest")') do |param|
+      options[:categories] = param.split(",")
+    end
+
+  	opts.on('-h', '--help', "Displays Help\n\n") do
+  		puts opts
+  		exit
+  	end
   end
   
-  # open the repo and checkout the content branch
-  testrepo = Git.open(options[:jekyll_repo])
-  testrepo.add_remote('origin',options[:remote_repo]) unless testrepo.remote.url == options[:remote_repo]
-  testrepo.branch('content').checkout
-  testrepo.pull('origin','content') if testrepo.branches.remote.include?("content")
-  
-  # empties, initializers & setup
-  create_dirs("#{options[:jekyll_repo]}/#{options[:images_dir]}","#{options[:jekyll_repo]}/#{options[:posts_dir]}")
-  meta = { layout: options[:layout], categories: options[:categories] }
+  ARGV.push('-h') if ARGV.empty?
+
+  parser.parse!
+
+  # default to pop method unless test is set by flag
+  if options[:retrieve].to_s.empty?
+    options[:retrieve] = "pop"
+  end
+
+  if options[:retrieve] == "pop"
+    if options[:pop_server].to_s.empty? || options[:pop_user].to_s.empty? || options[:pop_password].to_s.empty?
+      raise "All POP flags are required"
+      exit
+    end
+  end
+
+  options.each_pair do |k,v|
+    if k == :layout && options[k].to_s.empty?
+      options[k] = "post"
+    elsif k == :categories && options[k].to_s.empty?
+      options[k] = "latest"
+    elsif k == :test_source && options[:retrieve] == "pop"
+      next      
+    else
+      if options[k].to_s.empty?
+        unless options[:retrieve] == "file" && (k == :pop_server || k == :pop_user || k == :pop_password)
+          raise "#{k} flag is required"
+          exit
+        end
+      end
+    end
+  end
 
   # get files or emails from pop server
+  puts "Checking for emails..."
   if options[:retrieve] == "file"
     Mail.defaults do
       retriever_method :test
     end
-    Dir["#{config['test_source']}/*.eml"].each do |mail|
+    Dir["#{options[:test_source]}/*.eml"].each do |mail|
       Mail::TestRetriever.emails << Mail.read(mail)
     end
   elsif options[:retrieve] == "pop"
@@ -96,42 +146,57 @@ module Mailtojekyll
     puts "No new mails to process via #{options[:retrieve]} method" 
     exit
   else
-    puts "Fetching mails via #{options[:retrieve]} method"
-  end
+    puts "Setting up directories..."
+    # empties, initializers & setup
+    create_dirs("#{options[:jekyll_repo]}/#{options[:images_dir]}","#{options[:jekyll_repo]}/#{options[:posts_dir]}")
+    meta = { layout: options[:layout], categories: options[:categories] }
+    puts "Configuring git repositories..."
+    # open the repo and checkout the content branch
+    Dir.chdir(options[:jekyll_repo])
+    findremotes = `git remote -v`
+    unless findremotes.include?("deploy	#{options[:deploy_repo]} (push)")
+      `git remote add deploy #{options[:deploy_repo]}`
+    end
+    unless findremotes.include?("origin	#{options[:origin_repo]} (push)")
+      `git remote add origin #{options[:origin_repo]}`
+    end
+    findbranches = `git branch`
+    `git checkout -b master` unless findbranches.include?("master")
+    `git checkout master` unless findbranches.include?("* master")
+    `git pull -q deploy master`
+    nowbranch = "posts/#{Time.now.strftime("%Y%m%d%H%M%S")}"
+    `git checkout -q -b #{nowbranch}`
+    Dir.chdir(home)
+    puts "Fetching mails via #{options[:retrieve]} method..."
 
-  # test for validity and create posts
-  emails.each do |email|
-  
-    # make a new email
-    email = JekyllEmail.new(email)
+    # test for validity and create posts
+    emails.each do |email|
     
-    # validity tests
-    begin
-      email.validate_subject
-      email.validate_secret
-      email.validate_body
-    rescue
-      next
+      # make a new email
+      email = JekyllEmail.new(email)
+      
+      # validity tests
+      begin
+        email.validate_subject
+        email.validate_secret
+        email.validate_body
+      rescue
+        next
+      end
+      
+      puts "Creating post..."
+      # make a new post
+      post = JekyllPost.new(email.title, email.body, email.atts, options[:jekyll_repo], options[:images_dir], options[:posts_dir], meta)
+      
     end
     
-    # make a new post
-    post = JekyllPost.new(email.title, email.body, email.atts, options[:jekyll_repo], options[:images_dir], options[:posts_dir], meta)
-    
+    # commit the changes to the repo and push
+    puts "Updating git repositories..."
+    Dir.chdir(options[:jekyll_repo])
+    `git add -A && git commit -m "mailtojekyll: Adding email posts from #{Time.now}"`
+    `git checkout -q master && git merge -q #{nowbranch} && git branch -q -d #{nowbranch}`
+    `git push -q deploy master && git push -q origin master`
+    Dir.chdir(home)
+    puts "Finished!"
   end
-  
-  # commit the changes to the repo and push
-  unless testrepo.diff.size == 0
-    testrepo.add(:all=>true)
-    testrepo.commit("Adding email post(s) from #{Time.now}")
-  end
-  testrepo.push('origin','content')
-  testrepo.branch("develop").checkout
-  testrepo.pull('origin','develop') if testrepo.branches.remote.include?("develop")
-  testrepo.branch("develop").merge("content")
-  testrepo.push('origin','develop')
-  testrepo.branch("master").checkout
-  testrepo.pull('origin','master') if testrepo.branches.remote.include?("master")
-  testrepo.branch("master").merge("develop")
-  testrepo.push
-  testrepo.branch("content").checkout
 end
