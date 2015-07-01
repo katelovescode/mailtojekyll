@@ -57,11 +57,19 @@ which mailtojekyll # in my case, returns /home/user/.rvm/gems/ruby-2.2.0@mailtoj
 rvm cron setup # adds required path variables to the top of your crontab file
 
 crontab -e
-
-* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/wrappers/mailtojekyll
 ```
 
-**Note the change from /bin/ to /wrappers/ in the cron path
+CRON JOB W/ POP:
+```
+* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/wrappers/mailtojekyll -j /home/user/repo -s pop.example.com -u example@example.com -p x123456789x -S secretword -i imgdir -P postdir -d "git@github.com:user/deployrepo.git" -o "git@github.com:user/originrepo.git" >> /tmp/cron_debug_log.log 2>&1
+```
+
+CRON JOB W/ POP:
+```
+* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/wrappers/mailtojekyll -t path/to/emails -j /home/user/repo -S secretword -i imgdir -P postdir -d "git@github.com:user/deployrepo.git" -o "git@github.com:user/originrepo.git" >> /tmp/cron_debug_log.log 2>&1
+```
+
+**Note the change from /bin/ to /wrappers/ in the cron path**
 
 ### Deployment
 

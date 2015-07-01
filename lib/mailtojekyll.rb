@@ -61,7 +61,7 @@ module Mailtojekyll
       options[:posts_dir] = param
     end
     
-    opts.on('-d','--deploy path/to/remote', "*Deployment remote repo URL\n\n") do |param|
+    opts.on('-d','--deploy path/to/remote', "*Deployment remote repo URL") do |param|
       options[:deploy_repo] = param
     end
 
