@@ -40,46 +40,55 @@ Users email a post to their dedicated email account for their `jekyll` blog.  Mo
 
 ## For developers
 
-You must have a git repo initialized in your jekyll installation.  `mailtojekyll` sets up its own branch `content` to keep content changes separate from development changes.  When `mailtojekyll` runs, it will checkout the content branch and pull any changes (e.g. manually-created post files) from the remote repo.  After creating all of the email posts, it will 
-
 Best practices  
 1. Set up a dedicated email account only for this purpose
-2. Clone `mailtojekyll` to your server
-3. `cd mailtojekyll` - this should create a new gemset if you're using `rvm`
-4. 
-
-`rake install` to install gem executable?
-
-CRON JOB:
+2. Clone `mailtojekyll` to your local machine
+3. 
 ```
-which mailtojekyll # in my case, returns /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/bin/mailtojekyll
+cd mailtojekyll
+```
+(this should create a new gemset if you're using `rvm`)
 
-rvm cron setup # adds required path variables to the top of your crontab file
+4. `rake install` to install gem executable
+5. Install jekyll and create a new blog: [http://jekyllrb.com/docs/quickstart/](http://jekyllrb.com/docs/quickstart/)
+6. Send a few emails to your dedicated email account
+7. ```
+mailtojekyll -j /home/user/repo -s pop.example.com -u example@example.com -p x123456789x -S secretword -i imgdir -P postdir
+```
+8. View your repo to see the created files.
 
+### CRON JOB SETUP
+
+Add required `rvm` path variables to the top of your crontab file:
+```
+rvm cron setup
+```
+Set up cron job
+```
 crontab -e
 ```
 
-CRON JOB W/ POP:
+##### CRON JOB W/ POP
 ```
 * * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/bin/mailtojekyll -j /home/user/repo -s pop.example.com -u example@example.com -p x123456789x -S secretword -i imgdir -P postdir >> /tmp/cron_debug_log.log 2>&1
 ```
 
-CRON JOB W/ TEST EMAILS:
+##### CRON JOB W/ TEST EMAILS
 ```
 * * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/bin/mailtojekyll -t /path/to/emails -j /home/user/repo -S secretword -i imgdir -P postdir >> /tmp/cron_debug_log.log 2>&1
 ```
 
-**Note the change from /bin/ to /wrappers/ in the cron path**
-
 ### Deployment
+
+Run `mailtojekyll` on your own machine with cron, or on a server with cron to gather emails.  Manually build and upload your site, Deploy `jekyll` according to recommendations: [http://jekyllrb.com/docs/deployment-methods/](http://jekyllrb.com/docs/deployment-methods/)
 
 ## Contributors
 
  * **M**anager: Ian Reynolds
- * **O**wner:
- * **C**onsulted:
- * **H**elper:
- * **A**pprover:
+ * **O**wner: Kate Klemp
+ * **C**onsulted: Sunil Chopra
+ * **H**elper: Sunil Chopra
+ * **A**pprover: Sunil Chopra
 
 ## ATTRIBUTION
 
