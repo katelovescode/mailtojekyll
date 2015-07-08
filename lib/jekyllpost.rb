@@ -73,10 +73,7 @@ class JekyllPost
     fullpath = "#{repo}/#{imgdir}"
     
     unless Dir.exists?(fullpath)
-      # TODO: LOG THIS puts "creating directory"
       FileUtils.mkdir_p(fullpath)
-    else
-      # TODO: LOG THIS puts "today's images directory already exists"
     end
   end
   
