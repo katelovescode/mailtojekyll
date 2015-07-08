@@ -6,11 +6,11 @@
 
 ## What it does
 
-`mailtojekyll` connects to a dedicated email account using POP3, downloads all the emails, processes them into markdown, saves the attachments, and replaces image references with markdown-safe image links.
+Converts emailed blog posts into markdown and saves them inside a jekyll structure
 
 ## How it works
 
-
+`mailtojekyll` connects to a dedicated email account using POP3; downloads all the emails; validates for content, secret word, and subject line; processes the emails into markdown; saves the attachments; and replaces image references with markdown-safe image links.
 
 ## How to use it
 
@@ -23,20 +23,42 @@ Users email a post to their dedicated email account for their `jekyll` blog.  Mo
 `mailtojekyll` will replace that tag with the correct markdown image tag, including a reference to the relative image path so `jekyll` processes it correctly
 
 ### External Dependencies
+- `jekyll` [http://www.jekyllrb.com/](http://www.jekyllrb.com)
+- `mail` gem
+- `nokogiri` gem
+- `reverse_markdown` gem
+- `rinku` gem
 
 ## Reference implementation
+One option:
+- `jekyll` installed locally
+- `mailtojekyll` installed locally as an executable gem
+- cron job to run `mailtojekyll`
+- cron job to build `jekyll` site
+- cron job to transfer `_site/` directory to server (i.e. FTP or sync)
+- cron job to update and push `git` branches
 
 ### Managing services
 
 #### [OS]
 
+Ubuntu/Linux
+
+#### [Libraries/Apps]
+
+- `ruby`
+- `rvm`
+- `git`
+
 #### [Web Server]
 
-#### [Logging]
+Hosting (dedicated or shared)
 
 ### Production Implementation
 
 #### Where is this thing?
+
+**TODO: Update this with our production stack (AWS, etc.)**
 
 ## For developers
 

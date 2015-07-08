@@ -4,7 +4,6 @@ require_relative "mailtojekyll/version"
 require 'mail'
 require 'fileutils'
 require 'optparse'
-require 'logger'
 require_relative 'jekyllemail'
 require_relative 'jekyllpost'
 
