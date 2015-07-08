@@ -1,0 +1,33 @@
+Return-Path: <kklemp@misdepartment.com>
+Received: by 10.31.65.6 with SMTP id o6csp127809vka; Fri, 12 Jun 2015 16:04:32 -0700
+Received: from mail.misdepartment.com (mail.misdepartment.com. [12.32.148.3]) by mx.google.com with ESMTPS id p20si2495201igr.29.2015.06.12.16.04.32 for <jekylltester@gmail.com> (version=TLSv1 cipher=ECDHE-RSA-AES128-SHA bits=128/128); Fri, 12 Jun 2015 16:04:32 -0700
+Received: from IO.misdepartment.com (10.1.1.17) by io.misdepartment.com (10.1.1.17) with Microsoft SMTP Server (TLS) id 15.0.913.22; Fri, 12 Jun 2015 18:02:59 -0500
+Received: from IO.misdepartment.com ([fe80::d076:2133:8acf:fb96]) by io.misdepartment.com ([fe80::d076:2133:8acf:fb96%12]) with mapi id 15.00.0913.011; Fri, 12 Jun 2015 18:02:58 -0500
+Date: Fri, 12 Jun 2015 23:02:58 +0000
+From: Kate Klemp <kklemp@MISDepartment.com>
+To: "jekylltester@gmail.com" <jekylltester@gmail.com>
+Message-ID: <gionn1dt5skt774fbqlsd5fs.1434150194146@email.lge.com>
+Subject: HTML with no formatting from LG Mail || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=utf-8
+Content-Transfer-Encoding: base64
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.50.79.169 with SMTP id k9mr7379984igx.44.1434150272542; Fri,
+ 12 Jun 2015 16:04:32 -0700 (PDT)
+Received-SPF: pass (google.com: domain of kklemp@misdepartment.com designates
+ 12.32.148.3 as permitted sender) client-ip=12.32.148.3;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ kklemp@misdepartment.com designates 12.32.148.3 as permitted sender)
+ smtp.mail=kklemp@misdepartment.com
+Thread-Topic: HTML with no formatting from LG Mail || secret: jekyllmail
+Thread-Index: AQHQpWPsSgtjcyIQwkiRe2lp5oGZYA==
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: 
+X-MS-TNEF-Correlator: 
+Content-ID: <969ADB123E2C1547A87274AC55639181@misdepartment.com>
+
+TXVzdCB0ZXN0IGxpbmUgYnJlYWtzDQoNCk11c3QgdGVzdCBsaW5lIGJyZWFr
+cw0KDQoNCk11c3QgdGVzdCBkb3VibGUgbGluZSBicmVha3MNCg0KDQpNdXN0
+IHRlc3QgZG91YmxlIGxpbmUgYnJlYWtzDQo=

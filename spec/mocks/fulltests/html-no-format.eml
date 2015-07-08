@@ -1,0 +1,66 @@
+Return-Path: <katie.klemp@gmail.com>
+Received: by 10.31.65.6 with SMTP id o6csp77246vka; Fri, 12 Jun 2015 13:28:20 -0700
+Received: from mail-qg0-x231.google.com (mail-qg0-x231.google.com. [2607:f8b0:400d:c04::231]) by mx.google.com with ESMTPS id z108si4887942qge.74.2015.06.12.13.28.20 for <jekylltester@gmail.com> (version=TLSv1.2 cipher=ECDHE-RSA-AES128-GCM-SHA256 bits=128/128); Fri, 12 Jun 2015 13:28:20 -0700
+Received: by mail-qg0-x231.google.com with SMTP id p100so14839764qge.3 for <jekylltester@gmail.com>; Fri, 12 Jun 2015 13:28:20 -0700
+Received: by 10.96.229.65 with HTTP; Fri, 12 Jun 2015 13:27:39 -0700
+Date: Fri, 12 Jun 2015 15:27:39 -0500
+From: Kate <katie.klemp@gmail.com>
+To: jekylltester@gmail.com
+Message-ID: <CACyumXE7SAEkcRtw_+qeLOx+R7rdMs1QPCBod+9xVntAF0R9oA@mail.gmail.com>
+Subject: HTML with no formatting from Gmail Desktop || secret: jekyllmail
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary=001a11355a2eee3017051857f21c;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+Delivered-To: jekylltester@gmail.com
+X-Received: by 10.140.102.101 with SMTP id v92mr20534487qge.19.1434140900590;
+ Fri, 12 Jun 2015 13:28:20 -0700 (PDT)
+Received-SPF: pass (google.com: domain of katie.klemp@gmail.com designates
+ 2607:f8b0:400d:c04::231 as permitted sender)
+ client-ip=2607:f8b0:400d:c04::231;
+Authentication-Results: mx.google.com; spf=pass (google.com: domain of
+ katie.klemp@gmail.com designates 2607:f8b0:400d:c04::231 as permitted sender)
+ smtp.mail=katie.klemp@gmail.com; dkim=pass header.i=@gmail.com; dmarc=pass
+ (p=NONE dis=NONE) header.from=gmail.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=gmail.com; s=20120113;
+ h=mime-version:from:date:message-id:subject:to:content-type;
+ bh=C53IhDKh7pR74KTFoawXfgRgyeP44/nsBbQicdt/Nts=;
+ b=J6xplJUA507NEEWy3safmP5ka/KJUoHz55bXtD3J5XQxfXRuVNjgQo40AshHcLer50
+ qnm6TTbD0XkRQFLumoviCZrzo+NeGME3SmLdvPN2VmdT7iOVcrVGUI+UR0enRsVfhbyl
+ LMGgzNdeg6anO1mZBVqILbxswpaxvKxRtWsaOQnGqYJpNMw/Rv4lgdlC6CIzqU956Oqv
+ efqHIPjCSsGxsDwnhwp4XDojFGuD4d0fh07GqKsY0DUZWn32qteFU1xWw46Zu01qoFGl
+ I2PqYEfXzefwUyw2mcVmoV6ML/GFwobA+6GmxzTH7aReUiV+tQjVB5liW2SJNRs+kCoN sLFQ==
+X-Received: by 10.140.135.80 with SMTP id 77mr22218775qhh.8.1434140900468;
+ Fri, 12 Jun 2015 13:28:20 -0700 (PDT)
+
+
+--001a11355a2eee3017051857f21c
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Must test line breaks
+Must test line breaks
+
+Must test double line breaks
+
+Must test double line breaks
+
+--001a11355a2eee3017051857f21c
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div class=3D"gmail_default" style=3D"font-family:tahoma=
+,sans-serif;color:#073763">Must test line breaks</div><div class=3D"gmail=
+_default" style=3D"font-family:tahoma,sans-serif;color:#073763">Must test=
+ line breaks</div><div class=3D"gmail_default" style=3D"font-family:tahom=
+a,sans-serif;color:#073763"><br></div><div class=3D"gmail_default" style=3D=
+"font-family:tahoma,sans-serif;color:#073763">Must test double line break=
+s</div><div class=3D"gmail_default" style=3D"font-family:tahoma,sans-seri=
+f;color:#073763"><br></div><div class=3D"gmail_default" style=3D"font-fam=
+ily:tahoma,sans-serif;color:#073763">Must test double line breaks</div></=
+div>
+
+--001a11355a2eee3017051857f21c--

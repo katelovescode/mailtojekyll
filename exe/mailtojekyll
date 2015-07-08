@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+# Run mailtojekyll with options
+
+require_relative '../lib/mailtojekyll'

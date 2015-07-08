@@ -49,6 +49,7 @@ class JekyllEmail
   # validate the subject; if valid, return title
   def validate_subject
     if @subject.nil?
+      puts "No subject, skipping"
       raise StandardError, "No subject"
     else
       @title.strip
@@ -56,20 +57,22 @@ class JekyllEmail
   end
   
   # validate the secret; no return
-  def validate_secret # parse the title for the secret
+  def validate_secret(opt) # parse the title for the secret
     unless @secret.nil?
       (key, @secret) = @secret.split(/:\s?/)
       @secret.strip!
     end
-    if (@secret.nil? || @secret != "jekyllmail")
-      raise StandardError, "Secret incorrect or missing" 
+    if (@secret.nil? || @secret != opt)
+      puts "#{@subject}: Secret incorrect, skipping"
+      raise StandardError, "Secret incorrect or missing"
     end
   end
   
   # validate the body
   def validate_body
     if @body == ""
-      raise StandardError, "No body text" 
+      puts "#{@subject}: No body text, skipping"
+      raise StandardError, "No body text"
     end
   end
   
