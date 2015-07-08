@@ -1,5 +1,7 @@
 # mailtojekyll
 
+TODO: Update rspec tests
+
 ## Motivation
 
 `mailtojekyll` was written in order to allow clients to post to `jekyll` blogs via email, rather than manually creating markdown files, running `jekyll`, and uploading the generated static files themselves.
