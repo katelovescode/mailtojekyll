@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Allows users to send emails to post to a jekyll blog}
   spec.description   = %q{Uses POP3 to connect to a dedicated email address, fetch emails, and parse them into markdown posts for Jekyll to process}
-  spec.homepage      = "https://github.com/kateklemp/mailtojekyll"
+  spec.homepage      = "https://github.com/misdepartment/mailtojekyll"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
