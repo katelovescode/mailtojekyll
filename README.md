@@ -61,12 +61,12 @@ crontab -e
 
 CRON JOB W/ POP:
 ```
-* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/wrappers/mailtojekyll -j /home/user/repo -s pop.example.com -u example@example.com -p x123456789x -S secretword -i imgdir -P postdir -d "git@github.com:user/deployrepo.git" -o "git@github.com:user/originrepo.git" >> /tmp/cron_debug_log.log 2>&1
+* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/bin/mailtojekyll -j /home/user/repo -s pop.example.com -u example@example.com -p x123456789x -S secretword -i imgdir -P postdir >> /tmp/cron_debug_log.log 2>&1
 ```
 
-CRON JOB W/ POP:
+CRON JOB W/ TEST EMAILS:
 ```
-* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/wrappers/mailtojekyll -t path/to/emails -j /home/user/repo -S secretword -i imgdir -P postdir -d "git@github.com:user/deployrepo.git" -o "git@github.com:user/originrepo.git" >> /tmp/cron_debug_log.log 2>&1
+* * * * * /home/user/.rvm/gems/ruby-2.2.0@mailtojekyll/bin/mailtojekyll -t /path/to/emails -j /home/user/repo -S secretword -i imgdir -P postdir >> /tmp/cron_debug_log.log 2>&1
 ```
 
 **Note the change from /bin/ to /wrappers/ in the cron path**

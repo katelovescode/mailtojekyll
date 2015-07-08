@@ -22,18 +22,18 @@ module Mailtojekyll
   
   # empties and initializers
   home = Dir.pwd
-  options = {jekyll_repo: nil, retrieve: nil, test_source: nil, pop_server: nil, pop_user: nil, pop_password: nil, secret: nil, images_dir: nil, posts_dir: nil, layout: nil, categories: nil, deploy_repo: nil, origin_repo: nil}
+  options = {jekyll_repo: nil, retrieve: nil, test_source: nil, pop_server: nil, pop_user: nil, pop_password: nil, secret: nil, images_dir: nil, posts_dir: nil, layout: nil, categories: nil}
 
   # command line options for cron job settings
   parser = OptionParser.new do|opts|
   	opts.banner = "\nRequired flags are marked with an asterisk(*)\n\nUsage: mailtojekyll.rb [options]\n\n\n"
     
-    opts.on('-t','--test path/to/emails', "Retrieves saved emails from this directory (path is relative to your gem installation root)\n\t\t\t\t     When using the test flag, the POP flags are not required\n\n") do |param|
+    opts.on('-t','--test /path/to/emails', "Retrieves saved emails from this directory (local absolute path to test emails)\n\t\t\t\t     When using the test flag, the POP flags are not required\n\n") do |param|
       options[:retrieve] = "file"
       options[:test_source] = param
     end
 
-    opts.on('-j','--jekyll path/to/repo', '*Local absolute path to the git repo for your jekyll installation') do |param|
+    opts.on('-j','--jekyll /path/to/repo', '*Local absolute path to the git repo for your jekyll installation') do |param|
       options[:jekyll_repo] = param
     end
     
@@ -60,15 +60,6 @@ module Mailtojekyll
     opts.on('-P','--postdir path/to/posts', '*Posts directory (path is relative to your jekyll repo root)') do |param|
       options[:posts_dir] = param
     end
-    
-    opts.on('-d','--deploy path/to/remote', "*Deployment remote repo URL") do |param|
-      options[:deploy_repo] = param
-    end
-
-    opts.on('-o','--origin path/to/remote', "*Origin remote repo URL\n\n") do |param|
-      options[:origin_repo] = param
-    end
-
 
     opts.on('-l','--layout layout', 'Jekyll template layout (default is "post")') do |param|
       options[:layout] = param
@@ -123,6 +114,7 @@ module Mailtojekyll
     Mail.defaults do
       retriever_method :test
     end
+    puts File.expand_path(options[:test_source])
     Dir["#{options[:test_source]}/*.eml"].each do |mail|
       Mail::TestRetriever.emails << Mail.read(mail)
     end
@@ -150,23 +142,7 @@ module Mailtojekyll
     # empties, initializers & setup
     create_dirs("#{options[:jekyll_repo]}/#{options[:images_dir]}","#{options[:jekyll_repo]}/#{options[:posts_dir]}")
     meta = { layout: options[:layout], categories: options[:categories] }
-    puts "Configuring git repositories..."
-    # open the repo and checkout the content branch
-    Dir.chdir(options[:jekyll_repo])
-    findremotes = `git remote -v`
-    unless findremotes.include?("deploy	#{options[:deploy_repo]} (push)")
-      `git remote add deploy #{options[:deploy_repo]}`
-    end
-    unless findremotes.include?("origin	#{options[:origin_repo]} (push)")
-      `git remote add origin #{options[:origin_repo]}`
-    end
-    findbranches = `git branch`
-    `git checkout -b master` unless findbranches.include?("master")
-    `git checkout master` unless findbranches.include?("* master")
-    `git pull -q deploy master`
-    nowbranch = "posts/#{Time.now.strftime("%Y%m%d%H%M%S")}"
-    `git checkout -q -b #{nowbranch}`
-    Dir.chdir(home)
+
     puts "Fetching mails via #{options[:retrieve]} method..."
 
     # test for validity and create posts
@@ -178,7 +154,7 @@ module Mailtojekyll
       # validity tests
       begin
         email.validate_subject
-        email.validate_secret
+        email.validate_secret(options[:secret])
         email.validate_body
       rescue
         next
@@ -190,13 +166,6 @@ module Mailtojekyll
       
     end
     
-    # commit the changes to the repo and push
-    puts "Updating git repositories..."
-    Dir.chdir(options[:jekyll_repo])
-    `git add -A && git commit -m "mailtojekyll: Adding email posts from #{Time.now}"`
-    `git checkout -q master && git merge -q #{nowbranch} && git branch -q -d #{nowbranch}`
-    `git push -q deploy master && git push -q origin master`
-    Dir.chdir(home)
     puts "Finished!"
   end
 end
