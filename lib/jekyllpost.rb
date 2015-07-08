@@ -2,7 +2,7 @@
 
 class JekyllPost
 
-  def initialize(title, body, atts, repo, imgdir, pstdir, config)
+  def initialize(title, body, atts, repo, imgdir, pstdir, meta)
     time = Time.now
     postday = time.strftime("%Y-%m-%d")
     posttime = time.strftime("%H:%M:%S")
@@ -14,16 +14,16 @@ class JekyllPost
     content = replace_images(body, atts, imgdir)
     create_imgdir(repo,imgdir)
     save_attachments(repo, imgdir, atts)
-    create_post(post_filename, config, title, postday, posttime, atts, imgdir, content)
+    create_post(post_filename, meta, title, postday, posttime, atts, imgdir, content)
   end
   
-  def create_post(post_filename, config, title, postday, posttime, atts, imgdir, content)
+  def create_post(post_filename, meta, title, postday, posttime, atts, imgdir, content)
     open(post_filename, 'w') do |post|
       post << "---\n"
-      post << "layout: #{config[:layout]}\n"
+      post << "layout: #{meta[:layout]}\n"
       post << "title: #{title}\n"
       post << "date: #{postday} #{posttime}\n"
-      post << "categories: #{config[:categories]}\n"
+      post << "categories: #{meta[:categories]}\n"
       unless atts.empty?
         key,val = atts[:image0][:filename]
         post << "image: /#{imgdir}/#{key}\n"
@@ -51,7 +51,7 @@ class JekyllPost
     atts.each do |img,vals|
       srchimg = "![](#{vals[:filename]})"
       unless post.nil?
-        post = post.gsub(srchimg,"/#{imgdir}/#{vals[:filename]}")
+        post = post.gsub(srchimg,"![](/#{imgdir}/#{vals[:filename]})")
         # if vals[:cid] == ""
         #   newimg = "![](/#{imgdir}/#{vals[:filename]})\n\n"
         #   post << newimg
