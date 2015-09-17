@@ -30,7 +30,9 @@ Most formatting will be stripped out.  If the user wants to include images in th
 
 This must match the exact file name of the attachment.
 
-`mailtojekyll` will replace that tag with the correct markdown image tag, including a reference to the relative image path so `jekyll` processes it correctly
+`mailtojekyll` will replace that tag with the correct markdown image tag, including a reference to the relative image path so `jekyll` processes it correctly.
+
+If the user notices a mistake or wants to make an edit to their post, they cab re-send the email with the same title on the same day, and the post will be overwritten.  This makes it easy for non-technical users to correct their content if necessary.
 
 ### External Dependencies
 - `jekyll` [http://www.jekyllrb.com/](http://www.jekyllrb.com)
