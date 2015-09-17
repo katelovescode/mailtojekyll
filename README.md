@@ -16,11 +16,19 @@ Converts emailed blog posts into markdown and saves them inside a jekyll structu
 
 ## How to use it
 
-Users email a post to their dedicated email account for their `jekyll` blog.  Most formatting will be stripped out.  If the user wants to include images in the post, they should use the following syntax:
+Users email a post to their dedicated email account for their `jekyll` blog.  
+
+The subject must be in this format: `Post Title || secret: secretword`
+
+The secret word must match the one set in `_config.yml`
+
+Most formatting will be stripped out.  If the user wants to include images in the post, they should attach the images to the email and use the following syntax in the body of the email:
 
 ```
 #image-filename.png#
 ```
+
+This must match the exact file name of the attachment.
 
 `mailtojekyll` will replace that tag with the correct markdown image tag, including a reference to the relative image path so `jekyll` processes it correctly
 
